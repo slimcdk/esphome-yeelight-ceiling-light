@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:layout_gravity="bottom" android:orientation="vertical" android:background="@color/common_content_bg" android:padding="23dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="15sp" android:textColor="@color/common_dialog_text_color" android:gravity="center" android:id="@+id/dialog_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/common_dialog_input_rename"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="13sp" android:textColor="@color/global_black" android:gravity="center" android:id="@+id/dialog_message" android:paddingBottom="20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:alpha="0.4"/>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:id="@+id/dialog_imgs" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@+id/dialog_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="center"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="25dp">
+        <Button android:textSize="14sp" android:id="@+id/dialog_btn_left" android:background="@drawable/common_dialog_btn_left" android:layout_width="0dp" android:layout_height="@dimen/common_button_h" android:text="@string/common_text_cancel" android:layout_weight="1" android:alpha="0.7"/>
+        <Button android:textSize="14sp" android:id="@+id/dialog_btn_right" android:background="@drawable/common_dialog_btn_right" android:layout_width="0dp" android:layout_height="@dimen/common_button_h" android:text="@string/common_text_ok" android:layout_weight="1" android:alpha="0.7"/>
+    </LinearLayout>
+</LinearLayout>

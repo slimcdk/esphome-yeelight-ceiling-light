@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<root xmlns="urn:schemas-mi-com:device-1-0">
+    <specVersion>
+        <major>1</major>
+        <minor>0</minor>
+    </specVersion>
+    <device>
+        <type>urn:schemas-mi-com:device:Yeelight:MeshGatewayDevice:1</type>
+        <friendlyName>Yeelight Mesh网关</friendlyName>
+        <firmwareVersion>1</firmwareVersion>
+        <modelNumber>1</modelNumber>
+        <modelName>yeelink.gateway.va</modelName>
+        <modelDescription>Yeelight Mesh 网关</modelDescription>
+        <modelURL>http://www.mi.com</modelURL>
+        <manufacturer>Xiaomi</manufacturer>
+        <manufacturerURL>http://www.mi.com</manufacturerURL>
+
+        <serviceList>
+            <service>
+                <type>urn:schemas-mi-com:service:MeshGateway:Service:1</type>
+                <friendlyName>电力开关服务</friendlyName>
+
+                <actionList>
+                    <!-- Level 1 -->
+                    <action>
+                        <friendlyName>restore</friendlyName>
+                        <internalName>miIO.restore</internalName>
+                        <description>重置</description>
+                        <argumentList />
+                    </action>
+                    <action>
+                        <friendlyName>setLEDIndicator</friendlyName>
+                        <internalName>set_indicator</internalName>
+                        <description>设置开关指示灯</description>
+                        <argumentList>
+                            <argument>
+                                <name>indicatorParams</name>
+                                <direction>in</direction>
+                                <relatedProperty>IndicatorParams</relatedProperty>
+                            </argument>
+                        </argumentList>
+                    </action>
+                    <action>
+                        <friendlyName>setTimezone</friendlyName>
+                        <internalName>set_timezone</internalName>
+                        <description>设置时区</description>
+                        <argumentList>
+                            <argument>
+                                <name>timezone</name>
+                                <direction>in</direction>
+                                <relatedProperty>Timezone</relatedProperty>
+                            </argument>
+                        </argumentList>
+                    </action>
+                    <action>
+                        <friendlyName>setDefault</friendlyName>
+                        <internalName>set_default</internalName>
+                        <description>设置当前状态为默认开启</description>
+                    </action>
+                    <action>
+                        <friendlyName>sendCmd</friendlyName>
+                        <internalName>set_ps</internalName>
+                        <description>发送控制命令</description>
+                        <argumentList>
+                            <argument>
+                                <name>cmd_key</name>
+                                <direction>in</direction>
+                                <relatedProperty>CmdKey</relatedProperty>
+                            </argument>
+                            <argument>
+                                <name>cmd_value</name>
+                                <direction>in</direction>
+                                <relatedProperty>CmdValue</relatedProperty>
+                            </argument>
+                        </argumentList>
+                    </action>
+                </actionList>
+
+
+                <propertyList>
+                    <!-- level 1 basic -->
+                    <property gettable="false" notifiable="false" settable="false">
+                        <friendlyName>CmdKey</friendlyName>
+                        <internalName>cmd_key</internalName>
+                        <description>命令</description>
+                        <dataType>string</dataType>
+                        <allowedValueList>
+                            <allowedValue>cfg_pomodoro</allowedValue>
+                            <allowedValue>cfg_lan_ctrl</allowedValue>
+                            <allowedValue>cfg_save_state</allowedValue>
+                            <allowedValue>cfg_init_power</allowedValue>
+                        </allowedValueList>
+                    </property>
+                    <property gettable="false" notifiable="false" settable="false">
+                        <friendlyName>CmdValue</friendlyName>
+                        <internalName>cmd_value</internalName>
+                        <description>命令参数</description>
+                        <dataType>string</dataType>
+                    </property>
+                    <property gettable="true" notifiable="true" settable="true">
+                        <friendlyName>Indicator</friendlyName>
+                        <internalName>indicator</internalName>
+                        <description>指示灯状态</description>
+                        <dataType>string</dataType>
+                        <allowedValueList>
+                            <allowedValue>on</allowedValue>
+                            <allowedValue>off</allowedValue>
+                            <allowedValue>unknow</allowedValue>
+                        </allowedValueList>
+                    </property>
+                    <property gettable="true" notifiable="true" settable="true">
+                        <friendlyName>Timezone</friendlyName>
+                        <internalName>timezone</internalName>
+                        <description>时区</description>
+                        <dataType>string</dataType>
+                    </property>
+                    <property gettable="false" notifiable="false" settable="false">
+                        <friendlyName>IndicatorParams</friendlyName>
+                        <internalName>indicator_params</internalName>
+                        <description>指示灯状态参数</description>
+                        <dataType>string</dataType>
+                        <allowedValueList>
+                            <allowedValue>on</allowedValue>
+                            <allowedValue>off</allowedValue>
+                            <allowedValue>unknow</allowedValue>
+                        </allowedValueList>
+                    </property>
+                </propertyList>
+            </service>
+        </serviceList>
+    </device>
+</root>
+

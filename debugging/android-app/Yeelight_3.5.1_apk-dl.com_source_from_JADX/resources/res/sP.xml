@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:background="@color/common_divider_line_control_bottom_color" android:layout_width="match_parent" android:layout_height="1px"/>
+    <com.chauthai.swipereveallayout.SwipeRevealLayout android:id="@+id/swipe_reveal_layout" android:layout_width="match_parent" android:layout_height="wrap_content" app:dragEdge="2" app:modeSwipe="0">
+        <FrameLayout android:background="@color/common_color_secondary_white_f8" android:layout_width="wrap_content" android:layout_height="match_parent">
+            <ImageView android:layout_gravity="center_vertical" android:id="@+id/btn_item_delete" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/common_list_side_delete" android:layout_marginStart="31dp" android:layout_marginEnd="31dp"/>
+        </FrameLayout>
+        <FrameLayout android:id="@+id/group_device_card" android:background="@drawable/common_item_selector" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="87dp" android:layout_marginStart="20dp" android:layout_marginEnd="30dp">
+                <ImageView android:id="@+id/group_img" android:layout_width="58dp" android:layout_height="58dp" android:src="@drawable/icon_yeelight_device_badge_group_small" android:scaleType="fitXY" android:layout_marginEnd="20dp"/>
+                <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                    <TextView android:textSize="@dimen/font_size_16sp" android:textColor="@color/common_text_color_primary_33" android:id="@+id/group_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="1dp"/>
+                    <LinearLayout android:orientation="horizontal" android:id="@+id/group_status" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="@dimen/font_size_12sp" android:textColor="@color/common_text_color_description_99" android:gravity="bottom" android:id="@+id/group_device_on_number" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="10" android:drawableLeft="@drawable/icon_yeelight_device_tip_light_on" android:drawablePadding="5dp"/>
+                        <TextView android:textSize="@dimen/font_size_12sp" android:textColor="@color/common_text_color_description_99" android:gravity="bottom" android:id="@+id/group_device_off_number" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="10" android:drawableLeft="@drawable/icon_yeelight_device_tip_light_off" android:drawablePadding="5dp" android:paddingStart="3dp" android:layout_marginStart="10dp"/>
+                        <TextView android:textSize="@dimen/font_size_12sp" android:textColor="@color/common_text_color_description_99" android:gravity="bottom" android:id="@+id/group_device_offline_number" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="10" android:drawableLeft="@drawable/icon_yeelight_device_tip_light_offline" android:drawablePadding="5dp" android:paddingStart="3dp" android:layout_marginStart="10dp"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <FrameLayout android:layout_gravity="center" android:layout_width="42dp" android:layout_height="42dp">
+                    <ImageView android:id="@+id/group_switch_img" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent"/>
+                    <ProgressBar android:layout_gravity="center" android:id="@+id/group_connecting_progress" android:visibility="gone" android:layout_width="20dp" android:layout_height="20dp" android:indeterminate="true" android:indeterminateDrawable="@drawable/progressbar_rotate"/>
+                </FrameLayout>
+            </LinearLayout>
+        </FrameLayout>
+    </com.chauthai.swipereveallayout.SwipeRevealLayout>
+    <TextView android:background="@color/common_divider_line_content_color" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginStart="20dp"/>
+    <LinearLayout android:gravity="center" android:layout_width="match_parent" android:layout_height="48dp">
+        <com.yeelight.yeelib.p142ui.view.BrightnessSeekBarView android:gravity="center" android:id="@+id/brightness_seek_bar" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <TextView android:background="@color/common_divider_line_control_bottom_color" android:layout_width="match_parent" android:layout_height="1px"/>
+</LinearLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.lcodecore.tkrefreshlayout.TwinklingRefreshLayout android:id="@+id/refresh_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.yeelight.yeelib.p142ui.view.YeelightScrollView android:id="@+id/device_group_list_view" android:layout_width="match_parent" android:layout_height="match_parent" android:overScrollMode="never">
+            <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+                <LinearLayout android:orientation="horizontal" android:id="@+id/layout_alarm" android:background="@color/alarm_background" android:visibility="gone" android:layout_width="match_parent" android:layout_height="38dp">
+                    <ImageView android:layout_gravity="center_vertical" android:layout_width="18dp" android:layout_height="18dp" android:layout_marginLeft="20dp" android:src="@drawable/icon_alarm"/>
+                    <TextView android:textSize="@dimen/font_size_13sp" android:textColor="@color/common_text_color_secondary_66" android:layout_gravity="center_vertical" android:id="@+id/tv_alarm" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="13dp" android:text="@string/feedback_server_error" android:layout_weight="1"/>
+                </LinearLayout>
+                <FrameLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+                    <LinearLayout android:orientation="vertical" android:id="@+id/list_view" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <LinearLayout android:orientation="vertical" android:id="@+id/group_list_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                            <LinearLayout android:orientation="horizontal" android:id="@+id/group_list_bar" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="20dp" android:layout_marginEnd="19dp">
+                                <ImageView android:layout_gravity="center_vertical" android:id="@+id/img_group_view_tip" android:layout_width="11.5dp" android:layout_height="11.5dp" android:src="@drawable/icon_yeelight_device_retract"/>
+                                <TextView android:textSize="@dimen/font_size_13sp" android:textColor="@color/common_text_color_primary_33" android:gravity="center_vertical" android:id="@+id/text_group_info" android:layout_width="0dp" android:layout_height="38dp" android:text="@string/item_device_my_group" android:layout_weight="1" android:layout_marginStart="10dp"/>
+                            </LinearLayout>
+                            <androidx.recyclerview.widget.RecyclerView android:id="@+id/group_device_list" android:layout_width="match_parent" android:layout_height="wrap_content" app:layoutManager="LinearLayoutManager"/>
+                            <TextView android:background="@color/common_color_secondary_white_f8" android:layout_width="match_parent" android:layout_height="10dp"/>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+                            <LinearLayout android:orientation="horizontal" android:id="@+id/device_list_bar" android:layout_width="match_parent" android:layout_height="38dp" android:layout_marginStart="20dp" android:layout_marginEnd="19dp">
+                                <ImageView android:layout_gravity="center_vertical" android:id="@+id/img_device_view_tip" android:layout_width="11.5dp" android:layout_height="11.5dp" android:src="@drawable/icon_yeelight_device_retract"/>
+                                <TextView android:textSize="@dimen/font_size_13sp" android:textColor="@color/common_text_color_primary_33" android:gravity="center_vertical" android:id="@+id/text_device_info" android:layout_width="0dp" android:layout_height="38dp" android:text="@string/item_device_my_device" android:layout_weight="1" android:layout_marginStart="10dp"/>
+                            </LinearLayout>
+                            <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                                <LinearLayout android:orientation="vertical" android:id="@+id/layout_control_device_all" android:layout_width="match_parent" android:layout_height="wrap_content">
+                                    <TextView android:background="@color/common_divider_line_content_color" android:layout_width="match_parent" android:layout_height="1px"/>
+                                    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="90dp">
+                                        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/device_all_on_layout" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+                                            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/control_view_state_on_bg"/>
+                                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/item_device_all_on"/>
+                                        </LinearLayout>
+                                        <TextView android:background="@color/common_divider_line_content_color" android:layout_width="1px" android:layout_height="match_parent" android:layout_marginTop="20dp" android:layout_marginBottom="20dp"/>
+                                        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/device_all_off_layout" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+                                            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/control_view_state_off_bg"/>
+                                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/item_device_all_off"/>
+                                        </LinearLayout>
+                                    </LinearLayout>
+                                    <TextView android:background="@color/common_divider_line_control_bottom_color" android:layout_width="match_parent" android:layout_height="1px"/>
+                                </LinearLayout>
+                                <androidx.recyclerview.widget.RecyclerView android:id="@+id/device_list" android:layout_width="match_parent" android:layout_height="wrap_content" app:layoutManager="LinearLayoutManager"/>
+                            </FrameLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <com.yeelight.yeelib.p142ui.view.CommonFragmentDefaultView android:id="@+id/empty_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+                </FrameLayout>
+            </LinearLayout>
+        </com.yeelight.yeelib.p142ui.view.YeelightScrollView>
+    </com.lcodecore.tkrefreshlayout.TwinklingRefreshLayout>
+</FrameLayout>

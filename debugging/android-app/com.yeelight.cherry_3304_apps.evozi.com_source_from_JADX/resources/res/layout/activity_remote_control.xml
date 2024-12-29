@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/common_color_secondary_white_f8" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.yeelight.yeelib.p194ui.view.CommonTitleBar android:id="@+id/title_bar" android:layout_width="match_parent" android:layout_height="wrap_content" app:backgroundTranslucent="true" app:leftButtonResource="@drawable/icon_yeelight_back_black" app:leftButtonVisible="true" app:textColor="@color/setting_item_theme_text_color"/>
+    <FrameLayout android:background="@color/common_content_bg" android:paddingTop="10dp" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:layout_gravity="center_horizontal" android:id="@+id/remote_control_back_ground" android:background="@drawable/icon_yeelight_remote_background" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <ImageView android:layout_gravity="center_horizontal" android:id="@+id/remote_control_light_indicator" android:background="@drawable/icon_yeelight_remote_light_indicator" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="0dp"/>
+        <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="77dp">
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8dp">
+                <ImageButton android:id="@+id/remote_control_on" android:background="@drawable/remote_control_on_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="12dp"/>
+                <ImageButton android:id="@+id/remote_control_ct" android:background="@drawable/remote_control_ct_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="12dp"/>
+                <ImageButton android:id="@+id/remote_control_mode" android:background="@drawable/remote_control_mode_bg" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8dp">
+                <ImageButton android:id="@+id/remote_control_off" android:background="@drawable/remote_control_off_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="12dp"/>
+                <ImageButton android:id="@+id/remote_control_bright_increase" android:background="@drawable/remote_control_light_increase_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="0dp"/>
+                <ImageButton android:id="@+id/remote_control_bright_decrease" android:background="@drawable/remote_control_light_decrease_bg" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

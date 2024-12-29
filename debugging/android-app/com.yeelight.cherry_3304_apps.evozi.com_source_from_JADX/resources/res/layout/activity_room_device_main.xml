@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/common_text_color_white" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.yeelight.yeelib.p194ui.view.CommonTitleBar android:id="@+id/title_bar" android:layout_width="match_parent" android:layout_height="wrap_content" app:backgroundTranslucent="true" app:bottomDividerVisible="false" app:leftButtonResource="@drawable/icon_yeelight_back_black" app:leftButtonVisible="true" app:rightButtonResource="@drawable/icon_yeelight_control_view_settings" app:rightButtonVisible="true"/>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/device_info_layout" android:paddingTop="5dp" android:paddingBottom="20dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:paddingLeft="30dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <TextView android:textSize="30sp" android:textColor="@color/common_text_color_secondary_66" android:id="@+id/room_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="3dp" android:text=""/>
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/room_tip_on_layout" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ImageView android:layout_width="20dp" android:layout_height="20dp" android:layout_marginBottom="2dp" android:src="@drawable/icon_yeelight_device_tip_light_on"/>
+                    <TextView android:textSize="@dimen/font_size_15sp" android:textColor="@color/common_text_color_description_99" android:gravity="bottom" android:id="@+id/room_device_on_number" android:layout_width="wrap_content" android:layout_height="20dp" android:text="10" android:paddingStart="3dp"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/room_tip_off_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp">
+                    <ImageView android:layout_width="20dp" android:layout_height="20dp" android:layout_marginBottom="2dp" android:src="@drawable/icon_yeelight_device_tip_light_off"/>
+                    <TextView android:textSize="@dimen/font_size_15sp" android:textColor="@color/common_text_color_description_99" android:gravity="bottom" android:id="@+id/room_device_off_number" android:layout_width="wrap_content" android:layout_height="20dp" android:text="10" android:paddingStart="3dp"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="bottom" android:orientation="horizontal" android:id="@+id/room_tip_offline_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp">
+                    <ImageView android:layout_width="20dp" android:layout_height="20dp" android:layout_marginBottom="2dp" android:src="@drawable/icon_yeelight_device_tip_light_offline"/>
+                    <TextView android:textSize="@dimen/font_size_15sp" android:textColor="@color/common_text_color_description_99" android:gravity="bottom" android:id="@+id/room_device_offline_number" android:layout_width="wrap_content" android:layout_height="20dp" android:text="10" android:paddingStart="3dp"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <ImageView android:layout_gravity="center_vertical" android:id="@+id/room_control_arrow" android:layout_width="wrap_content" android:layout_height="14dp" android:layout_marginRight="31dp" android:src="@drawable/icon_yeelight_device_retract"/>
+    </LinearLayout>
+    <Button android:textSize="@dimen/font_size_14sp" android:textColor="@color/common_text_color_tips" android:gravity="left|center_vertical|center_horizontal|center" android:id="@+id/btn_quick_add_device" android:background="@drawable/round_btn_width_1dp_red" android:paddingLeft="15dp" android:paddingRight="15dp" android:layout_width="wrap_content" android:layout_height="30dp" android:layout_marginLeft="30dp" android:layout_marginTop="5dp" android:layout_marginBottom="26dp" android:text="@string/common_text_add_device" android:drawableRight="@drawable/icon_yeelight_room_add_scene_red" android:drawablePadding="8dp" android:textAllCaps="false"/>
+    <View android:background="@color/divider_line_color" android:layout_width="match_parent" android:layout_height="1px"/>
+    <TextView android:textColor="@color/common_text_color_description_99" android:gravity="center_vertical" android:background="@color/common_color_secondary_white_f8" android:paddingLeft="20dp" android:layout_width="match_parent" android:layout_height="38dp" android:text="@string/common_text_all_devices"/>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/empty_view" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="80dp" android:src="@drawable/icon_yeelight_default_image_room_main"/>
+        <TextView android:textSize="15sp" android:textColor="@color/common_text_color_description_99" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:text="@string/room_main_no_device"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/device_list_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <View android:background="@color/divider_line_color" android:layout_width="match_parent" android:layout_height="1px"/>
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/device_list" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <View android:background="@color/divider_line_color" android:layout_width="match_parent" android:layout_height="1px"/>
+    </LinearLayout>
+</LinearLayout>

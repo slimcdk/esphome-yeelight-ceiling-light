@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/fragment_container" android:background="@color/global_transparent" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageButton android:background="#01000000" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="wrap_content" android:layout_height="55dp" android:src="@drawable/icon_yeelight_back_white" android:scaleType="fitCenter" android:onClick="back"/>
+</RelativeLayout>

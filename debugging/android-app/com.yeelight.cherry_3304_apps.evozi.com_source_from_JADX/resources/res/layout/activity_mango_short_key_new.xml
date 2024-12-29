@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.percentlayout.widget.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/rootview" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/top_layout" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_heightPercent="23%">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/title_view" android:layout_width="match_parent" android:layout_height="44dp">
+            <ImageView android:id="@+id/img_back_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_yeelight_back_black" android:layout_marginStart="7dp"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingTop="5dp" android:layout_width="match_parent" android:layout_height="86dp">
+            <TextView android:textSize="@dimen/font_size_27sp" android:textStyle="bold" android:textColor="@color/common_text_color_secondary_66" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/feature_short_key_mode" android:layout_marginStart="30dp"/>
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView android:layout_gravity="center" android:id="@+id/imageview" android:background="@drawable/icon_yeelight_short_key_bg_new_bg" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/icon_yeelight_short_key_bg_new" android:scaleType="centerCrop" android:layout_below="@+id/top_layout" android:layout_marginStart="20dp" android:layout_marginEnd="20dp" app:layout_heightPercent="48%"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/imageview">
+        <LinearLayout android:orientation="vertical" android:id="@+id/layout_focus_mode" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="30dp" android:layout_marginEnd="30dp">
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="45dp">
+                <TextView android:textSize="@dimen/font_size_15sp" android:textColor="@color/common_text_color_primary_33" android:layout_gravity="center_vertical" android:id="@+id/text_of_focus_mode" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/short_key_mode_focus" android:layout_weight="1"/>
+                <ImageView android:layout_gravity="center_vertical" android:id="@+id/right_mark_of_focus_mode" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_yeelight_common_selected" android:layout_marginStart="13dp"/>
+            </LinearLayout>
+            <View android:background="@color/common_color_divider_line" android:layout_width="match_parent" android:layout_height="1px"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/layout_delay_mode" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="30dp" android:layout_marginEnd="30dp">
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="45dp">
+                <TextView android:textSize="@dimen/font_size_15sp" android:textColor="@color/common_text_color_primary_33" android:layout_gravity="center_vertical" android:id="@+id/text_of_delay_mode" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/short_key_mode_delay" android:layout_weight="1"/>
+                <ImageView android:layout_gravity="center_vertical" android:id="@+id/right_mark_of_delay_mode" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_yeelight_common_selected" android:layout_marginStart="13dp"/>
+            </LinearLayout>
+            <View android:background="@color/common_color_divider_line" android:layout_width="match_parent" android:layout_height="1px"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/layout_diy_mode" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="29dp" android:layout_marginEnd="29dp">
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="45dp">
+                <TextView android:textSize="@dimen/font_size_15sp" android:textColor="@color/common_text_color_primary_33" android:layout_gravity="center_vertical" android:id="@+id/text_of_diy" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/short_key_mode_diy"/>
+                <TextView android:textSize="@dimen/font_size_14sp" android:textColor="@color/common_text_color_primary_33" android:gravity="end" android:layout_gravity="right|center_vertical|center_horizontal|center|end" android:id="@+id/diy_scene_name" android:layout_width="0dp" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1" android:layout_marginEnd="20dp"/>
+                <ImageView android:layout_gravity="center_vertical" android:id="@+id/right_mark_of_diy" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_yeelight_common_selected"/>
+            </LinearLayout>
+            <View android:background="@color/common_color_divider_line" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginBottom="5dp"/>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.percentlayout.widget.PercentRelativeLayout>

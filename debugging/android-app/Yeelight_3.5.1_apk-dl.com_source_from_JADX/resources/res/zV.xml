@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="42dp">
+    <FrameLayout android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+        <TextView android:textSize="16sp" android:textColor="@color/common_text_color_primary_33" android:layout_gravity="center_vertical" android:id="@+id/name" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <com.yeelight.yeelib.p142ui.view.DeviceConnectStateView android:layout_gravity="right|center_vertical|center_horizontal|center|end" android:id="@+id/state_view" android:layout_width="40dp" android:layout_height="40dp"/>
+        <View android:layout_gravity="bottom" android:background="@color/common_color_divider_line" android:layout_width="match_parent" android:layout_height="1px"/>
+    </FrameLayout>
+</LinearLayout>

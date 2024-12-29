@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_gravity="center" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="266dp" android:layout_marginStart="41dp" android:layout_marginEnd="41dp">
+    <ScrollView android:layout_width="match_parent" android:layout_height="134dp" android:layout_marginTop="32dp" android:layout_marginBottom="25dp" android:layout_marginStart="27dp" android:layout_marginEnd="27dp">
+        <TextView android:textSize="@dimen/font_size_14sp" android:textColor="@color/common_text_color_secondary_66" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="如果您不同意最新的隐私政策，我们将无法继续为您提供服务，并将彻底删除服务器上所有与您相关的数据（包含房间、收藏、情景、个性化灯光等）、配置、日志等信息，删除的数据将无法恢复。是否确定继续当前操作？"/>
+    </ScrollView>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="27dp" android:layout_marginStart="27dp" android:layout_marginEnd="27dp">
+        <Button android:id="@+id/dialog_btn_cancel" android:layout_width="0dp" android:layout_height="44dp" android:text="@string/common_cancel" android:layout_weight="1" android:layout_marginEnd="12dp" style="@style/yl_dialog_btn_cancel_style"/>
+        <Button android:id="@+id/dialog_btn_confirm" android:layout_width="0dp" android:layout_height="44dp" android:text="@string/common_text_ok" android:layout_weight="1" style="@style/yl_dialog_btn_confirm_style"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="154dp">
+    <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="21dp">
+        <ImageView android:layout_gravity="center_horizontal" android:id="@+id/scene_img" android:layout_width="87dp" android:layout_height="87dp"/>
+        <ImageView android:layout_gravity="center_horizontal" android:id="@+id/scene_img_action_callback" android:visibility="gone" android:layout_width="87dp" android:layout_height="87dp" android:src="@drawable/icon_yeelight_control_view_excuate_success"/>
+    </FrameLayout>
+    <FrameLayout android:id="@+id/edit_layout" android:background="@drawable/common_item_selector" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <com.yeelight.cherry.p177ui.view.TriangleBadgeTextView android:textSize="14sp" android:textColor="@color/common_text_color_secondary_66" android:gravity="center" android:layout_gravity="top|center_vertical|center_horizontal|center" android:id="@+id/scene_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12dp"/>
+    </FrameLayout>
+</LinearLayout>

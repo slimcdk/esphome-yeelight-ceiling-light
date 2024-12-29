@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/common_color_secondary_white_f8" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.yeelight.yeelib.p142ui.view.CommonTitleBar android:id="@+id/title_bar" android:layout_width="match_parent" android:layout_height="wrap_content" app:backgroundTranslucent="true" app:leftButtonResource="@drawable/icon_yeelight_back_black" app:leftButtonVisible="true" app:textColor="@color/setting_item_theme_text_color"/>
+        <TextView android:background="@color/common_divider_line_control_bottom_color" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginTop="15dp"/>
+        <ListView android:id="@+id/list_locale_candidate" android:background="@color/white_50_transparent" android:layout_width="match_parent" android:layout_height="wrap_content" android:divider="@drawable/group_list_divider_music_mode" android:dividerHeight="1px"/>
+        <TextView android:background="@color/common_divider_line_control_bottom_color" android:layout_width="match_parent" android:layout_height="1px"/>
+    </LinearLayout>
+    <TextView android:textSize="@dimen/font_size_14sp" android:textColor="@color/common_text_link_color" android:gravity="center" android:id="@+id/notice_item" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="25dp" android:text="@string/common_text_notice_item" android:layout_alignParentBottom="true"/>
+</RelativeLayout>

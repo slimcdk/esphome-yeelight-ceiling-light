@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/white" android:layout_width="match_parent" android:layout_height="90dp">
+    <ImageView android:id="@+id/img_device" android:layout_width="58dp" android:layout_height="58dp" android:layout_marginStart="20dp"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginStart="20dp">
+        <TextView android:textSize="15sp" android:textColor="@color/common_text_color_primary_33" android:ellipsize="end" android:id="@+id/tv_device_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true"/>
+        <TextView android:textSize="13sp" android:textColor="@color/common_text_color_description_99" android:id="@+id/tv_room" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7dp"/>
+    </LinearLayout>
+    <ImageView android:id="@+id/img_switch" android:layout_width="53dp" android:layout_height="36dp" android:src="@drawable/icon_yeelight_lan_switch_off" android:layout_marginStart="15dp" android:layout_marginEnd="25dp"/>
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/common_text_color_white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.lcodecore.tkrefreshlayout.TwinklingRefreshLayout android:id="@+id/refresh_layout" android:background="@color/common_color_secondary_white_f8" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <androidx.recyclerview.widget.RecyclerView android:orientation="vertical" android:id="@+id/recycle_view" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </com.lcodecore.tkrefreshlayout.TwinklingRefreshLayout>
+    <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@+id/no_update_layout" android:background="@color/white" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:layout_width="130dp" android:layout_height="130dp" android:layout_marginTop="136dp" android:src="@drawable/icon_yeelight_no_favorite_view"/>
+        <TextView android:textSize="@dimen/font_size_15sp" android:textColor="@color/common_text_color_description_99" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:text="@string/common_text_no_favorite"/>
+    </LinearLayout>
+</FrameLayout>

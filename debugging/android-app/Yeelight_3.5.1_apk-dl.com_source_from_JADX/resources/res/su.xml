@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/title_view" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="44dp">
+            <ImageView android:id="@+id/img_back_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="6dp" android:src="@drawable/icon_yeelight_back_black" android:layout_centerVertical="true" android:layout_marginStart="7dp"/>
+            <TextView android:textSize="15sp" android:textColor="@color/common_color_primary" android:gravity="center" android:id="@+id/tv_cancel" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/common_text_cancel" android:layout_marginEnd="20dp" android:layout_alignParentEnd="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/ll_search" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent">
+            <RelativeLayout android:layout_width="247dp" android:layout_height="247dp">
+                <com.yeelight.yeelib.p142ui.view.WaterWaveView android:id="@+id/waveView" android:layout_width="match_parent" android:layout_height="match_parent"/>
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_yeelight_mi_band_search" android:layout_centerInParent="true"/>
+            </RelativeLayout>
+            <TextView android:textSize="18sp" android:textColor="@color/common_text_color_primary_33" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="80dp" android:text="@string/mi_band_bind_searching"/>
+            <TextView android:textSize="14sp" android:textColor="@color/common_text_color_secondary_66" android:gravity="center" android:layout_width="195dp" android:layout_height="wrap_content" android:layout_marginTop="18dp" android:text="@string/mi_band_bind_searching_hint"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/ll_connect" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="match_parent">
+            <RelativeLayout android:layout_width="220dp" android:layout_height="220dp">
+                <com.yeelight.yeelib.p142ui.view.CircleBarView android:id="@+id/circleBarView" android:layout_width="match_parent" android:layout_height="match_parent"/>
+                <ImageView android:id="@+id/img_connect_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_yeelight_mi_band_connecting" android:layout_centerInParent="true"/>
+            </RelativeLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/ll_connect_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="105dp">
+                <TextView android:textSize="18sp" android:textColor="@color/common_text_color_primary_33" android:layout_gravity="center_vertical" android:id="@+id/tv_connect_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mi_band_bind_connecting"/>
+                <ImageView android:layout_gravity="center_vertical" android:id="@+id/img_refresh" android:visibility="gone" android:layout_width="17dp" android:layout_height="17dp" android:layout_marginLeft="8dp" android:src="@drawable/icon_yeelight_band_refresh"/>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

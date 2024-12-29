@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.yeelight.yeelib.p194ui.view.CommonTitleBar android:id="@+id/title_bar" android:layout_width="match_parent" android:layout_height="wrap_content" app:backgroundTranslucent="true" app:leftButtonResource="@drawable/icon_yeelight_back_black" app:leftButtonVisible="true" app:rightButtonVisible="false" app:textColor="@color/setting_item_theme_text_color"/>
+        <androidx.coordinatorlayout.widget.CoordinatorLayout android:background="@color/common_color_secondary_white_f8" android:layout_width="match_parent" android:layout_height="match_parent">
+            <com.google.android.material.appbar.AppBarLayout android:orientation="vertical" android:id="@+id/app_bar" android:layout_width="match_parent" android:layout_height="wrap_content" app:elevation="0dp">
+                <com.google.android.material.appbar.CollapsingToolbarLayout android:id="@+id/collapsing_toolbar_layout" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_scrollFlags="3">
+                    <androidx.appcompat.widget.Toolbar android:id="@+id/toolbar" android:background="@color/black" android:layout_width="match_parent" android:layout_height="105dp" app:layout_collapseMode="1"/>
+                    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/layout_header_title" android:background="@color/white" android:layout_width="match_parent" android:layout_height="194dp" app:layout_scrollFlags="1">
+                        <ImageView android:id="@+id/template_icon" android:layout_width="60dp" android:layout_height="60dp" android:layout_marginTop="44dp" android:src="@drawable/alarm_add_timer_background" android:scaleType="fitXY"/>
+                        <TextView android:textSize="18sp" android:textColor="@color/common_text_color_secondary_66" android:id="@+id/template_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="13dp" android:singleLine="true" android:includeFontPadding="false"/>
+                        <TextView android:textSize="12sp" android:textColor="@color/common_text_color_secondary_66" android:id="@+id/template_des" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="9dp" android:singleLine="true" android:includeFontPadding="false"/>
+                    </LinearLayout>
+                </com.google.android.material.appbar.CollapsingToolbarLayout>
+                <RelativeLayout android:background="@color/white" android:layout_width="match_parent" android:layout_height="55dp" android:layout_marginTop="10dp">
+                    <TextView android:textSize="14sp" android:textColor="@color/common_text_color_secondary_66" android:paddingTop="15dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/common_text_select_device" android:paddingStart="@dimen/size_20dp"/>
+                    <TextView android:textSize="@dimen/font_size_13sp" android:textColor="@color/common_text_color_tips" android:id="@+id/tv_select_all" android:background="@color/white" android:paddingTop="15dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/create_scene_selecte_all" android:paddingEnd="@dimen/size_20dp" android:layout_alignParentEnd="true"/>
+                </RelativeLayout>
+            </com.google.android.material.appbar.AppBarLayout>
+            <androidx.recyclerview.widget.RecyclerView android:id="@+id/device_list" android:background="@color/white" android:paddingBottom="75dp" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_horizontal" android:layout_gravity="bottom|center_vertical|center_horizontal|center" android:id="@+id/layout_next" android:background="@color/white" android:layout_width="match_parent" android:layout_height="75dp">
+        <Button android:textSize="@dimen/font_size_15sp" android:textColor="@color/white" android:layout_gravity="center" android:id="@+id/btn_next" android:background="@drawable/round_btn_red" android:layout_width="240dp" android:layout_height="39dp" android:text="@string/common_text_next_step" android:textAllCaps="false" app:layout_marginBottomPercent="30%" app:layout_widthPercent="63%" style="?android:attr/borderlessButtonStyle"/>
+    </LinearLayout>
+</FrameLayout>

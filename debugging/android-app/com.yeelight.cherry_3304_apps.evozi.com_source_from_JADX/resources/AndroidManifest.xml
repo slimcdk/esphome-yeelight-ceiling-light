@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="3304" android:versionName="3.3.04" android:compileSdkVersion="30" android:compileSdkVersionCodename="11" package="com.yeelight.cherry" platformBuildVersionCode="30" platformBuildVersionName="11">
+    <uses-sdk android:minSdkVersion="19" android:targetSdkVersion="29"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.USE_CREDENTIALS"/>
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE"/>
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION"/>
+    <uses-permission android:name="android.permission.EXPAND_STATUS_BAR"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT"/>
+    <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT"/>
+    <uses-permission android:name="com.miui.home.launcher.permission.UNINSTALL_SHORTCUT"/>
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.android.launcher.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission-sdk-23 android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="com.xiaomi.permission.AUTH_SERVICE"/>
+    <permission android:name="com.yeelight.cherry.permission.MIPUSH_RECEIVE" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.yeelight.cherry.permission.MIPUSH_RECEIVE"/>
+    <uses-feature android:name="android.hardware.camera" android:required="true"/>
+    <uses-feature android:name="android.hardware.touchscreen" android:required="false"/>
+    <supports-screens android:anyDensity="true" android:smallScreens="true" android:normalScreens="true" android:largeScreens="true" android:xlargeScreens="true"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false"/>
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
+    <application android:theme="@style/AppTheme" android:label="@string/app_name" android:icon="@mipmap/ic_launcher" android:name="com.yeelight.cherry.YeelightApplication" android:configChanges="locale" android:allowBackup="true" android:supportsRtl="true" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:requestLegacyExternalStorage="true">
+        <meta-data android:name="STAT_CHANNEL" android:value="google"/>
+        <meta-data android:name="android.max_aspect" android:value="2.056"/>
+        <meta-data android:name="com.google.ar.core" android:value="optional"/>
+        <uses-library android:name="org.apache.http.legacy" android:required="false"/>
+        <receiver android:name="com.yeelight.yeelib.p194ui.appwidget.YeelightDeviceWidgetProvider" android:exported="true">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+                <action android:name="com.yeelight.appwidget.action.UPDATE_ALL"/>
+                <action android:name="com.yeelight.appwidget.prev"/>
+                <action android:name="com.yeelight.appwidget.next"/>
+                <action android:name="com.yeelight.appwidget.toggle"/>
+                <action android:name="com.yeelight.appwidget.connect"/>
+                <action android:name="com.yeelight.appwidget.launch"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/yeelight_appwidget_device"/>
+        </receiver>
+        <receiver android:name="com.yeelight.yeelib.p194ui.appwidget.YeelightRoomWidgetProvider" android:exported="true">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/yeelight_appwidget_room"/>
+        </receiver>
+        <service android:name="com.yeelight.yeelib.service.RestartJobService" android:permission="android.permission.BIND_JOB_SERVICE" android:exported="false"/>
+        <service android:name="com.yeelight.yeelib.wear.WearService" android:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE"/>
+        <service android:name="com.yeelight.yeelib.p194ui.appwidget.UpdateService" android:permission="android.permission.BIND_REMOTEVIEWS" android:exported="true"/>
+        <service android:label="@string/item_device_all_on" android:icon="@drawable/icon_quick_setting_turn_on_all" android:name="com.yeelight.yeelib.service.YeelightQuickSettingTurnOnService" android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
+            <intent-filter>
+                <action android:name="android.service.quicksettings.action.QS_TILE"/>
+            </intent-filter>
+        </service>
+        <service android:label="@string/item_device_all_off" android:icon="@drawable/icon_quick_setting_turn_off_all" android:name="com.yeelight.yeelib.service.YeelightQuickSettingTurnOffService" android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
+            <intent-filter>
+                <action android:name="android.service.quicksettings.action.QS_TILE"/>
+            </intent-filter>
+        </service>
+        <activity android:name="com.yeelight.cherry.p177ui.activity.AccountCenterActivity"/>
+        <activity android:name="com.yeelight.cherry.p177ui.activity.ARCoreDemoActivity"/>
+        <activity android:name="com.yeelight.cherry.p177ui.activity.AugmentedImagesDemoActivity"/>
+        <activity android:name="com.yeelight.yeelib.p194ui.activity.CreateSceneBundleNewActivity"/>
+        <activity android:name="com.yeelight.cherry.p177ui.activity.SceneBundleSettingActivity"/>
+        <activity android:name="com.yeelight.cherry.p177ui.activity.SceneItemModifyActivity"/>
+        <activity android:name="com.yeelight.cherry.p177ui.activity.MusicActivity"/>
+        <activity android:name="com.yeelight.cherry.p177ui.activity.WifiMiBandActivity"/>
+        <activity android:name="com.yeelight.cherry.p177ui.activity.MiBandBindActivity"/>
+        <activity android:name="com.yeelight.cherry.p177ui.activity.BleMiBandBindActivity"/>
+        <activity android:name="com.yeelight.cherry.p177ui.activity.MiBandOpenBluetoothActivity"/>
+        <activity android:name="com.yeelight.cherry.p177ui.activity.MiBandSearchActivity"/>
+        <activity android:name="com.yeelight.cherry.p177ui.activity.BleMiBandSearchActivity"/>
+        <activity android:name="com.yeelight.cherry.p177ui.activity.CherryMiBandActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.yeelight.cherry.p177ui.activity.BluetoothDeviceUpgradeActivity"/>
+        <activity android:name="com.yeelight.cherry.p177ui.activity.MeshDeviceFirmwareUpgradeActivity"/>
+        <activity android:name="com.yeelight.cherry.p177ui.activity.GeneralAboutActivity"/>
+        <activity android:name="com.yeelight.cherry.p177ui.activity.DeveloperCenterActivity"/>
+        <activity android:name="com.yeelight.cherry.p177ui.activity.GroupRhythmActivity"/>
+        <provider android:name="com.yeelight.yeelib.data.DeviceDataProvider" android:exported="true" android:authorities="com.yeelight.cherry.device.database"/>
+        <provider android:name="com.yeelight.yeelib.data.DeviceBrowserProvider" android:exported="false" android:authorities="com.yeelight.cherry.device"/>
+        <provider android:name="com.yeelight.yeelib.data.LanDeviceBrowserProvider" android:exported="false" android:authorities="com.yeelight.cherry.landevice"/>
+        <provider android:name="com.yeelight.yeelib.data.DeviceInteractionProvider" android:exported="false" android:authorities="com.yeelight.cherry.database.interaction"/>
+        <provider android:name="com.yeelight.yeelib.data.AppConfigurationProvider" android:exported="false" android:authorities="com.yeelight.cherry.database.configuration"/>
+        <activity android:name="com.xiaomi.account.openauth.AuthorizeActivity" android:configChanges="orientation" android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="com.xiaomi.account.openauth.action.AUTH"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.yeelight.cherry.p177ui.activity.BlankActivity"/>
+        <activity android:name="com.yeelight.yeelib.p194ui.activity.YeelightWebviewActivity"/>
+        <activity android:name="com.yeelight.cherry.p177ui.activity.DeviceSettingActivity"/>
+        <activity android:name="com.yeelight.yeelib.p194ui.activity.BlankActivity"/>
+        <activity android:name="com.yeelight.yeelib.p194ui.activity.ColorflowModeActivity"/>
+        <activity android:name="com.yeelight.yeelib.p194ui.activity.WifiDelaySetActivity"/>
+        <activity android:name="com.yeelight.yeelib.p194ui.activity.GroupDelaySetActivity"/>
+        <activity android:name="com.yeelight.yeelib.p194ui.activity.FeedbackV3Activity" android:screenOrientation="portrait"/>
+        <activity android:name="com.yeelight.yeelib.p194ui.activity.SwitchAiProviderActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.yeelight.yeelib.p194ui.activity.FlexSwitchSettingActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.yeelight.yeelib.p194ui.activity.GestureSwitchSettingActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.yeelight.yeelib.p194ui.activity.TouchPanelIndicatorActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.yeelight.yeelib.p194ui.activity.HumanInductionActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.yeelight.yeelib.p194ui.activity.KidModeSelectActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.yeelight.yeelib.p194ui.activity.DefaultScheduleActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.yeelight.yeelib.p194ui.activity.LightAlarmActivity"/>
+        <activity android:name="com.yeelight.yeelib.p194ui.activity.LightAlarmDetailActivity"/>
+        <activity android:name="com.yeelight.yeelib.p194ui.activity.NightLightActivity"/>
+        <activity android:name="com.yeelight.yeelib.p194ui.activity.WakeUpActivity"/>
+        <activity android:name="com.yeelight.yeelib.p194ui.activity.WifiLightAlarmActivity"/>
+        <activity android:name="com.yeelight.yeelib.p194ui.activity.WifiLightAlarmDetailActivity"/>
+        <activity android:theme="@style/dialogActivity" android:name="com.yeelight.yeelib.p194ui.activity.DialogActivity"/>
+        <activity android:name="com.yeelight.yeelib.pickcolor.CaptureActivity"/>
+        <activity android:name="com.yeelight.yeelib.p194ui.activity.SetDefaultSaveStateActivity"/>
+        <activity android:name="com.yeelight.yeelib.p194ui.activity.KidModeNewActivity"/>
+        <activity android:name="com.yeelight.yeelib.p194ui.activity.GeekModeNewActivity"/>
+        <activity android:name="com.yeelight.yeelib.p194ui.activity.LEDIndicatorActivity"/>
+        <activity android:name="com.yeelight.yeelib.p194ui.activity.ShareDeviceActivity"/>
+        <activity android:name="com.yeelight.yeelib.p194ui.activity.MangoShortKeyNewActivity"/>
+        <activity android:name="com.yeelight.yeelib.p194ui.activity.AddShortcutActivity"/>
+        <activity android:name="com.yeelight.yeelib.p194ui.activity.DelaySetNewActivity"/>
+        <activity android:name="com.yeelight.yeelib.p194ui.activity.DelaySetNew2Activity"/>
+        <activity android:theme="@style/Theme.NoDisplay" android:name="com.yeelight.yeelib.p194ui.activity.ShortcutIntentHandlingActivity">
+            <intent-filter>
+                <action android:name="com.yeelight.cherry.action.shortcut"/>
+                <action android:name="com.yeelight.cherry.action.shortcut.turn.on.all"/>
+                <action android:name="com.yeelight.cherry.action.shortcut.turn.off.all"/>
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/Theme.Holo.Dialog.NoActionBar" android:name="com.yeelight.yeelib.p194ui.activity.DimmerDialogActivity" android:taskAffinity="com.yeelight.shortcut"/>
+        <activity android:theme="@style/FullScreen" android:name="com.yeelight.cherry.p177ui.activity.LauncherActivity" android:taskAffinity="com.yeelight.cherry" android:configChanges="keyboardHidden|orientation|screenSize" android:alwaysRetainTaskState="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            <meta-data android:name="android.app.shortcuts" android:resource="@xml/shortcut_turn_on_all"/>
+        </activity>
+        <activity android:name="com.yeelight.yeelib_tasker.p196ui.TaskerDeviceSelectActivity"/>
+        <activity android:theme="@style/Theme.Translucent" android:name="com.yeelight.yeelib_tasker.p196ui.TypeSheetActivity"/>
+        <receiver android:name="com.yeelight.yeelib_tasker.receiver.FireReceiver" android:exported="true">
+            <intent-filter>
+                <action android:name="com.twofortyfouram.locale.intent.action.FIRE_SETTING"/>
+            </intent-filter>
+        </receiver>
+        <activity android:name="com.yeelight.yeelib.p194ui.activity.RemoteControlActivity"/>
+        <activity android:name="com.yeelight.yeelib.p194ui.activity.RemoteManagementActivity"/>
+        <activity android:name="com.yeelight.yeelib.p194ui.activity.NightTimeSettingActivity"/>
+        <activity android:name="com.yeelight.yeelib.p194ui.activity.GroupMusicModeManagerActivity"/>
+        <activity android:theme="@style/Theme.AppCompat.Light" android:name="com.yeelight.cherry.p177ui.activity.DemoControlViewActivity" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="com.yeelight.cherry.p177ui.activity.SpeakerDeviceControlActivity"/>
+        <activity android:name="com.yeelight.cherry.p177ui.activity.MeshGatewayControlActivity"/>
+        <activity android:name="com.yeelight.cherry.p177ui.activity.MainActivity" android:launchMode="singleTask"/>
+        <activity android:name="com.yeelight.cherry.p177ui.activity.ProductListActivity"/>
+        <activity android:name="com.yeelight.cherry.p177ui.activity.ProductListFromCategoryActivity"/>
+        <activity android:name="com.yeelight.cherry.p177ui.activity.ScanHelpCenterActivity"/>
+        <activity android:name="com.yeelight.cherry.p177ui.activity.DeviceResetActivity"/>
+        <activity android:name="com.yeelight.cherry.p177ui.activity.SelectNetworkActivity" android:launchMode="singleTop"/>
+        <activity android:name="com.yeelight.cherry.p177ui.activity.AddNetworkActivity"/>
+        <activity android:name="com.yeelight.cherry.p177ui.activity.BluetoothConnectNewActivity" android:launchMode="singleTop"/>
+        <activity android:name="com.yeelight.cherry.p177ui.activity.SearchDeviceActivity"/>
+        <activity android:name="com.yeelight.cherry.p177ui.activity.SearchDeviceAutoActivity"/>
+        <activity android:name="com.yeelight.cherry.p177ui.activity.SearchDeviceDetailActivity"/>
+        <activity android:name="com.yeelight.cherry.p177ui.activity.DeviceShareActivity" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:name="com.yeelight.cherry.p177ui.activity.DeviceShareManagermentActivity"/>
+        <activity android:name="com.yeelight.cherry.p177ui.activity.FirmwareCenterActivity"/>
+        <activity android:name="com.yeelight.cherry.p177ui.activity.MoreActivity"/>
+        <activity android:name="com.yeelight.cherry.p177ui.activity.ThirdPartyIntegrationActivity"/>
+        <activity android:name="com.yeelight.cherry.p177ui.activity.FaqActivity"/>
+        <activity android:name="com.yeelight.cherry.p177ui.activity.PersonalityLightingActivity"/>
+        <activity android:name="com.yeelight.cherry.p177ui.activity.ImageModeSelectionActivity"/>
+        <activity android:name="com.yeelight.cherry.p177ui.activity.CreateNameForPersonalityLightActivity"/>
+        <activity android:name="com.yeelight.cherry.p177ui.activity.PersonalityLightEditActivity"/>
+        <activity android:name="com.yeelight.cherry.p177ui.activity.AddColorFrameActivity"/>
+        <activity android:name="com.yeelight.cherry.p177ui.activity.AddColorTemperatureFrameActivity"/>
+        <activity android:name="com.yeelight.cherry.p177ui.activity.AddSuspendFrameActivity"/>
+        <activity android:name="com.yeelight.cherry.p177ui.activity.AddBrightFrameActivity"/>
+        <activity android:theme="@style/Theme.Translucent" android:name="com.yeelight.cherry.p177ui.activity.ActionSheetActivity"/>
+        <activity android:name="com.yeelight.cherry.p177ui.activity.PersonalityLightProfileEditActivity"/>
+        <activity android:name="com.yeelight.cherry.p177ui.activity.PersonalityLightNameEditActivity"/>
+        <activity android:name="com.yeelight.cherry.p177ui.activity.PersonalityLightRepeatEditActivity"/>
+        <activity android:name="com.yeelight.cherry.p177ui.activity.PersonalityLightStopEditActivity"/>
+        <activity android:name="com.yeelight.cherry.p177ui.activity.PersonalityLightPreviewActivity"/>
+        <activity android:name="com.yeelight.cherry.p177ui.activity.PersonalityLightItemMoreActivity"/>
+        <activity android:theme="@style/AppTheme" android:name="com.yeelight.cherry.p177ui.activity.CreateGroupNameActivity"/>
+        <activity android:theme="@style/AppTheme" android:name="com.yeelight.cherry.p177ui.activity.CreateGroupSelectDeviceActivity" android:parentActivityName="com.yeelight.yeelib.ui.activity.BaseActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.yeelight.yeelib.ui.activity.BaseActivity"/>
+        </activity>
+        <activity android:theme="@style/AppTheme" android:name="com.yeelight.cherry.p177ui.activity.CommonCreateNameActivity"/>
+        <activity android:theme="@style/AppTheme" android:name="com.yeelight.cherry.p177ui.activity.CreateRoomSelectDeviceActivity" android:parentActivityName="com.yeelight.yeelib.ui.activity.BaseActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.yeelight.yeelib.ui.activity.BaseActivity"/>
+        </activity>
+        <activity android:name="com.yeelight.cherry.p177ui.activity.RoomWidgetSettingActivity"/>
+        <activity android:name="com.yeelight.cherry.p177ui.activity.RoomMainActivity"/>
+        <activity android:name="com.yeelight.cherry.p177ui.activity.RoomSettingActivity"/>
+        <activity android:name="com.yeelight.cherry.p177ui.activity.RoomDeviceModifyActivity"/>
+        <activity android:name="com.yeelight.cherry.p177ui.activity.GroupDeviceModifyActivity"/>
+        <activity android:name="com.yeelight.cherry.p177ui.activity.MeshGrpDeviceModifyActivity"/>
+        <activity android:name="com.yeelight.cherry.p177ui.activity.SelectLightStateForPersonalityLightActivity"/>
+        <activity android:theme="@style/Theme.AppCompat.Light" android:name="com.yeelight.cherry.p177ui.activity.MessageCenterActivity"/>
+        <activity android:name="com.yeelight.cherry.p177ui.activity.LocaleSelectionActivity"/>
+        <activity android:name="com.yeelight.cherry.p177ui.activity.LocaleSelectionLoginActivity"/>
+        <activity android:theme="@style/Theme.Translucent" android:name="com.yeelight.cherry.p177ui.activity.LocaleQuickSelectActivity"/>
+        <activity android:name="com.yeelight.cherry.p177ui.activity.FirmwareUpgradeActivity"/>
+        <activity android:name="com.yeelight.cherry.p177ui.activity.WelcomeGuideNewActivity"/>
+        <activity android:name="com.yeelight.cherry.p177ui.activity.MeshGroupMainActivity"/>
+        <activity android:theme="@style/AppTheme" android:name="com.yeelight.cherry.p177ui.activity.AddMeshDeviceActivity"/>
+        <activity android:name="com.yeelight.yeelib.p194ui.activity.DeviceNameEditActivity"/>
+        <activity android:name="com.yeelight.yeelib.p194ui.activity.PomodoroNewActivity"/>
+        <activity android:name="com.yeelight.yeelib.p194ui.activity.NightLightNewActivity"/>
+        <activity android:theme="@style/Theme.Translucent" android:name="com.yeelight.cherry.p177ui.activity.MeshDeviceLoginActivity"/>
+        <activity android:theme="@style/Theme.AppCompat.Light" android:name="com.yeelight.cherry.p177ui.activity.ComboDeviceControlActivity" android:windowSoftInputMode="adjustPan"/>
+        <activity android:theme="@style/Theme.AppCompat.Light" android:name="com.yeelight.cherry.p177ui.activity.DebugActivity"/>
+        <activity android:theme="@style/Theme.Translucent" android:name="com.yeelight.yeelib.p194ui.activity.SceneActionSelectActivity"/>
+        <activity android:theme="@style/Theme.AppCompat.Light" android:name="com.yeelight.yeelib.p194ui.activity.LightAdjustViewActivity"/>
+        <activity android:theme="@style/Theme.AppCompat.Light" android:name="com.yeelight.yeelib.p194ui.activity.LightSceneSelectViewActivity"/>
+        <activity android:name="com.yeelight.yeelib.p194ui.activity.DeviceInfoActivity"/>
+        <activity android:name="com.yeelight.yeelib.p194ui.activity.DeviceOfflinePromptActivity"/>
+        <activity android:name="com.yeelight.cherry.p177ui.activity.PrivacyUpdateActivity"/>
+        <activity android:name="com.yeelight.cherry.p177ui.activity.PrivacyWithdrawActivity"/>
+        <activity android:name="com.yeelight.cherry.p177ui.activity.ForumActivity"/>
+        <activity android:theme="@style/Theme.Translucent" android:name="com.yeelight.cherry.p177ui.activity.LightShareApplicationActivity" android:hardwareAccelerated="false"/>
+        <activity android:name="com.yeelight.yeelib.p194ui.activity.BundleSceneDemoActivity"/>
+        <activity android:name="com.yeelight.cherry.p177ui.activity.BleMeshConnectActivity"/>
+        <activity android:name="com.yeelight.cherry.p177ui.activity.QuickConnectReNameDeviceActivity"/>
+        <activity android:name="com.yeelight.cherry.p177ui.activity.QuickConnectSelectedRoomActivity"/>
+        <activity android:name="com.yeelight.cherry.p177ui.activity.QuickConnectLanControlActivity"/>
+        <activity android:name="com.yeelight.cherry.p177ui.activity.QuickConnectRequestProgressActivity" android:launchMode="singleTask"/>
+        <activity android:name="com.yeelight.cherry.p177ui.activity.CreateSceneActivity"/>
+        <activity android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:name="com.yeelight.cherry.p177ui.activity.CreateSceneSelectDeviceActivity"/>
+        <activity android:name="com.yeelight.cherry.p177ui.activity.CreateSceneNameActivity"/>
+        <activity android:name="com.yeelight.cherry.p177ui.activity.CreateSceneImageSelectionActivity"/>
+        <activity android:name="com.yeelight.yeelib.p194ui.activity.LanControlListActivity"/>
+        <activity android:name="com.yeelight.cherry.p177ui.activity.CurtainGuideActivity"/>
+        <activity android:name="com.yeelight.cherry.p177ui.activity.CurtainModeActivity"/>
+        <activity android:name="com.yeelight.cherry.p177ui.activity.CurtainControlActivity" android:launchMode="singleTask"/>
+        <activity android:theme="@style/Theme.AppCompat.Light" android:name="com.yeelight.cherry.p177ui.activity.SwitchControlActivity"/>
+        <activity android:name="com.yeelight.cherry.p177ui.activity.PlugControlActivity"/>
+        <activity android:theme="@style/Theme.AppCompat.Light" android:name="com.yeelight.cherry.p177ui.activity.FanclControlViewActivity"/>
+        <activity android:name="com.yeelight.cherry.p177ui.activity.GoogleSeamlessActivity"/>
+        <activity android:label="@string/plugin_name" android:icon="@drawable/ic_locale_plugin" android:name="com.yeelight.yeelib_tasker.p196ui.TaskerEditActivity" android:exported="true">
+            <intent-filter>
+                <action android:name="com.twofortyfouram.locale.intent.action.EDIT_SETTING"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.yeelight.yeelib_tasker.p196ui.TaskerActionActivity"/>
+        <activity android:name="com.yeelight.yeelib_tasker.p196ui.TaskerBrightActivity"/>
+        <activity android:name="com.yeelight.yeelib.p194ui.activity.SceneActivity"/>
+        <activity android:name="com.yeelight.yeelib.p194ui.activity.FeedbackSelectQuestionTypeActivity"/>
+        <activity android:name="com.yeelight.yeelib.p194ui.activity.FeedbackSelectDeviceActivity"/>
+        <activity android:name="com.yeelight.yeelib.p194ui.activity.FeedbackSuccessActivity"/>
+        <activity android:name="com.yeelight.yeelib.p194ui.activity.BgProactActivity"/>
+        <activity android:name="com.yeelight.yeelib.p194ui.activity.KidLockActivity"/>
+        <activity android:name="com.xiaomi.account.openauth.AuthorizeActivityBase" android:exported="false"/>
+        <activity android:name="com.yeelight.yeelib.p194ui.activity.SetSpecDefaultStateActivity"/>
+        <activity android:name="com.yeelight.yeelib.p194ui.activity.GoogleHomeLinkingActivity"/>
+        <activity android:name="com.yeelight.yeelib.p194ui.activity.CurtainRcTypeActivity"/>
+        <activity android:name="com.yeelight.yeelib.p194ui.activity.LightGradientFeatureActivity"/>
+        <activity android:name="com.yeelight.yeelib.p194ui.activity.FanclFlexSwitchSettingActivity"/>
+        <activity android:name="com.yeelight.yeelib.p194ui.activity.BleCfgSettingActivity"/>
+        <meta-data android:name="io.fabric.ApiKey" android:value="5a2f7e4972dee248e9e52ce565b2d9127816da9b"/>
+        <service android:name="com.yeelight.yeelib.service.MusicModeNotificationService"/>
+        <activity android:theme="@style/Theme.NoTitleBar" android:name="com.miot.service.connection.wifi.SmartConfigMainActivity" android:process=":miot" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation" android:windowSoftInputMode="adjustUnspecified|stateUnchanged|stateHidden|stateAlwaysHidden|adjustPan"/>
+        <activity android:name="com.miot.service.connection.wifi.WebShellActivity" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize"/>
+        <activity android:theme="@style/Theme.NoTitleBar" android:name="com.miot.service.qrcode.ScanBarcodeActivity" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:windowSoftInputMode="adjustUnspecified|stateUnchanged|stateHidden|stateAlwaysHidden|adjustPan"/>
+        <activity android:name="com.miot.common.crash.CrashShowActivity"/>
+        <service android:label="MiotService" android:name="com.miot.service.MiotService" android:enabled="true" android:exported="true" android:process=":miot">
+            <intent-filter>
+                <action android:name="com.miot.service.action.BIND_SERVICE"/>
+            </intent-filter>
+        </service>
+        <service android:name="com.inuker.bluetooth.library.BluetoothService" android:enabled="true" android:exported="true"/>
+        <service android:name="com.xiaomi.push.service.XMPushService" android:enabled="true" android:process=":miot"/>
+        <service android:name="com.xiaomi.mipush.sdk.PushMessageHandler" android:enabled="true" android:exported="true" android:process=":miot"/>
+        <service android:name="com.xiaomi.mipush.sdk.MessageHandleService" android:enabled="true" android:process=":miot"/>
+        <service android:name="com.xiaomi.push.service.XMJobService" android:permission="android.permission.BIND_JOB_SERVICE" android:enabled="true" android:exported="false" android:process=":miot"/>
+        <receiver android:name="com.xiaomi.push.service.receivers.NetworkStatusReceiver" android:exported="true" android:process=":miot">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.xiaomi.push.service.receivers.PingReceiver" android:exported="false" android:process=":miot">
+            <intent-filter>
+                <action android:name="com.xiaomi.push.PING_TIMER"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.miot.service.common.mipush.MiotpnReceiver" android:exported="true" android:process=":miot">
+            <intent-filter>
+                <action android:name="com.xiaomi.mipush.RECEIVE_MESSAGE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.xiaomi.mipush.MESSAGE_ARRIVED"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.xiaomi.mipush.ERROR"/>
+            </intent-filter>
+        </receiver>
+        <meta-data android:name="com.google.ar.core.min_apk_version" android:value="190805000"/>
+        <activity android:theme="@style/Theme.Material.Light.Dialog.Alert" android:name="com.google.p107ar.core.InstallActivity" android:exported="false" android:excludeFromRecents="true" android:launchMode="singleTop" android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <service android:name="com.squareup.leakcanary.internal.HeapAnalyzerService" android:enabled="false" android:process=":leakcanary"/>
+        <service android:name="com.squareup.leakcanary.DisplayLeakService" android:enabled="false"/>
+        <activity android:theme="@style/leak_canary_LeakCanary.Base" android:label="@string/leak_canary_display_activity_label" android:icon="@drawable/leak_canary_icon" android:name="com.squareup.leakcanary.internal.DisplayLeakActivity" android:enabled="false" android:taskAffinity="com.squareup.leakcanary">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/leak_canary_Theme.Transparent" android:label="@string/leak_canary_storage_permission_activity_label" android:icon="@drawable/leak_canary_icon" android:name="com.squareup.leakcanary.internal.RequestStoragePermissionActivity" android:enabled="false" android:taskAffinity="com.squareup.leakcanary"/>
+        <service android:name="com.google.firebase.components.ComponentDiscoveryService" android:exported="false" android:directBootAware="true">
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.crashlytics.CrashlyticsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.iid.Registrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+        </service>
+        <receiver android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" android:permission="com.google.android.c2dm.permission.SEND" android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+            </intent-filter>
+        </receiver>
+        <activity android:theme="@style/Theme.Translucent.NoTitleBar" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:exported="false"/>
+        <provider android:name="com.google.firebase.provider.FirebaseInitProvider" android:exported="false" android:authorities="com.yeelight.cherry.firebaseinitprovider" android:initOrder="100"/>
+        <receiver android:name="com.google.android.gms.measurement.AppMeasurementReceiver" android:enabled="true" android:exported="false"/>
+        <service android:name="com.google.android.gms.measurement.AppMeasurementService" android:enabled="true" android:exported="false"/>
+        <service android:name="com.google.android.gms.measurement.AppMeasurementJobService" android:permission="android.permission.BIND_JOB_SERVICE" android:enabled="true" android:exported="false"/>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <service android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery" android:exported="false">
+            <meta-data android:name="backend:com.google.android.datatransport.cct.CctBackendFactory" android:value="cct"/>
+        </service>
+        <service android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService" android:permission="android.permission.BIND_JOB_SERVICE" android:exported="false"/>
+        <receiver android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver" android:exported="false"/>
+        <meta-data android:name="com.google.android.wearable.beta.app" android:resource="@xml/android_wear_micro_apk"/>
+    </application>
+</manifest>

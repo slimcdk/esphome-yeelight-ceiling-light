@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/rootview" android:background="@color/common_color_secondary_white_f8" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.yeelight.yeelib.p194ui.view.CommonTitleBar android:id="@+id/title_bar" android:layout_width="match_parent" android:layout_height="wrap_content" app:backgroundTranslucent="true" app:leftButtonResource="@drawable/icon_yeelight_back_black" app:leftButtonVisible="true" app:rightButtonResource="@drawable/icon_yeelight_save_unused" app:rightTextColor="@color/common_text_color_tips" app:rightTextResource="@string/common_text_save" app:rightTextVisible="true" app:textColor="@color/setting_item_theme_text_color"/>
+    <FrameLayout android:background="@color/white" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="3">
+                <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:clickable="true" android:onClick="switchSelect" style="@style/setting_click_item_style">
+                    <TextView android:layout_marginLeft="10dp" android:text="@string/alarm_action" style="@style/setting_text_style"/>
+                    <TextView android:layout_gravity="center_vertical" android:id="@+id/switch_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5dp" android:text="" style="@style/setting_text_style.sub"/>
+                    <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/common_item_more"/>
+                </LinearLayout>
+                <TextView style="@style/horizontal_line.padding"/>
+                <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:clickable="true" android:onClick="repeatSelect" style="@style/setting_click_item_style">
+                    <TextView android:layout_marginLeft="10dp" android:text="@string/common_text_repeat" style="@style/setting_text_style"/>
+                    <TextView android:layout_gravity="center_vertical" android:id="@+id/repeat_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5dp" android:text="@string/common_text_repeat_once" style="@style/setting_text_style.sub"/>
+                    <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/common_item_more"/>
+                </LinearLayout>
+                <TextView style="@style/horizontal_line.padding"/>
+            </LinearLayout>
+            <com.yeelight.yeelib.p194ui.view.TimePicker android:id="@+id/timerPicker" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/alarm_mask" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </FrameLayout>
+</LinearLayout>

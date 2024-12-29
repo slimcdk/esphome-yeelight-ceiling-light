@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:layout_gravity="center_vertical" android:layout_width="45dp" android:layout_height="45dp" android:layout_marginLeft="10dp" android:src="@mipmap/ic_launcher"/>
+    <ImageView android:layout_gravity="left|center_vertical|center_horizontal|center" android:id="@+id/notification_prev" android:layout_width="30dp" android:layout_height="30dp" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:src="@drawable/notification_arrow_left"/>
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@+id/notification_launch_app_area" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+        <TextView android:gravity="center_vertical" android:id="@+id/notification_device_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" style="@style/notificaton_title"/>
+        <TextView android:gravity="center_vertical" android:id="@+id/notification_device_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" style="@style/notificaton_text"/>
+    </LinearLayout>
+    <FrameLayout android:layout_width="wrap_content" android:layout_height="match_parent">
+        <ImageView android:layout_gravity="center_vertical" android:id="@+id/notification_device_switch" android:layout_width="30dp" android:layout_height="30dp" android:src="@drawable/notification_switch"/>
+        <TextView android:gravity="center" android:layout_gravity="center_vertical" android:id="@+id/notification_device_connect" android:background="@drawable/device_card_view_text_button_black" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/common_text_connect" style="@style/notificaton_text"/>
+        <ProgressBar android:layout_gravity="center_vertical" android:id="@+id/notification_device_connect_progress_bar" android:visibility="gone" android:layout_width="30dp" android:layout_height="30dp" style="@style/Widget.ProgressBar.Inverse"/>
+    </FrameLayout>
+    <ImageView android:layout_gravity="center_vertical" android:id="@+id/notification_next" android:layout_width="30dp" android:layout_height="30dp" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:src="@drawable/notification_arrow_right"/>
+</LinearLayout>

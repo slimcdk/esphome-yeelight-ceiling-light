@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/common_color_secondary_white_f8" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.yeelight.yeelib.p142ui.view.CommonTitleBar android:id="@+id/title_bar" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="wrap_content" app:backgroundTranslucent="true" app:leftButtonResource="@drawable/icon_yeelight_back_black" app:leftButtonVisible="true" app:rightButtonResource="@drawable/icon_yeelight_common_close" app:rightButtonVisible="true" app:textColor="@color/setting_item_theme_text_color"/>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/layout_create_scene" android:background="@color/white" android:layout_width="match_parent" android:layout_height="135dp">
+        <TextView android:background="@drawable/icon_yeelight_scene_create" android:layout_width="55dp" android:layout_height="55dp"/>
+        <TextView android:textSize="@dimen/font_size_13sp" android:textColor="@color/common_text_color_primary_33" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="@string/common_text_repeat_custom"/>
+    </LinearLayout>
+    <TextView android:textSize="14sp" android:textColor="@color/common_text_color_secondary_66" android:gravity="center_vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="46dp" android:layout_marginTop="10dp" android:text="@string/create_scene_from_template" android:paddingStart="@dimen/size_20dp"/>
+    <View android:background="@color/common_color_secondary_white_f8" android:layout_width="match_parent" android:layout_height="1dp"/>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/template_list" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+</LinearLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="#e6ffffff" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="14sp" android:textColor="@color/common_setting_item_text_color" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginBottom="10dp" android:text="@string/common_text_repeat"/>
+    <TextView android:background="@color/alarm_item_line_color" android:layout_width="match_parent" android:layout_height="1px"/>
+    <LinearLayout android:id="@+id/alarm_repeat_7" android:background="@drawable/common_click_item_bg" android:layout_width="match_parent" android:layout_height="@dimen/setting_item_height">
+        <TextView android:layout_gravity="center_vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="@string/common_text_repeat_7" android:layout_weight="1"/>
+        <ImageView android:layout_gravity="center_vertical" android:id="@+id/alarm_repeat_7_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20dp" android:src="@drawable/alarm_selector_unselected"/>
+    </LinearLayout>
+    <TextView android:background="@color/alarm_item_line_color" android:layout_width="match_parent" android:layout_height="1px"/>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/alarm_repeat_1" android:background="@drawable/common_click_item_bg" android:layout_width="match_parent" android:layout_height="@dimen/setting_item_height">
+        <TextView android:layout_gravity="center_vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="@string/common_text_repeat_1" android:layout_weight="1"/>
+        <ImageView android:layout_gravity="center_vertical" android:id="@+id/alarm_repeat_1_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20dp" android:src="@drawable/alarm_selector_unselected"/>
+    </LinearLayout>
+    <TextView android:background="@color/alarm_item_line_color" android:layout_width="match_parent" android:layout_height="1px"/>
+    <LinearLayout android:id="@+id/alarm_repeat_2" android:background="@drawable/common_click_item_bg" android:layout_width="match_parent" android:layout_height="@dimen/setting_item_height">
+        <TextView android:layout_gravity="center_vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="@string/common_text_repeat_2" android:layout_weight="1"/>
+        <ImageView android:layout_gravity="center_vertical" android:id="@+id/alarm_repeat_2_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20dp" android:src="@drawable/alarm_selector_unselected"/>
+    </LinearLayout>
+    <TextView android:background="@color/alarm_item_line_color" android:layout_width="match_parent" android:layout_height="1px"/>
+    <LinearLayout android:id="@+id/alarm_repeat_3" android:background="@drawable/common_click_item_bg" android:layout_width="match_parent" android:layout_height="@dimen/setting_item_height">
+        <TextView android:layout_gravity="center_vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="@string/common_text_repeat_3" android:layout_weight="1"/>
+        <ImageView android:layout_gravity="center_vertical" android:id="@+id/alarm_repeat_3_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20dp" android:src="@drawable/alarm_selector_unselected"/>
+    </LinearLayout>
+    <TextView android:background="@color/alarm_item_line_color" android:layout_width="match_parent" android:layout_height="1px"/>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/alarm_repeat_4" android:background="@drawable/common_click_item_bg" android:layout_width="match_parent" android:layout_height="@dimen/setting_item_height">
+        <TextView android:layout_gravity="center_vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="@string/common_text_repeat_4" android:layout_weight="1"/>
+        <ImageView android:layout_gravity="center_vertical" android:id="@+id/alarm_repeat_4_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20dp" android:src="@drawable/alarm_selector_unselected"/>
+    </LinearLayout>
+    <TextView android:background="@color/alarm_item_line_color" android:layout_width="match_parent" android:layout_height="1px"/>
+    <LinearLayout android:id="@+id/alarm_repeat_5" android:background="@drawable/common_click_item_bg" android:layout_width="match_parent" android:layout_height="@dimen/setting_item_height">
+        <TextView android:layout_gravity="center_vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="@string/common_text_repeat_5" android:layout_weight="1"/>
+        <ImageView android:layout_gravity="center_vertical" android:id="@+id/alarm_repeat_5_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20dp" android:src="@drawable/alarm_selector_unselected"/>
+    </LinearLayout>
+    <TextView android:background="@color/alarm_item_line_color" android:layout_width="match_parent" android:layout_height="1px"/>
+    <LinearLayout android:id="@+id/alarm_repeat_6" android:background="@drawable/common_click_item_bg" android:layout_width="match_parent" android:layout_height="@dimen/setting_item_height">
+        <TextView android:layout_gravity="center_vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="@string/common_text_repeat_6" android:layout_weight="1"/>
+        <ImageView android:layout_gravity="center_vertical" android:id="@+id/alarm_repeat_6_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20dp" android:src="@drawable/alarm_selector_unselected"/>
+    </LinearLayout>
+    <TextView android:background="@color/alarm_item_line_color" android:layout_width="match_parent" android:layout_height="1px"/>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="25dp" android:layout_marginRight="20dp" android:layout_marginBottom="25dp">
+        <Button android:textSize="14sp" android:id="@+id/dialog_btn_left" android:background="@drawable/common_dialog_btn_left" android:layout_width="0dp" android:layout_height="@dimen/common_button_h" android:text="@string/common_text_cancel" android:layout_weight="1"/>
+        <Button android:textSize="14sp" android:id="@+id/dialog_btn_right" android:background="@drawable/common_dialog_btn_right" android:layout_width="0dp" android:layout_height="@dimen/common_button_h" android:text="@string/common_text_ok" android:layout_weight="1"/>
+    </LinearLayout>
+</LinearLayout>

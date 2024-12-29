@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/common_color_secondary_white_f8" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.yeelight.yeelib.p142ui.view.CommonTitleBar android:id="@+id/title_bar" android:layout_width="match_parent" android:layout_height="wrap_content" app:backgroundTranslucent="true" app:leftButtonResource="@drawable/icon_yeelight_back_black" app:leftButtonVisible="true" app:rightTextVisible="false" app:textColor="@color/setting_item_theme_text_color"/>
+    <androidx.recyclerview.widget.RecyclerView android:name="com.yeelight.cherry.p141ui.fragment.SceneFragment" android:id="@+id/list_view" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+    <LinearLayout android:gravity="center_horizontal" android:layout_gravity="bottom|center_vertical|center_horizontal|center" android:id="@+id/layout_next" android:background="@color/white" android:layout_width="match_parent" android:layout_height="75dp">
+        <Button android:textSize="@dimen/font_size_15sp" android:textColor="@color/white" android:layout_gravity="center" android:id="@+id/btn_confirm" android:background="@drawable/round_btn_red" android:layout_width="240dp" android:layout_height="39dp" android:text="@string/common_text_ok" android:textAllCaps="false" app:layout_marginBottomPercent="30%" app:layout_widthPercent="63%" style="?android:attr/borderlessButtonStyle"/>
+    </LinearLayout>
+</LinearLayout>

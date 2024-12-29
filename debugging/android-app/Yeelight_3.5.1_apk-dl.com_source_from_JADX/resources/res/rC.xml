@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.chauthai.swipereveallayout.SwipeRevealLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/swipe_reveal_layout" android:layout_width="match_parent" android:layout_height="wrap_content" app:dragEdge="2" app:modeSwipe="0">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/hide_layout" android:background="@color/common_color_secondary_white_f8" android:layout_width="wrap_content" android:layout_height="80dp">
+        <LinearLayout android:id="@+id/layout_right_delete" android:layout_width="wrap_content" android:layout_height="match_parent" android:paddingStart="31dp" android:paddingEnd="31dp">
+            <ImageView android:layout_gravity="center" android:id="@+id/img_delete" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/common_list_side_delete"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:background="@drawable/common_item_selector" android:layout_width="match_parent" android:layout_height="80dp">
+        <com.yeelight.yeelib.p142ui.view.LightView android:layout_gravity="center" android:id="@+id/fav_img" android:layout_width="34dp" android:layout_height="34dp" android:layout_marginStart="32dp" android:layout_marginEnd="23dp"/>
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:layout_marginEnd="15dp">
+            <TextView android:textSize="@dimen/font_size_16sp" android:textColor="@color/common_text_color_primary_33" android:ellipsize="end" android:id="@+id/fav_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="-1dp" android:maxLines="1"/>
+            <TextView android:textSize="@dimen/font_size_13sp" android:textColor="@color/common_text_color_secondary_66" android:id="@+id/fav_value" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="1dp" android:maxLines="1"/>
+        </LinearLayout>
+        <LinearLayout android:id="@+id/fav_apply" android:layout_width="wrap_content" android:layout_height="match_parent">
+            <TextView android:textSize="@dimen/font_size_12sp" android:textColor="@color/common_text_color_secondary_66" android:gravity="center" android:layout_gravity="center" android:background="@drawable/common_corner_rectangle_grey" android:layout_width="wrap_content" android:layout_height="27dp" android:maxWidth="67dp" android:minWidth="58dp" android:text="@string/scene_apply" android:singleLine="true" android:paddingStart="2dp" android:paddingEnd="2dp" android:layout_marginEnd="20dp"/>
+        </LinearLayout>
+    </LinearLayout>
+</com.chauthai.swipereveallayout.SwipeRevealLayout>

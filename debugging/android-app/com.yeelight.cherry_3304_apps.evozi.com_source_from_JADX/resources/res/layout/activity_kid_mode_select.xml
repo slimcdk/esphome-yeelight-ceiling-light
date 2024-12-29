@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.yeelight.yeelib.p194ui.view.CommonTitleBar android:id="@+id/title_bar" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="wrap_content" app:backgroundTranslucent="true" app:leftButtonResource="@drawable/icon_yeelight_back_black" app:leftButtonVisible="true" app:rightButtonVisible="false" app:textColor="@color/setting_item_theme_text_color"/>
+    <View android:layout_marginTop="15dp" style="@style/horizontal_line"/>
+    <RelativeLayout android:id="@+id/rl_kids_mode" android:background="@color/white" android:layout_width="match_parent" android:layout_height="@dimen/size_44dp">
+        <ImageView android:id="@+id/img_kids_mode" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:src="@drawable/icon_yeelight_kids_mode_selected" android:layout_centerVertical="true"/>
+        <TextView android:textSize="15sp" android:textColor="@color/common_text_color_primary_33" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="17dp" android:text="@string/vision_kid_mode" android:layout_toRightOf="@+id/img_kids_mode" android:layout_centerVertical="true"/>
+        <View android:layout_marginLeft="20dp" android:layout_alignParentBottom="true" style="@style/horizontal_line"/>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/rl_adult_mode" android:background="@color/white" android:layout_width="match_parent" android:layout_height="@dimen/size_44dp">
+        <ImageView android:id="@+id/img_adult_mode" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:src="@drawable/icon_yeelight_kids_mode_selected" android:layout_centerVertical="true"/>
+        <TextView android:textSize="15sp" android:textColor="@color/common_text_color_primary_33" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="17dp" android:text="@string/vision_adult_mode" android:layout_toRightOf="@+id/img_adult_mode" android:layout_centerVertical="true"/>
+        <View android:layout_alignParentBottom="true" style="@style/horizontal_line"/>
+    </RelativeLayout>
+    <TextView android:textSize="12sp" android:textColor="@color/common_text_color_description_99" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:text="@string/vision_kid_mode_introduce" android:layout_marginStart="20dp" android:layout_marginEnd="20dp"/>
+</LinearLayout>

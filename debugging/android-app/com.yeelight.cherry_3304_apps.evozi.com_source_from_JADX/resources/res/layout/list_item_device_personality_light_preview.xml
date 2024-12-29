@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:id="@+id/preview_item_layout" android:background="@color/white" android:layout_width="match_parent" android:layout_height="90dp" android:paddingStart="20dp" android:paddingEnd="20dp">
+    <ImageView android:layout_gravity="center" android:id="@+id/device_item_badge_view" android:layout_width="58dp" android:layout_height="58dp"/>
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginStart="10dp">
+        <TextView android:textSize="@dimen/font_size_15sp" android:textColor="@color/common_text_color_primary_33" android:layout_gravity="left|center_vertical|center_horizontal|center" android:id="@+id/device_item_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true"/>
+        <TextView android:textSize="@dimen/font_size_12sp" android:textColor="@color/common_text_color_secondary_66" android:layout_gravity="left|center_vertical|center_horizontal|center" android:id="@+id/device_item_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true"/>
+    </LinearLayout>
+</LinearLayout>

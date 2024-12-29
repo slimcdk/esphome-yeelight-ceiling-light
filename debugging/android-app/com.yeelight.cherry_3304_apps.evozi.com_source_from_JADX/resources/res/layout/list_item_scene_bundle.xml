@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yeelight.cherry.p177ui.view.DeviceListItem xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="66dp" android:baselineAligned="false">
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginStart="15dp">
+        <TextView android:textSize="@dimen/font_size_14sp" android:layout_gravity="left|center_vertical|center_horizontal|center" android:id="@+id/scene_bundle_name" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/tasker_text_style.content"/>
+        <TextView android:textSize="@dimen/font_size_12sp" android:layout_gravity="left|center_vertical|center_horizontal|center" android:id="@+id/scene_bundle_device_num" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/tasker_text_style.content"/>
+    </LinearLayout>
+    <TextView android:textSize="@dimen/font_size_12sp" android:textColor="@color/black_60_transparent" android:gravity="center" android:layout_gravity="right|center_vertical|center_horizontal|center|end" android:id="@+id/scene_bundle_launch_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginRight="15dp"/>
+</com.yeelight.cherry.p177ui.view.DeviceListItem>

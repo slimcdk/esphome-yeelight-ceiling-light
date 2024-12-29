@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/common_tile_bar_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ProgressBar android:layout_gravity="center" android:id="@+id/page_loading_img" android:visibility="gone" android:layout_width="15dp" android:layout_height="15dp" android:indeterminateDrawable="@drawable/progressbar_rotate" android:layout_marginEnd="3dp"/>
+        <TextView android:layout_gravity="center" android:id="@+id/text_title" android:maxWidth="220dp" style="@style/yeelight_badge_text_style"/>
+    </LinearLayout>
+    <ImageView android:layout_gravity="center" android:id="@+id/image_logo_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/logo_white"/>
+    <com.yeelight.yeelib.p194ui.view.RedSpotTipImageView android:layout_gravity="left|center_vertical|center_horizontal|center|start" android:id="@+id/btn_title_bar_left" android:paddingLeft="7dp" android:paddingTop="3dp" android:paddingBottom="3dp" android:paddingEnd="7dp" style="@style/title_bar_btn_style"/>
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="end" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="match_parent">
+        <com.yeelight.yeelib.p194ui.view.RedSpotTipImageView android:id="@+id/btn_title_bar_right2" android:paddingLeft="7dp" android:paddingTop="3dp" android:paddingBottom="3dp" style="@style/title_bar_btn_style"/>
+        <com.yeelight.yeelib.p194ui.view.RedSpotTipImageView android:id="@+id/btn_title_bar_right" android:paddingLeft="7dp" android:paddingTop="3dp" android:paddingBottom="3dp" android:paddingEnd="7dp" style="@style/title_bar_btn_style"/>
+    </LinearLayout>
+    <TextView android:layout_gravity="right|center_vertical|center_horizontal|center|end" android:id="@+id/tile_bar_right_text" android:background="#01ffffff" style="@style/title_bar_text_style"/>
+    <ImageView android:layout_gravity="bottom" android:id="@+id/tile_bar_bottom_divider" android:background="@color/common_divider_line_title_bottom_color" android:layout_width="match_parent" android:layout_height="1px"/>
+</FrameLayout>

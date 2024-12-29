@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.yeelight.yeelib.p194ui.view.CommonTitleBar android:id="@+id/title_bar" android:layout_width="match_parent" android:layout_height="wrap_content" app:bottomDividerColor="@color/divider_line_color" app:bottomDividerVisible="true" app:leftButtonResource="@drawable/icon_yeelight_back_black" app:leftButtonVisible="true"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/ll_xiaoai" android:background="@color/common_white" android:layout_width="match_parent" android:layout_height="@dimen/size_44dp" android:paddingStart="20dp">
+        <ImageView android:id="@+id/img_xiaoai" android:layout_width="16dp" android:layout_height="16dp" android:src="@drawable/icon_yeelight_common_choice_normal"/>
+        <TextView android:textSize="15sp" android:textColor="@color/common_text_color_primary_33" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/speaker_xiao_ai" android:layout_marginStart="13dp"/>
+    </LinearLayout>
+    <View android:layout_marginStart="20dp" style="@style/horizontal_line"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/ll_xiaobing" android:background="@color/common_white" android:layout_width="match_parent" android:layout_height="@dimen/size_44dp" android:paddingStart="20dp">
+        <ImageView android:id="@+id/img_xiaobing" android:layout_width="16dp" android:layout_height="16dp" android:src="@drawable/icon_yeelight_common_choice_normal"/>
+        <TextView android:textSize="15sp" android:textColor="@color/common_text_color_primary_33" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/speaker_xiao_bing" android:layout_marginStart="13dp"/>
+    </LinearLayout>
+</LinearLayout>

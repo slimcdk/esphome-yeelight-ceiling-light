@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/device_widget_layout" android:background="@color/black_00_transparent" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:layout_width="match_parent" android:layout_height="30dp">
+        <LinearLayout android:layout_gravity="left|center_vertical|center_horizontal|center|start" android:id="@+id/device_widget_skin" android:layout_width="wrap_content" android:layout_height="match_parent">
+            <ImageView android:layout_gravity="center_vertical" android:background="@drawable/icon_yeelight_widget_skin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="15dp" android:layout_marginEnd="15dp"/>
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="center" android:id="@+id/widget_image_logo_view" android:layout_width="wrap_content" android:layout_height="match_parent">
+            <ImageView android:layout_gravity="center" android:background="@drawable/icon_yeelight_logo" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="right|center_vertical|center_horizontal|center|end" android:id="@+id/widget_progress_refresh" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent">
+            <ProgressBar android:layout_gravity="center_vertical" android:layout_width="18dp" android:layout_height="18dp" android:layout_marginStart="15dp" android:layout_marginEnd="15dp"/>
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="right|center_vertical|center_horizontal|center|end" android:id="@+id/widget_image_refresh" android:layout_width="wrap_content" android:layout_height="match_parent">
+            <ImageView android:layout_gravity="center_vertical" android:background="@drawable/icon_yeelight_refresh" android:layout_marginStart="15dp" android:layout_marginEnd="15dp" style="@style/title_bar_btn_style"/>
+        </LinearLayout>
+    </FrameLayout>
+    <ImageView android:background="@color/white_30_transparent" android:layout_width="match_parent" android:layout_height="1px"/>
+    <ListView android:id="@+id/app_widget_lv" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+</LinearLayout>

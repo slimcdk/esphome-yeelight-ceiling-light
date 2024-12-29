@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/quick_connect_setting_indicate"/>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <ScrollView android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:orientation="vertical" android:paddingBottom="20dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="52dp" android:layout_marginStart="30dp" android:layout_marginEnd="30dp">
+                    <TextView android:textSize="@dimen/font_size_23sp" android:textColor="@color/common_text_color_secondary_66" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/feature_geek_mode" android:layout_centerVertical="true"/>
+                    <ImageView android:id="@+id/lan_control_switch" android:background="@drawable/icon_quickconnect_lan_control_check" android:layout_width="42dp" android:layout_height="25dp" android:layout_centerVertical="true" android:layout_alignParentEnd="true"/>
+                </RelativeLayout>
+                <TextView android:textSize="14sp" android:textColor="@color/common_text_color_secondary_66" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="78dp" android:text="@string/quickconnect_lan_control_tips" android:lineSpacingExtra="4dp" android:layout_marginStart="30dp" android:layout_marginEnd="30dp"/>
+                <TextView android:textSize="14sp" android:textColor="@color/common_text_color_secondary_66" android:id="@+id/tv_google_home_hint" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30dp" android:text="@string/quickconnect_lan_control_tips_yeelight" android:lineSpacingExtra="4dp" android:layout_marginStart="30dp" android:layout_marginEnd="30dp"/>
+                <TextView android:textSize="14sp" android:textColor="@color/common_text_link_color" android:id="@+id/tv_google_lan" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="@string/quickconnect_lan_control_tips_google" android:lineSpacingExtra="4dp" android:layout_marginStart="30dp" android:layout_marginEnd="30dp"/>
+                <View android:layout_width="1dp" android:layout_height="124dp"/>
+            </LinearLayout>
+        </ScrollView>
+        <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <View android:background="@drawable/gradient_transparent_to_white" android:layout_width="match_parent" android:layout_height="20dp"/>
+            <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                <TextView android:textSize="@dimen/font_size_13sp" android:textColor="@color/common_text_link_color" android:layout_gravity="center_horizontal" android:id="@+id/tv_third_party_protocol" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="24.5dp" android:text="@string/geek_mode_protocol_link"/>
+                <Button android:textSize="@dimen/font_size_14sp" android:textColor="@color/white" android:layout_gravity="center_horizontal" android:id="@+id/btn_complete" android:background="@drawable/round_btn_red" android:layout_width="240dp" android:layout_height="39dp" android:layout_marginBottom="55dp" android:text="@string/common_text_complete" android:textAllCaps="false" app:layout_marginBottomPercent="30%" app:layout_widthPercent="63%" style="?android:attr/borderlessButtonStyle"/>
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

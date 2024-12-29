@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.yeelight.yeelib.p142ui.view.CommonTitleBar android:id="@+id/title_bar" android:layout_width="match_parent" android:layout_height="wrap_content" app:backgroundTranslucent="true" app:leftButtonResource="@drawable/icon_yeelight_back_black" app:leftButtonVisible="true" app:textColor="@color/setting_item_theme_text_color"/>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/rv_device" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+    <View android:background="@color/common_divider_line_title_bottom_color" android:layout_width="match_parent" android:layout_height="1px"/>
+    <LinearLayout android:orientation="horizontal" android:background="@color/white" android:layout_width="match_parent" android:layout_height="50dp">
+        <TextView android:textSize="17sp" android:textColor="@color/common_text_color_secondary_66" android:gravity="center" android:id="@+id/tv_all_close" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/lan_control_list_alloff" android:layout_weight="1"/>
+        <View android:background="@color/common_divider_line_title_bottom_color" android:layout_width="1px" android:layout_height="match_parent" android:layout_marginTop="5dp" android:layout_marginBottom="5dp"/>
+        <TextView android:textSize="17sp" android:textColor="@color/common_text_color_secondary_66" android:gravity="center" android:id="@+id/tv_all_open" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/lan_control_list_allon" android:layout_weight="1"/>
+    </LinearLayout>
+</LinearLayout>

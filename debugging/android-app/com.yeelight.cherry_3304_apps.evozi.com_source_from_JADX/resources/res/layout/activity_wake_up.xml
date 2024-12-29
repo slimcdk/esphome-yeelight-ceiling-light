@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/common_color_secondary_white_f8" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.yeelight.yeelib.p194ui.view.CommonTitleBar android:id="@+id/title_bar" android:layout_width="match_parent" android:layout_height="wrap_content" app:backgroundTranslucent="true" app:leftButtonResource="@drawable/icon_yeelight_back_black" app:leftButtonVisible="true" app:rightTextColor="@color/common_text_color_tips" app:rightTextResource="@string/common_text_save" app:rightTextVisible="true" app:textColor="@color/setting_item_theme_text_color"/>
+    <RelativeLayout android:background="@color/common_content_bg" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/wake_up_layout" android:clickable="true" style="@style/setting_click_item_style">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/common_text_awake" style="@style/setting_text_style"/>
+            <ImageView android:id="@+id/wake_up_switch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/setting_switch_off" android:scaleType="center"/>
+        </LinearLayout>
+        <TextView android:layout_below="@+id/wake_up_layout" style="@style/horizontal_line.padding"/>
+        <TextView android:textSize="@dimen/setting_item_text_sub_size" android:gravity="center_vertical" android:id="@+id/wake_up_sub_info" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:layout_marginBottom="30dp" android:minHeight="@dimen/setting_item_height" android:text="@string/wake_up_sub_info" android:layout_below="@+id/wake_up_layout" android:lineSpacingMultiplier="1.1" android:alpha="0.5" style="@style/setting_click_item_style"/>
+        <TextView android:id="@+id/wake_up_line" android:layout_below="@+id/wake_up_sub_info" style="@style/horizontal_line.padding"/>
+        <LinearLayout android:orientation="vertical" android:id="@+id/repeat_area" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/wake_up_line">
+            <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@+id/wake_up_repeat" android:clickable="true" android:onClick="repeatSelect" style="@style/setting_click_item_style">
+                <TextView android:layout_marginLeft="10dp" android:text="@string/common_text_repeat" style="@style/setting_text_style"/>
+                <TextView android:layout_gravity="center_vertical" android:id="@+id/repeat_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5dp" android:text="@string/common_text_repeat_once" style="@style/setting_text_style.sub"/>
+                <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/common_item_more"/>
+            </LinearLayout>
+            <TextView style="@style/horizontal_line.padding"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/wake_up_time_area" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+            <TextView android:textSize="@dimen/setting_item_text_size" android:gravity="center" android:layout_gravity="bottom" android:id="@+id/wake_up_detail" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="23dp" android:layout_marginRight="23dp" android:layout_marginBottom="20dp" android:text="@string/wake_up_time" android:lineSpacingMultiplier="1.2" android:alpha="0.5"/>
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <com.yeelight.yeelib.p194ui.view.TimePicker android:id="@+id/timerPicker" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/feature_item_root" android:background="@drawable/setting_item_bg" android:layout_width="wrap_content" android:layout_height="58dp">
+    <View android:background="@color/common_divider_line_content_color" android:layout_width="match_parent" android:layout_height="1px" android:layout_alignParentBottom="true" android:layout_marginStart="20dp"/>
+    <ImageView android:id="@+id/feature_item_icon" android:visibility="gone" android:layout_width="@dimen/setting_item_icon_size" android:layout_height="@dimen/setting_item_icon_size" android:layout_centerVertical="true" android:layout_marginStart="@dimen/setting_item_icon_margin_left" android:layout_alignParentStart="true"/>
+    <com.yeelight.yeelib.p194ui.view.RedSpotTipTextView android:textSize="@dimen/font_size_15sp" android:textColor="@color/common_text_color_primary_33" android:id="@+id/feature_item_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:paddingEnd="10dp" android:layout_marginStart="20dp" android:layout_alignParentStart="true"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginEnd="13dp" android:layout_alignParentEnd="true">
+        <TextView android:textSize="@dimen/font_size_14sp" android:textColor="@color/common_text_color_secondary_66" android:gravity="right" android:id="@+id/feature_item_info" android:layout_width="130dp" android:layout_height="wrap_content" android:singleLine="true"/>
+        <com.yeelight.yeelib.p194ui.view.YeelightSwitchButton android:id="@+id/feature_item_switch_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/setting_item_switch_margin_right"/>
+        <ImageView android:id="@+id/feature_item_more" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/right_arrow_white" android:layout_marginStart="@dimen/setting_item_info_margin_right"/>
+    </LinearLayout>
+</RelativeLayout>

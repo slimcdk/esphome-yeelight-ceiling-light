@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:id="@+id/padding_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="14dp"/>
+    <FrameLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="82dp">
+        <com.yeelight.yeelib.p142ui.view.TimelineView android:layout_gravity="center_vertical" android:id="@+id/layout_time_line" android:layout_width="20dp" android:layout_height="wrap_content" android:layout_marginStart="20dp"/>
+        <com.chauthai.swipereveallayout.SwipeRevealLayout android:gravity="center_vertical" android:id="@+id/swipe_reveal_layout" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:baselineAligned="false" app:dragEdge="2" app:modeSwipe="0">
+            <LinearLayout android:orientation="horizontal" android:id="@+id/hide_layout" android:background="@color/common_color_secondary_white_f8" android:layout_width="wrap_content" android:layout_height="70dp">
+                <LinearLayout android:id="@+id/layout_left_view" android:layout_width="wrap_content" android:layout_height="match_parent" android:paddingStart="11dp">
+                    <ImageView android:layout_gravity="center" android:id="@+id/img_hide_left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/personality_light_slide_delete"/>
+                </LinearLayout>
+                <LinearLayout android:id="@+id/layout_right_view" android:layout_width="wrap_content" android:layout_height="match_parent" android:paddingStart="31dp" android:paddingEnd="31dp">
+                    <ImageView android:layout_gravity="center" android:id="@+id/img_hide_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/personality_light_slide_more"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent" android:minHeight="82dp">
+                <TextView android:background="@android:color/transparent" android:layout_width="60dp" android:layout_height="wrap_content"/>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/color_ct_frame_layout" android:background="@drawable/common_corner_rectangle_grey_e8" android:layout_width="match_parent" android:layout_height="70dp" android:layout_marginEnd="20dp">
+                    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                        <ImageView android:id="@+id/flow_item_type_image" android:layout_width="20dp" android:layout_height="20dp" android:layout_marginBottom="8dp" android:src="@drawable/favorite_scene_item_bg"/>
+                        <TextView android:textSize="@dimen/font_size_12sp" android:textColor="@color/common_text_color_secondary_66" android:gravity="center" android:id="@+id/flow_item_type_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/personality_light_add_color"/>
+                    </LinearLayout>
+                    <View android:background="@color/common_divider_line_content_color" android:layout_width="1px" android:layout_height="29dp"/>
+                    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                        <TextView android:textSize="@dimen/font_size_14sp" android:textStyle="bold" android:textColor="@color/common_text_color_secondary_66" android:gravity="center_horizontal" android:id="@+id/flow_item_bright_value" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="8dp"/>
+                        <TextView android:textSize="@dimen/font_size_12sp" android:textColor="@color/common_text_color_secondary_66" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/common_text_bright"/>
+                    </LinearLayout>
+                    <View android:background="@color/common_divider_line_content_color" android:layout_width="1px" android:layout_height="29dp"/>
+                    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                        <TextView android:textSize="@dimen/font_size_14sp" android:textStyle="bold" android:textColor="@color/common_text_color_secondary_66" android:id="@+id/flow_item_duration_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8dp" android:text="10:06.9"/>
+                        <TextView android:textSize="@dimen/font_size_12sp" android:textColor="@color/common_text_color_secondary_66" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/personality_light_add_duration"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </com.chauthai.swipereveallayout.SwipeRevealLayout>
+    </FrameLayout>
+</LinearLayout>

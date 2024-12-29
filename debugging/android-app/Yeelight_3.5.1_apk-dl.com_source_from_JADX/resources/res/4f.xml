@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/common_color_secondary_white_f8" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.yeelight.yeelib.p142ui.view.CommonTitleBar android:id="@+id/title_bar" android:layout_width="match_parent" android:layout_height="wrap_content" app:backgroundTranslucent="true" app:leftButtonResource="@drawable/icon_yeelight_back_black" app:leftButtonVisible="true" app:textColor="@color/setting_item_theme_text_color"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <Button android:layout_gravity="center" android:id="@+id/btn_exit_dev_mode" android:layout_width="200dp" android:layout_height="50dp" android:layout_marginTop="40dp" android:layout_marginBottom="10dp" android:text="Disable Dev Mode" android:textAllCaps="false"/>
+        <Button android:layout_gravity="center" android:id="@+id/btn_ar_core_demo" android:visibility="gone" android:layout_width="200dp" android:layout_height="50dp" android:layout_marginTop="10dp" android:layout_marginBottom="10dp" android:text="AR Core Demo" android:textAllCaps="false"/>
+        <Button android:layout_gravity="center" android:id="@+id/btn_augmented_image_demo" android:layout_width="200dp" android:layout_height="50dp" android:layout_marginTop="10dp" android:layout_marginBottom="40dp" android:text="Augmented Image Demo" android:textAllCaps="false"/>
+        <Button android:layout_gravity="center" android:id="@+id/btn_log_upload" android:visibility="gone" android:layout_width="200dp" android:layout_height="50dp" android:layout_marginTop="40dp" android:text="Log Control" android:textAllCaps="false"/>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingEnd="20dp">
+            <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginBottom="10dp" android:layout_weight="1">
+                <TextView android:textSize="16sp" android:textColor="@color/common_text_color_primary_33" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Crash Upload enable" android:layout_weight="1" android:paddingStart="20dp" android:paddingEnd="20dp"/>
+                <TextView android:textSize="16sp" android:textColor="@color/common_text_color_secondary_66" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="App needs to be restarted" android:layout_weight="1" android:paddingStart="20dp" android:paddingEnd="20dp"/>
+            </LinearLayout>
+            <CheckBox android:id="@+id/cb_crash_force_enable" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <View style="@style/horizontal_line"/>
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="16sp" android:textColor="@color/common_text_color_primary_33" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginBottom="10dp" android:text="Host环境切换" android:paddingStart="20dp" android:paddingEnd="20dp"/>
+            <View style="@style/horizontal_line"/>
+            <RadioGroup android:orientation="vertical" android:id="@+id/rg_mode" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:paddingStart="20dp" android:paddingEnd="20dp">
+                <RadioButton android:textSize="16sp" android:id="@+id/rb_pro" android:paddingTop="10dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="生产环境" android:layoutDirection="rtl"/>
+                <View style="@style/horizontal_line"/>
+                <RadioButton android:textSize="16sp" android:id="@+id/rb_test" android:paddingTop="10dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="测试环境" android:layoutDirection="rtl"/>
+                <View style="@style/horizontal_line"/>
+                <RadioButton android:textSize="16sp" android:id="@+id/rb_dev" android:paddingTop="10dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="开发环境" android:layoutDirection="rtl"/>
+                <View style="@style/horizontal_line"/>
+                <RadioButton android:textSize="16sp" android:id="@+id/rb_pro2" android:paddingTop="10dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="生产环境2" android:layoutDirection="rtl"/>
+                <View style="@style/horizontal_line"/>
+                <RadioButton android:textSize="16sp" android:id="@+id/rb_stage" android:paddingTop="10dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="预生产环境" android:layoutDirection="rtl"/>
+            </RadioGroup>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

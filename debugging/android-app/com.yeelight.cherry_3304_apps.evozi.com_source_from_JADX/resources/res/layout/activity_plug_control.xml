@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.constraintlayout.widget.ConstraintLayout android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="77dp">
+        <com.yeelight.yeelib.p194ui.view.CommonTitleBar android:id="@+id/title_bar" android:layout_width="match_parent" android:layout_height="wrap_content" app:backgroundTranslucent="true" app:layout_constraintTop_toTopOf="0" app:leftButtonResource="@drawable/icon_yeelight_back_black" app:leftButtonVisible="true" app:rightButtonResource="@drawable/icon_yeelight_control_view_settings" app:rightButtonVisible="true" app:textColor="@color/setting_item_theme_text_color"/>
+        <ImageView android:id="@+id/img_control" android:layout_width="0dp" android:layout_height="0dp" android:src="@drawable/icon_yeelight_plug_control" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintDimensionRatio="w,1:1" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/title_bar" app:layout_constraintWidth_percent="0.53"/>
+        <TextView android:textSize="13sp" android:textColor="@color/common_text_color_description_99" android:id="@+id/tv_firmware" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="40dp" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/img_control"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/shadow_view" android:background="@color/black_50_transparent" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/layout_animation" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="0">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:background="@color/common_divider_line_content_color" android:layout_width="match_parent" android:layout_height="1px"/>
+            <LinearLayout android:orientation="horizontal" android:background="@color/white" android:layout_width="match_parent" android:layout_height="62dp">
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/layout_left" android:background="@drawable/item_click_background" android:clickable="true" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+                    <ImageView android:id="@+id/image_left" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                </LinearLayout>
+                <RelativeLayout android:id="@+id/layout_middle" android:background="@drawable/item_click_background" android:clickable="true" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+                    <ImageView android:id="@+id/image_middle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/setting_delay2" android:layout_centerInParent="true"/>
+                    <TextView android:id="@+id/delay_enable" android:background="@color/common_color_secondary_yellow" android:layout_width="7dp" android:layout_height="5px" android:layout_marginBottom="5dp" android:layout_below="@+id/image_middle" android:layout_centerHorizontal="true"/>
+                </RelativeLayout>
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/layout_right" android:background="@drawable/item_click_background" android:clickable="true" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+                    <ImageView android:id="@+id/image_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_yeelight_control_view_arrow_up"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/control_view_more" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:background="@color/common_divider_line_content_color" android:clickable="true" android:layout_width="match_parent" android:layout_height="1px"/>
+            <TextView android:background="@color/item_alarm_disable_color" android:clickable="true" android:layout_width="match_parent" android:layout_height="12dp"/>
+            <GridView android:id="@+id/function_grid_view" android:background="@color/common_text_color_white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:numColumns="3"/>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,58 @@
+package com.google.android.gms.common.api.internal;
+
+import android.os.Bundle;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import com.google.android.gms.common.ConnectionResult;
+
+/* renamed from: com.google.android.gms.common.api.internal.j3 */
+final class C0799j3 implements C0828p1 {
+
+    /* renamed from: a */
+    final /* synthetic */ C0847u f677a;
+
+    /* synthetic */ C0799j3(C0847u uVar, C0792i3 i3Var) {
+        this.f677a = uVar;
+    }
+
+    /* renamed from: a */
+    public final void mo12018a(@Nullable Bundle bundle) {
+        this.f677a.f799l.lock();
+        try {
+            C0847u.m1098v(this.f677a, bundle);
+            this.f677a.f796i = ConnectionResult.RESULT_SUCCESS;
+            C0847u.m1099w(this.f677a);
+        } finally {
+            this.f677a.f799l.unlock();
+        }
+    }
+
+    /* renamed from: b */
+    public final void mo12019b(int i, boolean z) {
+        this.f677a.f799l.lock();
+        try {
+            C0847u uVar = this.f677a;
+            if (!uVar.f798k && uVar.f797j != null) {
+                if (uVar.f797j.mo11756f0()) {
+                    this.f677a.f798k = true;
+                    this.f677a.f791d.mo11948c(i);
+                }
+            }
+            this.f677a.f798k = false;
+            C0847u.m1097u(this.f677a, i, z);
+        } finally {
+            this.f677a.f799l.unlock();
+        }
+    }
+
+    /* renamed from: c */
+    public final void mo12020c(@NonNull ConnectionResult connectionResult) {
+        this.f677a.f799l.lock();
+        try {
+            this.f677a.f796i = connectionResult;
+            C0847u.m1099w(this.f677a);
+        } finally {
+            this.f677a.f799l.unlock();
+        }
+    }
+}

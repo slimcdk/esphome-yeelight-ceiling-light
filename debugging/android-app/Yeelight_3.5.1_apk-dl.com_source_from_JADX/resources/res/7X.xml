@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <shortcut android:icon="@drawable/icon_yeelight_device_list_on" android:enabled="true" android:shortcutId="turn_on_all" android:shortcutShortLabel="@string/item_device_all_on" android:shortcutLongLabel="@string/item_device_all_on">
+        <intent android:targetPackage="com.yeelight.cherry" android:action="com.yeelight.cherry.action.shortcut.turn.on.all" android:targetClass="com.yeelight.yeelib.ui.activity.ShortcutIntentHandlingActivity"/>
+        <categories android:name="android.shortcut.conversation"/>
+    </shortcut>
+    <shortcut android:icon="@drawable/icon_yeelight_device_list_off" android:enabled="true" android:shortcutId="turn_off_all" android:shortcutShortLabel="@string/item_device_all_off" android:shortcutLongLabel="@string/item_device_all_off">
+        <intent android:targetPackage="com.yeelight.cherry" android:action="com.yeelight.cherry.action.shortcut.turn.off.all" android:targetClass="com.yeelight.yeelib.ui.activity.ShortcutIntentHandlingActivity"/>
+        <categories android:name="android.shortcut.conversation"/>
+    </shortcut>
+</shortcuts>

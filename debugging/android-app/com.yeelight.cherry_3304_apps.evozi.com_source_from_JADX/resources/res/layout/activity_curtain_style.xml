@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_horizontal" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/title_view" android:layout_width="match_parent" android:layout_height="44dp">
+        <ImageView android:id="@+id/img_back_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_yeelight_back_black" android:layout_marginStart="7dp"/>
+    </LinearLayout>
+    <TextView android:textSize="16sp" android:textColor="@color/common_text_color_primary_33" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="14dp" android:text="@string/config_curtain_open_style_title"/>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <ScrollView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:paddingBottom="32dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@+id/img_double" android:layout_width="90dp" android:layout_height="90dp" android:src="@drawable/icon_yeelight_curtain_double_nor"/>
+                <TextView android:textSize="12sp" android:textColor="@color/common_text_color_description_99" android:id="@+id/tv_double" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="11dp" android:text="@string/config_curtain_open_style_double"/>
+                <ImageView android:id="@+id/img_left" android:layout_width="90dp" android:layout_height="90dp" android:layout_marginTop="38dp" android:src="@drawable/icon_yeelight_curtain_left_nor"/>
+                <TextView android:textSize="12sp" android:textColor="@color/common_text_color_description_99" android:id="@+id/tv_left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="11dp" android:text="@string/config_curtain_open_style_to_left"/>
+                <ImageView android:id="@+id/img_right" android:layout_width="90dp" android:layout_height="90dp" android:layout_marginTop="38dp" android:src="@drawable/icon_yeelight_curtain_right_nor"/>
+                <TextView android:textSize="12sp" android:textColor="@color/common_text_color_description_99" android:id="@+id/tv_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="11dp" android:text="@string/config_curtain_open_style_to_right"/>
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+    <FrameLayout android:paddingBottom="40dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <Button android:enabled="false" android:textSize="@dimen/font_size_14sp" android:textColor="@color/white" android:layout_gravity="center" android:id="@+id/btn_done" android:background="@drawable/round_btn_red2" android:layout_width="match_parent" android:layout_height="39dp" android:text="@string/common_text_complete" android:textAllCaps="false" android:layout_marginStart="55dp" android:layout_marginEnd="55dp" style="?android:attr/borderlessButtonStyle"/>
+    </FrameLayout>
+</LinearLayout>

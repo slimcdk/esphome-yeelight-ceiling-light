@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="@dimen/common_title_info_text_size" android:textColor="@color/text_white" android:gravity="center" android:layout_gravity="center_horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="45dp" android:layout_marginBottom="10dp" android:text="@string/mi_band_reopen_broadcast"/>
+    <ImageView android:id="@+id/ensure_middle_image" android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@drawable/miband_guide" android:layout_weight="1"/>
+    <Button android:textSize="@dimen/font_size_13sp" android:textColor="@color/text_white" android:layout_gravity="center_horizontal" android:id="@+id/miband_bottom_btn" android:background="@drawable/radian_btn_bg" android:layout_width="@dimen/long_button_w" android:layout_height="@dimen/common_button_h" android:layout_marginTop="23dp" android:layout_marginBottom="23dp" android:text="@string/mi_band_reopen_broadcast_ok" android:alpha="0.7"/>
+</LinearLayout>

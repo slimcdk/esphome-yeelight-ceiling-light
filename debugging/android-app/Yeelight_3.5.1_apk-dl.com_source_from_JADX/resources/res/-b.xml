@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/swipe_reveal_layout" android:layout_width="match_parent" android:layout_height="38dp">
+    <LinearLayout android:background="@color/common_color_secondary_white_f8" android:paddingTop="4dp" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:textSize="@dimen/font_size_13sp" android:textColor="@color/common_text_color_description_99" android:gravity="center_vertical" android:layout_gravity="center" android:id="@+id/message_item_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="20dp"/>
+    </LinearLayout>
+</LinearLayout>

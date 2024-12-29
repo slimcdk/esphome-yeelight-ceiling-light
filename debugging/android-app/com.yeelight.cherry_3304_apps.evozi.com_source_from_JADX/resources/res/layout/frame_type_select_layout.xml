@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_gravity="bottom" android:orientation="vertical" android:background="@color/common_color_secondary_white_f8" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:background="@color/common_text_color_white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="11dp">
+        <TextView android:textSize="17sp" android:textColor="@color/common_text_color_primary_33" android:gravity="center" android:id="@+id/bright_frame" android:background="@drawable/item_click_background" android:layout_width="match_parent" android:layout_height="49dp" android:text="@string/personality_light_add_frame_bright"/>
+        <TextView android:background="@color/common_divider_line_control_bottom_color" android:layout_width="match_parent" android:layout_height="1px"/>
+        <TextView android:textSize="17sp" android:textColor="@color/common_text_color_primary_33" android:gravity="center" android:id="@+id/color_frame" android:background="@drawable/item_click_background" android:layout_width="match_parent" android:layout_height="49dp" android:text="@string/personality_light_add_frame_color"/>
+        <TextView android:background="@color/common_divider_line_control_bottom_color" android:layout_width="match_parent" android:layout_height="1px"/>
+        <TextView android:textSize="17sp" android:textColor="@color/common_text_color_primary_33" android:gravity="center" android:id="@+id/ct_frame" android:background="@drawable/item_click_background" android:layout_width="match_parent" android:layout_height="49dp" android:text="@string/personality_light_add_frame_ct"/>
+        <TextView android:background="@color/common_divider_line_control_bottom_color" android:layout_width="match_parent" android:layout_height="1px"/>
+        <TextView android:textSize="17sp" android:textColor="@color/common_text_color_primary_33" android:gravity="center" android:id="@+id/suspend_frame" android:background="@drawable/item_click_background" android:layout_width="match_parent" android:layout_height="49dp" android:text="@string/personality_light_add_frame_suspend"/>
+        <TextView android:background="@color/common_divider_line_control_bottom_color" android:layout_width="match_parent" android:layout_height="1px"/>
+    </LinearLayout>
+    <TextView android:textSize="17sp" android:textColor="@color/common_text_color_primary_33" android:gravity="center" android:id="@+id/cancel_button" android:background="@drawable/item_click_background" android:layout_width="match_parent" android:layout_height="49dp" android:text="@string/common_text_cancel"/>
+</LinearLayout>

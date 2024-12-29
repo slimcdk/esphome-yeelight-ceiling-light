@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/common_color_secondary_white_f8" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.yeelight.yeelib.p142ui.view.CommonTitleBar android:id="@+id/title_bar" android:layout_width="match_parent" android:layout_height="wrap_content" app:backgroundTranslucent="true" app:leftButtonResource="@drawable/icon_yeelight_back_black" app:leftButtonVisible="true" app:rightButtonVisible="false" app:textColor="@color/setting_item_theme_text_color"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:layout_gravity="center_vertical" android:id="@+id/layout_action_open" style="@style/setting_click_item_style">
+            <TextView android:id="@+id/action_title_open" android:layout_marginLeft="10dp" android:text="@string/common_text_action_on" style="@style/setting_text_style"/>
+            <ImageView android:layout_gravity="center_vertical" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/common_item_more"/>
+        </LinearLayout>
+        <TextView android:layout_marginLeft="20dp" style="@style/horizontal_line"/>
+        <LinearLayout android:layout_gravity="center_vertical" android:id="@+id/layout_action_close" style="@style/setting_click_item_style">
+            <TextView android:id="@+id/action_title_close" android:layout_marginLeft="10dp" android:text="@string/common_text_action_off" style="@style/setting_text_style"/>
+            <ImageView android:layout_gravity="center_vertical" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/common_item_more"/>
+        </LinearLayout>
+        <TextView android:layout_marginLeft="20dp" style="@style/horizontal_line"/>
+        <LinearLayout android:layout_gravity="center_vertical" android:id="@+id/layout_action_toggle" style="@style/setting_click_item_style">
+            <TextView android:id="@+id/action_title_toggle" android:layout_marginLeft="10dp" android:text="@string/common_text_action_toggle" style="@style/setting_text_style"/>
+            <ImageView android:layout_gravity="center_vertical" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/common_item_more"/>
+        </LinearLayout>
+        <TextView android:layout_marginLeft="20dp" style="@style/horizontal_line"/>
+        <LinearLayout android:layout_gravity="center_vertical" android:id="@+id/layout_action_bright" style="@style/setting_click_item_style">
+            <TextView android:id="@+id/action_title_bright" android:layout_marginLeft="10dp" android:text="@string/common_text_action_bright" style="@style/setting_text_style"/>
+            <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/common_item_more"/>
+        </LinearLayout>
+        <TextView android:layout_marginLeft="20dp" style="@style/horizontal_line"/>
+        <LinearLayout android:layout_gravity="center_vertical" android:id="@+id/layout_action_bright_variable" style="@style/setting_click_item_style">
+            <TextView android:id="@+id/action_title_bright_variable" android:layout_marginLeft="10dp" android:text="@string/common_text_action_bright_variable" style="@style/setting_text_style"/>
+            <ImageView android:layout_gravity="center_vertical" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/common_item_more"/>
+        </LinearLayout>
+        <TextView android:layout_marginLeft="20dp" style="@style/horizontal_line"/>
+        <LinearLayout android:layout_gravity="center_vertical" android:id="@+id/layout_action_ct_variable" style="@style/setting_click_item_style">
+            <TextView android:id="@+id/action_title_ct_variable" android:layout_marginLeft="10dp" android:text="@string/common_text_action_ct_variable" style="@style/setting_text_style"/>
+            <ImageView android:layout_gravity="center_vertical" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/common_item_more"/>
+        </LinearLayout>
+        <TextView android:layout_marginLeft="20dp" style="@style/horizontal_line"/>
+        <LinearLayout android:layout_gravity="center_vertical" android:id="@+id/layout_action_color_variable" style="@style/setting_click_item_style">
+            <TextView android:id="@+id/action_title_color_variable" android:layout_marginLeft="10dp" android:text="@string/common_text_action_color_variable" style="@style/setting_text_style"/>
+            <ImageView android:layout_gravity="center_vertical" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/common_item_more"/>
+        </LinearLayout>
+        <TextView android:layout_marginLeft="20dp" style="@style/horizontal_line"/>
+        <LinearLayout android:layout_gravity="center_vertical" android:id="@+id/layout_action_scene" style="@style/setting_click_item_style">
+            <TextView android:id="@+id/action_title_scene" android:layout_marginLeft="10dp" android:text="@string/common_text_action_scene" style="@style/setting_text_style"/>
+            <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/common_item_more"/>
+        </LinearLayout>
+        <TextView android:layout_marginLeft="20dp" style="@style/horizontal_line"/>
+    </LinearLayout>
+</LinearLayout>

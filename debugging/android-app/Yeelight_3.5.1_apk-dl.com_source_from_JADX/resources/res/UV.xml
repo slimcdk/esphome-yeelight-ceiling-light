@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/common_text_color_white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.yeelight.yeelib.p142ui.view.CommonTitleBar android:id="@+id/title_bar" android:layout_width="match_parent" android:layout_height="wrap_content" app:backgroundTranslucent="true" app:leftButtonResource="@drawable/icon_yeelight_back_black" app:leftButtonVisible="true" app:rightTextVisible="true" app:textColor="@color/setting_item_theme_text_color"/>
+    <LinearLayout android:background="@color/common_color_secondary_white_f8" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/flow_item_list" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="6dp"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/bottom_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:layout_gravity="bottom" android:background="@color/common_divider_line_control_bottom_color" android:layout_width="match_parent" android:layout_height="1px"/>
+        <LinearLayout android:orientation="horizontal" android:background="@color/common_color_secondary_white_f8" android:layout_width="match_parent" android:layout_height="50dp">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/layout_item_copy" android:background="@drawable/item_click_background_dark" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+                <ImageView android:layout_width="20dp" android:layout_height="20dp" android:layout_marginBottom="3dp" android:src="@drawable/icon_yeelight_personality_light_copy"/>
+                <TextView android:textSize="10sp" android:textColor="@color/white" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/personality_light_item_copy" android:maxLines="1"/>
+            </LinearLayout>
+            <TextView android:background="@color/personality_edit_divider_color" android:layout_width="1px" android:layout_height="match_parent"/>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/layout_item_delete" android:background="@drawable/item_click_background_dark" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+                <ImageView android:layout_width="20dp" android:layout_height="20dp" android:layout_marginBottom="3dp" android:src="@drawable/icon_yeelight_personality_light_delete"/>
+                <TextView android:textSize="10sp" android:textColor="@color/white" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/personality_light_item_delete" android:maxLines="1"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/common_color_secondary_white_f8" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.yeelight.yeelib.p194ui.view.CommonTitleBar android:id="@+id/title_bar" android:layout_width="match_parent" android:layout_height="wrap_content" app:backgroundTranslucent="true" app:leftButtonResource="@drawable/icon_yeelight_back_black" app:leftButtonVisible="true" app:rightButtonResource="@drawable/round_save" app:rightButtonVisible="true" app:textColor="@color/setting_item_theme_text_color"/>
+    <RelativeLayout android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@+id/layout_action_open" android:clickable="true" style="@style/setting_click_item_style">
+                <TextView android:layout_marginLeft="10dp" android:text="@string/night_light_start_time" style="@style/setting_text_style"/>
+                <TextView android:layout_gravity="center_vertical" android:id="@+id/open_time_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5dp" style="@style/setting_text_style.sub"/>
+            </LinearLayout>
+            <TextView style="@style/horizontal_line.padding"/>
+            <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@+id/layout_action_close" android:clickable="true" style="@style/setting_click_item_style">
+                <TextView android:layout_marginLeft="10dp" android:text="@string/night_light_end_time" style="@style/setting_text_style"/>
+                <TextView android:layout_gravity="center_vertical" android:id="@+id/close_time_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5dp" style="@style/setting_text_style.sub"/>
+            </LinearLayout>
+            <TextView style="@style/horizontal_line.padding"/>
+            <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:clickable="true" style="@style/setting_click_item_style">
+                <TextView android:layout_marginLeft="10dp" android:text="@string/night_light_auto_delay_off" style="@style/setting_text_style"/>
+                <com.yeelight.yeelib.p194ui.view.YeelightSwitchButton android:id="@+id/switch_btn_auto_delay" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginRight="15dp" android:layout_toLeftOf="@+id/menu_nl_more" android:layout_centerVertical="true"/>
+            </LinearLayout>
+            <TextView style="@style/horizontal_line.padding"/>
+            <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@+id/layout_action_delay_off" android:clickable="true" style="@style/setting_click_item_style">
+                <TextView android:layout_marginLeft="10dp" android:text="@string/night_light_delay_off_time" style="@style/setting_text_style"/>
+                <TextView android:layout_gravity="center_vertical" android:id="@+id/delay_off_time_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5dp" style="@style/setting_text_style.sub"/>
+            </LinearLayout>
+            <TextView android:id="@+id/bottom_line" style="@style/horizontal_line.padding"/>
+        </LinearLayout>
+        <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+            <com.yeelight.yeelib.p194ui.view.TimePicker android:id="@+id/timerPicker" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            <com.yeelight.yeelib.p194ui.view.TimeMinutePicker android:id="@+id/delay_num_picker" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        </FrameLayout>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/title_view" android:layout_width="match_parent" android:layout_height="44dp">
+        <ImageView android:id="@+id/img_back_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_yeelight_back_black" android:layout_marginStart="7dp"/>
+    </LinearLayout>
+    <ScrollView android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingTop="5dp" android:layout_width="match_parent" android:layout_height="86dp">
+                <TextView android:textSize="@dimen/font_size_27sp" android:textStyle="bold" android:textColor="@color/common_text_color_secondary_66" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/vision_setting_induction_name" android:layout_weight="1" android:layout_marginStart="26dp"/>
+                <ImageView android:id="@+id/img_switch_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_yeelight_switch_point_off_new" android:layout_marginEnd="25dp"/>
+            </LinearLayout>
+            <ImageView android:layout_gravity="center" android:id="@+id/led_indicator_bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="18dp" android:src="@drawable/icon_yeelight_human_induction_feature_bg" android:scaleType="fitCenter" android:layout_marginStart="20dp" android:layout_marginEnd="20dp"/>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="28dp" android:layout_marginStart="32dp" android:layout_marginEnd="32dp">
+                <TextView android:textSize="11sp" android:textColor="@color/white" android:gravity="center" android:background="@drawable/vision_sensor_item_bg" android:layout_width="15dp" android:layout_height="15dp" android:minWidth="13dp" android:text="1"/>
+                <TextView android:textSize="12sp" android:textColor="@color/common_text_color_secondary_66" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/vision_setting_induction_switch" android:layout_marginStart="4dp"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="28dp" android:layout_marginStart="32dp" android:layout_marginEnd="32dp">
+                <TextView android:textSize="11sp" android:textColor="@color/white" android:gravity="center" android:background="@drawable/vision_sensor_item_bg" android:layout_width="15dp" android:layout_height="15dp" android:minWidth="13dp" android:text="2"/>
+                <TextView android:textSize="12sp" android:textColor="@color/common_text_color_secondary_66" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/vision_setting_induction_indicator" android:layout_marginStart="4dp"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="28dp" android:layout_marginStart="32dp" android:layout_marginEnd="32dp">
+                <TextView android:textSize="11sp" android:textColor="@color/white" android:gravity="center" android:background="@drawable/vision_sensor_item_bg" android:layout_width="15dp" android:layout_height="15dp" android:minWidth="13dp" android:text="3"/>
+                <TextView android:textSize="12sp" android:textColor="@color/common_text_color_secondary_66" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/vision_setting_induction_sensor" android:layout_marginStart="4dp"/>
+            </LinearLayout>
+            <TextView android:textSize="14sp" android:textColor="@color/common_text_color_secondary_66" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="28dp" android:text="@string/vision_setting_induction_introduce" android:layout_marginStart="31dp" android:layout_marginEnd="31dp"/>
+            <TextView android:textSize="14sp" android:textColor="@color/common_text_color_77" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="28dp" android:text="@string/vision_setting_induction_notice" android:layout_marginStart="31dp" android:layout_marginEnd="31dp"/>
+            <TextView android:textSize="14sp" android:textColor="@color/common_text_color_77" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/vision_setting_induction_notice_1" android:layout_marginStart="31dp" android:layout_marginEnd="31dp"/>
+            <TextView android:textSize="14sp" android:textColor="@color/common_text_color_77" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="58dp" android:text="@string/vision_setting_induction_notice_2" android:layout_marginStart="31dp" android:layout_marginEnd="31dp"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

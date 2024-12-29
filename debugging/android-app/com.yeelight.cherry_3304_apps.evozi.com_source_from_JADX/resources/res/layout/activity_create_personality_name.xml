@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/common_color_secondary_white_f8" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.yeelight.yeelib.p194ui.view.CommonTitleBar android:id="@+id/title_bar" android:layout_width="match_parent" android:layout_height="wrap_content" app:backgroundTranslucent="true" app:leftButtonResource="@drawable/icon_yeelight_back_black" app:leftButtonVisible="true" app:rightButtonResource="@drawable/icon_yeelight_common_close" app:rightButtonVisible="true" app:textColor="@color/setting_item_theme_text_color"/>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="170dp">
+        <ImageView android:id="@+id/type_view" android:layout_width="82dp" android:layout_height="82dp"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:background="@color/white" android:layout_width="match_parent" android:layout_height="44dp">
+        <EditText android:textSize="@dimen/font_size_15sp" android:textColor="@color/common_text_color_primary_33" android:textColorHint="@color/common_text_color_not_clickable_cc" android:layout_gravity="center_vertical" android:id="@+id/edit_textView" android:background="@null" android:layout_width="0dp" android:layout_height="wrap_content" android:maxLines="1" android:layout_weight="1" android:inputType="text" android:imeOptions="actionDone" android:paddingStart="21dp"/>
+        <ImageView android:layout_gravity="center_vertical" android:id="@+id/edit_reset" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_yeelight_share_reset" android:layout_marginStart="10dp" android:layout_marginEnd="20dp"/>
+    </LinearLayout>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+    <TextView android:background="@color/common_divider_line_control_bottom_color" android:layout_width="match_parent" android:layout_height="1px"/>
+    <TextView android:textSize="16sp" android:textColor="@color/common_color_primary" android:gravity="center" android:id="@+id/next_step" android:background="@drawable/common_create_bottom_btn" android:layout_width="match_parent" android:layout_height="48dp" android:text="@string/personality_light_select_next_step"/>
+</LinearLayout>

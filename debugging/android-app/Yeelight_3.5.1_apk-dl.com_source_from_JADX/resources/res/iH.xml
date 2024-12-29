@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="60dp">
+    <ImageView android:gravity="center" android:layout_gravity="center" android:id="@+id/widget_device_card_view_icon" android:layout_width="45dp" android:layout_height="45dp" android:layout_marginStart="15dp"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/widget_list_view_item" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginStart="6dp">
+        <TextView android:textColor="@android:color/white" android:id="@+id/widget_device_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="0dp" android:singleLine="true"/>
+        <TextView android:textSize="12sp" android:textColor="@color/white_50_transparent" android:id="@+id/widget_device_status" android:layout_width="match_parent" android:layout_height="wrap_content" android:singleLine="true"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:id="@+id/ll_curtain_switch" android:layout_width="wrap_content" android:layout_height="match_parent">
+        <ImageView android:textSize="@dimen/font_size_12sp" android:layout_gravity="right|center_vertical|center_horizontal|center|end" android:id="@+id/widget_curtain_open" android:background="@drawable/device_card_view_curtain_open" android:layout_width="50dp" android:layout_height="40dp"/>
+        <ImageView android:textSize="@dimen/font_size_12sp" android:layout_gravity="right|center_vertical|center_horizontal|center|end" android:id="@+id/widget_curtain_close" android:background="@drawable/device_card_view_curtain_close" android:layout_width="50dp" android:layout_height="40dp"/>
+    </LinearLayout>
+    <FrameLayout android:layout_gravity="right|center_vertical|center_horizontal|center|end" android:id="@+id/fl_common_device_switch" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:textSize="@dimen/font_size_12sp" android:layout_gravity="right|center_vertical|center_horizontal|center|end" android:id="@+id/widget_device_status_switch" android:background="@drawable/device_card_view_switch_background" android:layout_width="50dp" android:layout_height="40dp"/>
+        <TextView android:textColor="@android:color/white" android:gravity="center" android:layout_gravity="center_vertical" android:id="@+id/widget_device_connect" android:background="@drawable/device_card_view_text_button_white" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/common_text_connect"/>
+        <ProgressBar android:layout_gravity="right|center_vertical|center_horizontal|center|end" android:id="@+id/widget_device_connect_progress_bar" android:visibility="gone" android:layout_width="30dp" android:layout_height="30dp" android:layout_marginEnd="10dp"/>
+    </FrameLayout>
+</LinearLayout>

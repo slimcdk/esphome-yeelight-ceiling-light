@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/frame_layout" android:layout_width="match_parent" android:layout_height="82dp" android:minHeight="82dp" android:layout_marginStart="20dp">
+    <androidx.cardview.widget.CardView android:id="@+id/suspend_frame_layout" android:layout_width="0dp" android:layout_height="70dp" android:layout_weight="1" app:cardBackgroundColor="@color/common_text_color_white" app:cardCornerRadius="2.5dp" app:cardElevation="0dp" app:cardUseCompatPadding="true">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="70dp">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                <TextView android:textSize="@dimen/font_size_14sp" android:textStyle="bold" android:textColor="@color/common_text_color_secondary_66" android:id="@+id/flow_item_bright_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8dp" android:text="80%"/>
+                <TextView android:textSize="@dimen/font_size_12sp" android:textColor="@color/common_text_color_secondary_66" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/common_text_bright"/>
+            </LinearLayout>
+            <View android:background="@color/common_divider_line_content_color" android:layout_width="1px" android:layout_height="29dp"/>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                <TextView android:textSize="@dimen/font_size_14sp" android:textStyle="bold" android:textColor="@color/common_text_color_secondary_66" android:id="@+id/flow_item_duration_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8dp" android:text="10:06.9"/>
+                <TextView android:textSize="@dimen/font_size_12sp" android:textColor="@color/common_text_color_secondary_66" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/personality_light_add_duration"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <FrameLayout android:layout_width="50dp" android:layout_height="match_parent">
+        <ImageView android:layout_gravity="center" android:id="@+id/select_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/personality_light_flow_item_edit_select_bg"/>
+        <ImageView android:layout_gravity="center" android:id="@+id/sort_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_yeelight_personality_light_list_sort"/>
+    </FrameLayout>
+</LinearLayout>

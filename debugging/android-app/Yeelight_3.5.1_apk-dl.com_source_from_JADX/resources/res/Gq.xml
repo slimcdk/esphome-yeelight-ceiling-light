@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:background="@color/white" android:paddingTop="20dp" android:paddingBottom="12dp" android:clickable="true" android:layout_width="match_parent" android:layout_height="139dp">
+    <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center_horizontal" android:id="@+id/scene_img" android:layout_width="78dp" android:layout_height="78dp" android:layout_marginBottom="12dp"/>
+        <ImageView android:layout_gravity="center_horizontal" android:id="@+id/scene_img_action_callback" android:visibility="gone" android:layout_width="78dp" android:layout_height="78dp" android:layout_marginBottom="12dp" android:src="@drawable/icon_yeelight_control_view_excuate_success"/>
+    </FrameLayout>
+    <TextView android:textSize="@dimen/font_size_14sp" android:textColor="@color/common_text_color_secondary_66" android:id="@+id/scene_name" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+</LinearLayout>

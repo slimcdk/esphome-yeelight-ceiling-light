@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:state_pressed="true">
+        <shape>
+            <stroke android:width="1px" android:color="@color/round_btn_red_pressed"/>
+            <corners android:radius="25dp"/>
+            <solid android:color="#2effffff"/>
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <stroke android:width="1px" android:color="@color/round_btn_red"/>
+            <corners android:radius="25dp"/>
+        </shape>
+    </item>
+</selector>

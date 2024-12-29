@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/common_color_secondary_white_f8" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.yeelight.yeelib.p142ui.view.CommonTitleBar android:id="@+id/title_bar" android:layout_width="match_parent" android:layout_height="wrap_content" app:backgroundTranslucent="true" app:leftButtonResource="@drawable/icon_yeelight_back_black" app:leftButtonVisible="true" app:textColor="@color/setting_item_theme_text_color"/>
+    <FrameLayout android:background="@color/white" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <ListView android:id="@+id/light_alarm_list" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent" android:divider="@null"/>
+        <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@+id/no_alarm_added_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="100dp">
+            <ImageView android:layout_gravity="center_horizontal" android:background="@drawable/icon_yeelight_alarm" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5dp"/>
+            <TextView android:textSize="@dimen/font_size_11sp" android:textColor="@color/black_50_transparent" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/activity_wifi_alarm_no_added_tips"/>
+        </LinearLayout>
+    </FrameLayout>
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@+id/alarm_wifi_add_layout" android:background="@color/white" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center" android:id="@+id/light_alarm_wifi_add" android:background="@drawable/alarm_add_timer_background" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="3dp"/>
+        <TextView android:textSize="@dimen/font_size_12sp" android:textColor="@color/item_alarm_action_color" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/activity_wifi_alarm_add"/>
+    </LinearLayout>
+</LinearLayout>

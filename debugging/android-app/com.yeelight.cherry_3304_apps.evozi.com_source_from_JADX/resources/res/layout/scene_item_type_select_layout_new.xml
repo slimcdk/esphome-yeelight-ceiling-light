@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_gravity="bottom" android:orientation="vertical" android:background="@color/common_color_secondary_white_f8" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="11dp">
+        <TextView android:textSize="@dimen/font_size_13sp" android:textColor="@color/common_text_color_description_99" android:gravity="center" android:background="@color/white" android:clickable="false" android:layout_width="match_parent" android:layout_height="49dp" android:text="@string/scene_selection_tips"/>
+        <TextView android:background="@color/common_divider_line_control_bottom_color" android:layout_width="match_parent" android:layout_height="1px"/>
+        <LinearLayout android:orientation="vertical" android:id="@+id/use_recommend_template" android:background="@drawable/item_click_background" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="17sp" android:textColor="@color/common_text_color_primary_33" android:gravity="center" android:layout_width="match_parent" android:layout_height="49dp" android:text="@string/create_scene_use_recommend_template"/>
+            <TextView android:background="@color/common_divider_line_control_bottom_color" android:layout_width="match_parent" android:layout_height="1px"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/power_off" android:background="@drawable/item_click_background" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="17sp" android:textColor="@color/common_text_color_primary_33" android:gravity="center" android:layout_width="match_parent" android:layout_height="49dp" android:text="@string/common_text_turn_off"/>
+            <TextView android:background="@color/common_divider_line_control_bottom_color" android:layout_width="match_parent" android:layout_height="1px"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/power_on" android:background="@drawable/item_click_background" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="17sp" android:textColor="@color/common_text_color_primary_33" android:gravity="center" android:layout_width="match_parent" android:layout_height="49dp" android:text="@string/common_text_turn_on"/>
+            <TextView android:background="@color/common_divider_line_control_bottom_color" android:layout_width="match_parent" android:layout_height="1px"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/power_on_and_adjust" android:background="@drawable/item_click_background" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="17sp" android:textColor="@color/common_text_color_primary_33" android:gravity="center" android:layout_width="match_parent" android:layout_height="49dp" android:text="@string/scene_selection_turn_on_and_adjust"/>
+            <TextView android:background="@color/common_divider_line_control_bottom_color" android:layout_width="match_parent" android:layout_height="1px"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/power_on_and_apply" android:background="@drawable/item_click_background" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="17sp" android:textColor="@color/common_text_color_primary_33" android:gravity="center" android:layout_width="match_parent" android:layout_height="49dp" android:text="@string/scene_selection_turn_on_and_apply"/>
+            <TextView android:background="@color/common_divider_line_control_bottom_color" android:layout_width="match_parent" android:layout_height="1px"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:background="@color/common_divider_line_control_bottom_color" android:layout_width="match_parent" android:layout_height="1px"/>
+        <TextView android:textSize="17sp" android:textColor="@color/common_text_color_primary_33" android:gravity="center" android:id="@+id/cancel_button" android:background="@drawable/item_click_background" android:layout_width="match_parent" android:layout_height="49dp" android:text="@string/common_text_cancel"/>
+    </LinearLayout>
+</LinearLayout>

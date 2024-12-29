@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<root xmlns="urn:schemas-mi-com:device-1-0">
+    <specVersion>
+        <major>1</major>
+        <minor>0</minor>
+    </specVersion>
+    <device>
+        <type>urn:schemas-mi-com:device:Yeelight:RemoteControl:1</type>
+        <friendlyName>Yeelight遥控器</friendlyName>
+        <firmwareVersion>1</firmwareVersion>
+        <modelNumber>1</modelNumber>
+        <modelName>yeelink.controller.v1</modelName>
+        <modelDescription>Yeelight遥控器</modelDescription>
+        <modelURL>http://www.mi.com</modelURL>
+        <manufacturer>Xiaomi</manufacturer>
+        <manufacturerURL>http://www.mi.com</manufacturerURL>
+
+        <serviceList>
+            <service>
+                <type>urn:schemas-mi-com:service:RemoteControl:Service:1</type>
+                <friendlyName>遥控器服务</friendlyName>
+                <internalName/>
+                <description/>
+
+                <actionList>
+                </actionList>
+
+                <eventList>
+                    <event>
+                        <friendlyName>onButton</friendlyName>
+                        <internalName>button_event</internalName>
+                        <description>Button事件</description>
+                        <argumentList>
+                            <argument>
+                                <name>ButtonId</name>
+                                <relatedProperty>Button</relatedProperty>
+                            </argument>
+                            <argument>
+                                <name>EventType</name>
+                                <relatedProperty>EventType</relatedProperty>
+                            </argument>
+                        </argumentList>
+                    </event>
+                </eventList>
+
+                <propertyList>
+                    <property gettable="true" notifiable="true" settable="false">
+                        <friendlyName>BatteryStatus</friendlyName>
+                        <internalName>battery_status</internalName>
+                        <description>电量</description>
+                        <dataType>ui4</dataType>
+                        <allowedValueRange>
+                            <minimum>0</minimum>
+                            <maximum>100</maximum>
+                        </allowedValueRange>
+                    </property>
+
+                    <property gettable="false" notifiable="false" settable="false">
+                        <friendlyName>EventType</friendlyName>
+                        <internalName>event_type</internalName>
+                        <description>按键事件类型</description>
+                        <dataType>ui4</dataType>
+                        <allowedValueRange>
+                            <minimum>0</minimum>
+                            <maximum>2</maximum>
+                        </allowedValueRange>
+                    </property>
+
+                    <property gettable="false" notifiable="false" settable="false">
+                        <friendlyName>Button</friendlyName>
+                        <internalName>button_idx</internalName>
+                        <description>按键序号</description>
+                        <dataType>ui4</dataType>
+                        <allowedValueRange>
+                            <minimum>1</minimum>
+                            <maximum>5</maximum>
+                        </allowedValueRange>
+                    </property>
+                </propertyList>
+            </service>
+        </serviceList>
+    </device>
+</root>
+

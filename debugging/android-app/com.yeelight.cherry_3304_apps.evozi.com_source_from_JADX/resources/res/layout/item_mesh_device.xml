@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:paddingLeft="20dp" android:paddingRight="30dp" android:layout_width="match_parent" android:layout_height="87dp">
+        <ImageView android:id="@+id/device_img" android:layout_width="58dp" android:layout_height="58dp" android:src="@drawable/icon_yeelight_device_badge_gingko_small" android:scaleType="fitXY" android:layout_marginEnd="20dp"/>
+        <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <TextView android:textSize="@dimen/font_size_14sp" android:textColor="@color/common_text_color_primary_33" android:id="@+id/device_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5dp"/>
+            <TextView android:textSize="@dimen/font_size_14sp" android:textColor="@color/common_text_color_description_99" android:id="@+id/device_statue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5dp"/>
+        </LinearLayout>
+        <ImageView android:id="@+id/device_switch_img" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <View android:layout_gravity="bottom" android:background="@color/common_divider_line_content_color" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginStart="20dp"/>
+</FrameLayout>

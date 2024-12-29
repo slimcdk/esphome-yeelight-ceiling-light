@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginStart="20dp" android:layout_marginEnd="20dp">
+    <ImageView android:id="@+id/brightness_bar_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_yeelight_control_view_brightness_day"/>
+    <SeekBar android:id="@+id/bright_seek_bar" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" style="@style/Widget.SeekBar.Normal"/>
+    <TextView android:textSize="@dimen/font_size_13sp" android:textColor="#666666" android:id="@+id/bright_seek_value" android:layout_width="wrap_content" android:layout_height="18dp"/>
+</LinearLayout>

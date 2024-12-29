@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="23sp" android:textStyle="bold" android:textColor="@color/common_text_color_primary_33" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="85dp" android:layout_marginBottom="25dp" android:text="@string/privacy_policy_has_update" android:layout_marginStart="35dp" android:layout_marginEnd="35dp"/>
+    <ScrollView android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:layout_marginStart="35dp" android:layout_marginEnd="35dp">
+        <TextView android:textSize="@dimen/font_size_13sp" android:textColor="@color/common_text_color_primary_33" android:id="@+id/text_view_privacy_update" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/privacy_policy_update_statement" android:lineSpacingExtra="6dp"/>
+    </ScrollView>
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="130dp" android:layout_marginStart="35dp" android:layout_marginEnd="35dp">
+        <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:id="@+id/items_and_conditions_layout" android:paddingTop="5dp" android:paddingBottom="12dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_above="@+id/account_login">
+            <ImageView android:id="@+id/items_and_conditions_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/items_and_conditions_bg" android:layout_marginEnd="6dp"/>
+            <TextView android:textSize="@dimen/font_size_12sp" android:id="@+id/items_and_conditions_privacy" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp">
+            <Button android:textSize="15sp" android:textColor="@color/common_text_color_secondary_66" android:id="@+id/btn_disagree" android:background="@drawable/round_btn_normal" android:layout_width="0dp" android:layout_height="39dp" android:text="@string/privacy_policy_disagree" android:layout_weight="1" android:textAllCaps="false" android:layout_marginEnd="17dp" style="?android:attr/borderlessButtonStyle"/>
+            <Button android:textSize="15sp" android:textColor="@color/white" android:id="@+id/btn_agree" android:background="@drawable/round_btn_red" android:layout_width="0dp" android:layout_height="39dp" android:text="@string/common_text_agree" android:layout_weight="1" android:textAllCaps="false" style="?android:attr/borderlessButtonStyle"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/common_color_secondary_white_f8" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.yeelight.yeelib.p194ui.view.CommonTitleBar android:id="@+id/title_bar" android:layout_width="match_parent" android:layout_height="wrap_content" app:backgroundTranslucent="true" app:leftButtonResource="@drawable/icon_yeelight_back_black" app:leftButtonVisible="true" app:textColor="@color/common_text_color_primary_33"/>
+    <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ProgressBar android:id="@+id/web_loading" android:layout_width="match_parent" android:layout_height="2dp" android:progressDrawable="@drawable/progress_bar_common" style="?android:attr/progressBarStyleHorizontal"/>
+        <com.google.android.material.tabs.TabLayout android:id="@+id/tabLayout" android:background="@color/white" android:layout_width="match_parent" android:layout_height="44dp" android:overScrollMode="never" app:tabBackground="@color/transparent" app:tabIndicatorColor="@color/common_color_primary" app:tabIndicatorHeight="2dp" app:tabPaddingEnd="1dp" app:tabPaddingStart="1dp" app:tabSelectedTextColor="@color/common_color_primary" app:tabTextAppearance="@style/tab_view_text_style" app:tabTextColor="@color/common_text_color_description_99"/>
+        <FrameLayout android:background="@color/common_color_secondary_white_f8" android:layout_width="match_parent" android:layout_height="match_parent">
+            <WebView android:id="@+id/webview" android:layout_width="match_parent" android:layout_height="match_parent"/>
+            <LinearLayout android:orientation="vertical" android:id="@+id/feedback_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+                <TextView android:background="@color/common_divider_line_title_bottom_color" android:layout_width="match_parent" android:layout_height="1px"/>
+                <com.lcodecore.tkrefreshlayout.TwinklingRefreshLayout android:id="@+id/refresh_layout_feedback" android:background="#f2f2f2" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+                    <androidx.recyclerview.widget.RecyclerView android:id="@+id/feedback_list" android:layout_width="match_parent" android:layout_height="wrap_content" android:divider="@drawable/group_list_divider_music_mode" android:dividerHeight="1px" android:overScrollMode="never"/>
+                </com.lcodecore.tkrefreshlayout.TwinklingRefreshLayout>
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:background="@color/common_divider_line_title_bottom_color" android:layout_width="match_parent" android:layout_height="1px"/>
+                    <TextView android:textSize="@dimen/font_size_17sp" android:textColor="@color/common_color_primary" android:gravity="center" android:id="@+id/new_feedback" android:background="@color/white" android:layout_width="match_parent" android:layout_height="50dp" android:text="@string/message_center_new_feedback"/>
+                </LinearLayout>
+            </LinearLayout>
+            <com.lcodecore.tkrefreshlayout.TwinklingRefreshLayout android:id="@+id/refresh_layout_device_share" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+                <androidx.recyclerview.widget.RecyclerView android:id="@+id/device_share_message_list" android:layout_width="match_parent" android:layout_height="wrap_content" android:divider="@drawable/group_list_divider_music_mode" android:dividerHeight="1px" android:overScrollMode="never"/>
+            </com.lcodecore.tkrefreshlayout.TwinklingRefreshLayout>
+            <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@+id/no_update_layout" android:background="@color/white" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="match_parent">
+                <TextView android:background="@color/common_divider_line_title_bottom_color" android:layout_width="match_parent" android:layout_height="1px"/>
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="120dp" android:src="@drawable/icon_yeelight_no_message"/>
+                <TextView android:textSize="@dimen/font_size_15sp" android:textColor="@color/common_text_color_description_99" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:text="@string/message_center_no_message"/>
+                <View android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+                <LinearLayout android:orientation="vertical" android:id="@+id/new_feedback_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:background="@color/common_divider_line_title_bottom_color" android:layout_width="match_parent" android:layout_height="1px"/>
+                    <TextView android:textSize="@dimen/font_size_17sp" android:textColor="@color/common_color_primary" android:gravity="center" android:background="@color/white" android:layout_width="match_parent" android:layout_height="50dp" android:text="@string/message_center_new_feedback"/>
+                </LinearLayout>
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>

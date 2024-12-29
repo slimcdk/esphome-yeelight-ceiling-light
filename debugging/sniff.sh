@@ -1,0 +1,1 @@
+sudo bash ./erx-hook.sh -u ubnt -s 192.168.1.1 -p 22 -i eth0 -f "host 192.168.1.215"

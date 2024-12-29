@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/common_color_secondary_white_f8" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.yeelight.yeelib.p142ui.view.CommonTitleBar android:id="@+id/title_bar" android:layout_width="match_parent" android:layout_height="wrap_content" app:backgroundTranslucent="true" app:leftButtonResource="@drawable/icon_yeelight_back_black" app:leftButtonVisible="true" app:textColor="@color/common_text_color_primary_33"/>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:id="@+id/layout_new_update" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:paddingTop="6dp" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+                <ImageView android:layout_width="150dp" android:layout_height="150dp" android:src="@drawable/icon_yeelight_firmware_update"/>
+                <TextView android:textSize="@dimen/font_size_17sp" android:textColor="@color/common_text_color_secondary_66" android:gravity="center_horizontal" android:id="@+id/current_version" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="22dp" android:text="@string/firmware_update_device_current_version"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginBottom="12dp" android:layout_weight="1">
+                <LinearLayout android:orientation="vertical" android:background="@color/common_text_color_white" android:layout_width="match_parent" android:layout_height="167dp" android:layout_marginBottom="36dp" android:layout_marginStart="25dp" android:layout_marginEnd="25dp">
+                    <TextView android:textSize="@dimen/font_size_15sp" android:textColor="@color/common_text_color_primary_33" android:id="@+id/latest_version" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:text="@string/firmware_update_device_latest_version" android:layout_marginStart="21dp" android:layout_marginEnd="21dp"/>
+                    <TextView android:textSize="@dimen/font_size_15sp" android:textColor="@color/common_text_color_primary_33" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:layout_marginBottom="8dp" android:text="@string/firmware_update_device_release_title" android:layout_marginStart="21dp" android:layout_marginEnd="21dp"/>
+                    <ScrollView android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginBottom="15dp" android:layout_weight="1" android:layout_marginStart="21dp" android:layout_marginEnd="21dp">
+                        <TextView android:textSize="13sp" android:textColor="@color/common_text_color_secondary_66" android:id="@+id/release_note" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                    </ScrollView>
+                </LinearLayout>
+                <Button android:textSize="15sp" android:textColor="@color/white" android:id="@+id/btn_update" android:background="@drawable/round_btn_red" android:layout_width="match_parent" android:layout_height="39dp" android:text="@string/firmware_update_device_update_now" android:textAllCaps="false" android:layout_marginStart="67dp" android:layout_marginEnd="67dp" style="?android:attr/borderlessButtonStyle"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/firmware_upgrading_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+            <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:id="@+id/progress_bar_upgrade" android:visibility="visible" android:layout_width="150dp" android:layout_height="150dp" android:layout_marginTop="139dp"/>
+                <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="100dp" android:layout_height="150dp" android:layout_marginTop="139dp">
+                    <TextView android:textSize="@dimen/font_size_36sp" android:textColor="@color/common_color_primary" android:gravity="right|center_vertical|center_horizontal|center|end" android:layout_gravity="center_vertical" android:id="@+id/update_progress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1"/>
+                    <TextView android:textSize="@dimen/font_size_17sp" android:textColor="@color/common_color_primary" android:gravity="left|center_vertical|center_horizontal|center|start" android:layout_gravity="center_vertical" android:paddingTop="12dp" android:layout_width="wrap_content" android:layout_height="150dp" android:text="%"/>
+                </LinearLayout>
+            </FrameLayout>
+            <TextView android:textSize="@dimen/font_size_17sp" android:textColor="@color/common_text_color_secondary_66" android:gravity="center_horizontal" android:id="@+id/updating_hint_tx" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="25dp" android:text="@string/firmware_update_device_updating"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/firmware_upgrade_fail_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+            <ImageView android:layout_width="150dp" android:layout_height="150dp" android:layout_marginTop="135dp" android:src="@drawable/icon_yeelight_firmware_update_failed"/>
+            <TextView android:textSize="@dimen/font_size_17sp" android:textColor="@color/common_text_color_secondary_66" android:gravity="center_horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="29dp" android:text="@string/firmware_update_device_update_failed"/>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+            <Button android:textSize="15sp" android:textColor="@color/white" android:id="@+id/btn_retry" android:background="@drawable/round_btn_red" android:layout_width="match_parent" android:layout_height="39dp" android:layout_marginBottom="65dp" android:text="@string/common_retry" android:textAllCaps="false" android:layout_marginStart="67dp" android:layout_marginEnd="67dp" style="?android:attr/borderlessButtonStyle"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/layout_no_update" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+            <ImageView android:layout_gravity="center_horizontal" android:layout_width="150dp" android:layout_height="150dp" android:layout_marginTop="135dp" android:src="@drawable/icon_yeelight_firmware_update"/>
+            <TextView android:textSize="@dimen/font_size_17sp" android:textColor="@color/common_text_color_secondary_66" android:gravity="center_horizontal" android:id="@+id/no_update_current_version" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="29dp"/>
+            <TextView android:textSize="@dimen/font_size_15sp" android:textColor="@color/common_text_color_description_99" android:gravity="center_horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:text="@string/firmware_update_already_latest_version"/>
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

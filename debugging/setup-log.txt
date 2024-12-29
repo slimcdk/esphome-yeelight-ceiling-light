@@ -1,0 +1,234 @@
+[Dec 27 00:05:00.396] ets Jun  8 2016 00:22:57
+[Dec 27 00:05:00.396] 
+[Dec 27 00:05:00.396] rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+[Dec 27 00:05:00.402] configsip: 0, SPIWP:0xee
+[Dec 27 00:05:00.402] clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+[Dec 27 00:05:00.407] mode:DIO, clock div:2
+[Dec 27 00:05:00.413] load:0x3fff0018,len:4
+[Dec 27 00:05:00.413] load:0x3fff001c,len:1040
+[Dec 27 00:05:00.418] ho 0 tail 12 room 4
+[Dec 27 00:05:00.418] load:0x40078000,len:10676
+[Dec 27 00:05:00.418] load:0x40080400,len:2988
+[Dec 27 00:05:00.422] entry 0x400805cc
+[Dec 27 00:05:00.512] 08:00:00.020 [W] yglc loop started, wait msg ... (yglc_req_handler,1291)
+[Dec 27 00:05:00.545] 08:00:00.050 [W] fast_reboot_count=1 (fast_reboot_check,4891)
+[Dec 27 00:05:00.826] 08:00:00.340 [W] yglc_init_async done, ret=0 (yglc_init_async,761)
+[Dec 27 00:05:00.870] 08:00:00.380 [I] miio_ot: httpdns enabled
+[Dec 27 00:05:00.870] 08:00:00.380 [I] miio_ot: dlg enabled
+[Dec 27 00:05:00.875] 
+[Dec 27 00:05:00.875] 
+[Dec 27 00:05:00.875] _|      _|  _|_|_|  _|_|_|    _|_|  
+[Dec 27 00:05:00.881] _|_|  _|_|    _|      _|    _|    _|
+[Dec 27 00:05:00.881] _|  _|  _|    _|      _|    _|    _|
+[Dec 27 00:05:00.886] _|      _|    _|      _|    _|    _|
+[Dec 27 00:05:00.892] _|      _|  _|_|_|  _|_|_|    _|_|  
+[Dec 27 00:05:00.892] JENKINS BUILD NUMBER: N/A
+[Dec 27 00:05:00.897] BUILD TIME: Apr 16 2021,14:47:10
+[Dec 27 00:05:00.897] BUILT BY: N/A
+[Dec 27 00:05:00.903] MIIO APP VER: 2.1.7_0009
+[Dec 27 00:05:00.903] MIIO MCU VER: 
+[Dec 27 00:05:00.903] MIIO DID: 407209157
+[Dec 27 00:05:00.908] MIIO WIFI MAC: 58b62368b45b
+[Dec 27 00:05:00.908] MIIO MODEL: yeelink.light.ceilb
+[Dec 27 00:05:00.914] ARCH TYPE: esp32,0x0000a601
+[Dec 27 00:05:00.914] ARCH VER: b137930
+[Dec 27 00:05:00.914] FLASH INFO: manufacturer(0x68), memory type(0x40), capacity(0x16)
+[Dec 27 00:05:01.317] 08:00:00.830 [W] mible_gateway_init
+[Dec 27 00:05:01.317]  (miio_instance_create,549)
+[Dec 27 00:05:01.335] I (1788) wifi:wifi driver task: 3ffeb58c, prio:23, stack:6656, core=0
+[Dec 27 00:05:01.344] I (1788) wifi:wifi firmware version: 7e79465
+[Dec 27 00:05:01.344] I (1788) wifi:config NVS flash: enabled
+[Dec 27 00:05:01.349] I (1788) wifi:config nano formating: disabled
+[Dec 27 00:05:01.355] I (1788) wifi:Init data frame dynamic rx buffer num: 32
+[Dec 27 00:05:01.355] I (1798) wifi:Init management frame dynamic rx buffer num: 32
+[Dec 27 00:05:01.360] I (1798) wifi:Init management short buffer num: 32
+[Dec 27 00:05:01.366] I (1808) wifi:Init dynamic tx buffer num: 32
+[Dec 27 00:05:01.371] I (1808) wifi:Init static rx buffer size: 1600
+[Dec 27 00:05:01.377] I (1818) wifi:Init static rx buffer num: 10
+[Dec 27 00:05:01.377] I (1818) wifi:Init dynamic rx buffer num: 32
+[Dec 27 00:05:01.382] I (1828) wifi:set country: cc=DE schan=1 nchan=13 policy=1
+[Dec 27 00:05:01.388] 
+[Dec 27 00:05:01.388] Keystore initialised
+[Dec 27 00:05:01.394] Accessory is not Paired with any controller
+[Dec 27 00:05:01.399] Database initialised. Accessory Device ID: 89:30:32:68:3B:CE
+[Dec 27 00:05:01.405] HAP Initialization succeeded. Version : 4.0-b137930
+[Dec 27 00:05:01.410] W (1848) YGLC_HAP: has token HAP_MFI_AUTH_SW
+[Dec 27 00:05:01.416] Enabling SW Token Authentication
+[Dec 27 00:05:01.416] Setup ID: O8GE
+[Dec 27 00:05:01.421] Getting setup info from factory NVS
+[Dec 27 00:05:01.421] HAP Main Loop Started
+[Dec 27 00:05:01.427] mDNS initialised
+[Dec 27 00:05:01.427] Registering HomeKit web handlers
+[Dec 27 00:05:01.432] Announcing _hap._tcp mDNS service
+[Dec 27 00:05:01.438] Setup ID: O8GE
+[Dec 27 00:05:01.438] Starting SoftAP with SSID: yeelink-light-ceilb_mibtB45B
+[Dec 27 00:05:01.444] I (1888) wifi:mode : softAP (5a:b6:23:68:b4:5b)
+[Dec 27 00:05:01.449] I (1888) wifi:Total power save buffer number: 16
+[Dec 27 00:05:01.455] I (1898) wifi:Init max length of beacon: 752/752
+[Dec 27 00:05:01.460] I (1898) wifi:Init max length of beacon: 752/752
+[Dec 27 00:05:01.460] 08:00:00.970 [W] mible_gap: The system has stopped scaning (mible_gap_scan,251)
+[Dec 27 00:05:01.473] 08:00:00.980 [I] otu: Opened.
+[Dec 27 00:05:07.306] 08:00:06.820 [W] mible_gap: The system has started scaning (mible_gap_scan,240)
+[Dec 27 00:05:43.608] I (44058) wifi:new:<1,0>, old:<1,1>, ap:<1,1>, sta:<255,255>, prof:1
+[Dec 27 00:05:43.613] I (44058) wifi:station: 8a:7b:c9:16:90:93 join, AID=1, bgn, 20
+[Dec 27 00:09:53.592] I (294038) wifi:station: 8a:7b:c9:16:90:93 leave, AID = 1, bss_flags is 134243, bss:0x3ffba100
+[Dec 27 00:09:53.598] I (294038) wifi:new:<1,0>, old:<1,0>, ap:<1,1>, sta:<255,255>, prof:1
+[Dec 27 00:09:58.326] 08:04:57.830 [W] mible_wifi_config: OPCODE 0x000000A2
+[Dec 27 00:09:58.326]  (auth_opcode_process,216)
+[Dec 27 00:09:58.357] 08:04:57.860 [W] mible_wifi_config: OPCODE 0x000000A2
+[Dec 27 00:09:58.357]  (auth_opcode_process,216)
+[Dec 27 00:09:58.448] 08:04:57.960 [I] mible_wifi_config: dev_info sent @ schd_ticks 13
+[Dec 27 00:09:58.451] 
+[Dec 27 00:09:58.457] 08:04:57.970 [W] mible_wifi_config: OPERATION 0x000000A2 completed.
+[Dec 27 00:09:58.462]  (monitor,537)
+[Dec 27 00:09:58.477] 08:04:57.980 [W] mible_wifi_config: OPCODE 0x00000015
+[Dec 27 00:09:58.477]  (auth_opcode_process,216)
+[Dec 27 00:10:05.527] 08:05:05.030 [W] mible_slave: Connection 0000 is abort (mible_slave_disconnect,102)
+[Dec 27 00:10:23.976] 08:05:23.480 [W] mible_wifi_config: OPCODE 0x000000A2
+[Dec 27 00:10:23.976]  (auth_opcode_process,216)
+[Dec 27 00:10:24.158] 08:05:23.670 [I] mible_wifi_config: dev_info sent @ schd_ticks 19
+[Dec 27 00:10:24.161] 
+[Dec 27 00:10:24.168] 08:05:23.680 [W] mible_wifi_config: OPERATION 0x000000A2 completed.
+[Dec 27 00:10:24.173]  (monitor,537)
+[Dec 27 00:10:24.186] 08:05:23.690 [W] mible_wifi_config: OPCODE 0x00000015
+[Dec 27 00:10:24.186]  (auth_opcode_process,216)
+[Dec 27 00:10:24.410] 08:05:23.920 [I] mible_wifi_config: app_pub Received @ schd_ticks 23
+[Dec 27 00:10:24.413] 
+[Dec 27 00:10:24.938] 08:05:24.450 [I] mible_wifi_config: dev_pub sent @ schd_ticks 76
+[Dec 27 00:10:24.943] 
+[Dec 27 00:10:24.943] 08:05:24.450 [W] mible_wifi_config: Select NO OOB mode.
+[Dec 27 00:10:24.949]  (reg_auth,717)
+[Dec 27 00:10:25.190] 08:05:24.700 [I] mible_wifi_config: enc(WiFi config) received 99 bytes@ schd_ticks 101
+[Dec 27 00:10:25.195] 
+[Dec 27 00:10:25.195] I (325638) wifi:flush txq
+[Dec 27 00:10:25.200] I (325638) wifi:stop sw txq
+[Dec 27 00:10:25.200] I (325638) wifi:lmac stop hw txq
+[Dec 27 00:10:25.232] 01:05:24.740 [I] miio_ot: httpdns disabled
+[Dec 27 00:10:25.232] 01:05:24.740 [I] miio_ot: dlg disabled
+[Dec 27 00:10:25.238] 01:05:24.740 [I] mible_wifi_config: REG SUCCESS: 101
+[Dec 27 00:10:25.243] 
+[Dec 27 00:10:25.243] 01:05:24.740 [W] mible_wifi_config: OPERATION 0x00000015 completed.
+[Dec 27 00:10:25.249]  (monitor,537)
+[Dec 27 00:10:25.737] I (326178) wifi:set country: cc=DE schan=1 nchan=13 policy=1
+[Dec 27 00:10:25.737] 
+[Dec 27 00:10:25.742] I (326188) wifi:Set ps type: 1
+[Dec 27 00:10:25.742] 
+[Dec 27 00:10:25.742] I (326188) wifi:mode : sta (58:b6:23:68:b4:5b)
+[Dec 27 00:10:26.234] 01:05:25.740 [W] miio_net: no mem for ap info entry (miio_wifi_scan_finish,1062)
+[Dec 27 00:10:26.268] 01:05:25.780 [I] otu: closing.
+[Dec 27 00:10:26.268] 01:05:25.780 [I] otu: closed.
+[Dec 27 00:10:26.478] 01:05:25.980 [W] miio_net: no mem for ap info entry (miio_wifi_scan_finish,1062)
+[Dec 27 00:10:26.721] 01:05:26.230 [W] miio_net: no mem for ap info entry (miio_wifi_scan_finish,1062)
+[Dec 27 00:10:26.965] 01:05:26.470 [W] miio_net: no mem for ap info entry (miio_wifi_scan_finish,1062)
+[Dec 27 00:10:28.673] 01:05:28.180 [W] miio_net: no mem for ap info entry (miio_wifi_scan_finish,1062)
+[Dec 27 00:10:28.918] 01:05:28.430 [W] miio_net: no mem for ap info entry (miio_wifi_scan_finish,1062)
+[Dec 27 00:10:29.164] 01:05:28.670 [W] miio_net: no mem for ap info entry (miio_wifi_scan_finish,1062)
+[Dec 27 00:10:29.408] 01:05:28.920 [W] miio_net: no mem for ap info entry (miio_wifi_scan_finish,1062)
+[Dec 27 00:10:32.089] I (332538) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1
+[Dec 27 00:10:33.004] I (333448) wifi:state: init -> auth (b0)
+[Dec 27 00:10:33.012] I (333458) wifi:state: auth -> assoc (0)
+[Dec 27 00:10:33.019] I (333468) wifi:state: assoc -> run (10)
+[Dec 27 00:10:33.054] I (333498) wifi:connected with SuperNetty, aid = 26, channel 1, BW20, bssid = 18:e8:29:c1:c2:a1
+[Dec 27 00:10:33.059] I (333498) wifi:security: WPA2-PSK, phy: bgn, rssi: -57
+[Dec 27 00:10:33.066] I (333498) wifi:pm start, type: 1
+[Dec 27 00:10:33.066] 
+[Dec 27 00:10:33.080] Re-announcing _hap._tcp mDNS service
+[Dec 27 00:10:33.084] Stopping SoftAP.
+[Dec 27 00:10:33.150] I (333598) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+[Dec 27 00:10:35.070] 
+[Dec 27 00:10:35.070] ************************
+[Dec 27 00:10:35.070] Wifi ip=192.168.1.140,mask=255.255.255.0,gw=192.168.1.1
+[Dec 27 00:10:35.075] ************************
+[Dec 27 00:10:35.075] 
+[Dec 27 00:10:35.075] Value Changed
+[Dec 27 00:10:35.108] 01:05:34.610 [I] otu: Opened.
+[Dec 27 00:10:35.108] 01:05:34.620 [W] ots: httpdns resolve start failed, -12 (ots_cloud_host_update,1022)
+[Dec 27 00:10:35.121] Re-announcing _hap._tcp mDNS service
+[Dec 27 00:10:35.199] 01:05:34.700 [I] ots: de.ots.io.mi.com resolved to 18.158.185.119.
+[Dec 27 00:10:35.205] 01:05:34.710 [I] ots: ots connect 18.158.185.119::443...
+[Dec 27 00:10:35.219] 01:05:34.730 [I] tls: connect to server Mijia Cloud, domain is 18.158.185.119, port is 443.
+[Dec 27 00:10:35.348] 01:05:34.860 [W] tls: timeout[100]! mbedtls_ssl_handshake returned -0x6800 (d0_tls_open,389)
+[Dec 27 00:10:35.499] 01:05:35.010 [W] tls: timeout[200]! mbedtls_ssl_handshake returned -0x6800 (d0_tls_open,389)
+[Dec 27 00:10:35.699] 01:05:35.210 [W] tls: timeout[300]! mbedtls_ssl_handshake returned -0x6800 (d0_tls_open,389)
+[Dec 27 00:10:35.748] 01:05:35.250 [I] ots: Connected.
+[Dec 27 00:10:35.755] 01:05:35.260 [I] ots: -->sync sent.
+[Dec 27 00:10:35.813] 01:05:35.320 [I] ots: <--sync ack.
+[Dec 27 00:10:36.398] 00:10:35.900 [W] mible_slave: Connection 0000 is abort (mible_slave_disconnect,102)
+[Dec 27 00:10:36.754] 00:10:36.260 [I] ots: -->login sent.
+[Dec 27 00:10:36.781] 00:10:36.290 [I] ots: <--login ack, code=0.
+[Dec 27 00:10:36.781] 00:10:36.290 [I] miio_ot: info(ots) will start in 0 ms...
+[Dec 27 00:10:36.813] 00:10:36.320 [I] miio_ot: -->info(ots).
+[Dec 27 00:10:36.974] 00:10:36.480 [I] miio_ot: <--info ack(ots).
+[Dec 27 00:10:37.352] 00:10:36.860 [E] executor: _changed_ack called (_changed_ack,385)
+[Dec 27 00:10:37.593] 00:10:37.100 [E] ot: no session memory, up req dropped. (ot_up_rpc_delegate_execute,1150)
+[Dec 27 00:10:37.598] 00:10:37.100 [E] executor: _changed_ack called (_changed_ack,385)
+[Dec 27 00:10:37.603] 00:10:37.110 [E] executor: _changed_ack called (_changed_ack,385)
+[Dec 27 00:10:37.615] 00:10:37.120 [E] ot: no session memory, up req dropped. (ot_up_rpc_delegate_execute,1150)
+[Dec 27 00:10:37.620] 00:10:37.120 [E] executor: _changed_ack called (_changed_ack,385)
+[Dec 27 00:10:37.626] 00:10:37.130 [E] ot: no session memory, up req dropped. (ot_up_rpc_delegate_execute,1150)
+[Dec 27 00:10:37.637] 00:10:37.140 [E] executor: _changed_ack called (_changed_ack,385)
+[Dec 27 00:10:37.642] 00:10:37.140 [E] ot: no session memory, up req dropped. (ot_up_rpc_delegate_execute,1150)
+[Dec 27 00:10:37.653] 00:10:37.150 [E] executor: _changed_ack called (_changed_ack,385)
+[Dec 27 00:10:37.659] 00:10:37.160 [E] ot: no session memory, up req dropped. (ot_up_rpc_delegate_execute,1150)
+[Dec 27 00:10:37.670] 00:10:37.170 [E] executor: _changed_ack called (_changed_ack,385)
+[Dec 27 00:10:37.676] 00:10:37.180 [E] ot: no session memory, up req dropped. (ot_up_rpc_delegate_execute,1150)
+[Dec 27 00:10:37.687] 00:10:37.180 [E] executor: _changed_ack called (_changed_ack,385)
+[Dec 27 00:10:37.693] 00:10:37.190 [E] ot: no session memory, up req dropped. (ot_up_rpc_delegate_execute,1150)
+[Dec 27 00:10:37.698] 00:10:37.200 [E] executor: _changed_ack called (_changed_ack,385)
+[Dec 27 00:10:37.709] 00:10:37.210 [E] ot: no session memory, up req dropped. (ot_up_rpc_delegate_execute,1150)
+[Dec 27 00:10:37.715] 00:10:37.220 [E] executor: _changed_ack called (_changed_ack,385)
+[Dec 27 00:10:37.720] 00:10:37.220 [E] ot: no session memory, up req dropped. (ot_up_rpc_delegate_execute,1150)
+[Dec 27 00:10:37.731] 00:10:37.230 [E] executor: _changed_ack called (_changed_ack,385)
+[Dec 27 00:10:37.737] 00:10:37.240 [E] ot: no session memory, up req dropped. (ot_up_rpc_delegate_execute,1150)
+[Dec 27 00:10:37.748] 00:10:37.250 [E] executor: _changed_ack called (_changed_ack,385)
+[Dec 27 00:10:37.779] 00:10:37.290 [I] miio_ot: -->pull ip list sent.
+[Dec 27 00:10:37.779] 00:10:37.290 [E] ot: no session memory, up req dropped. (ot_up_rpc_delegate_execute,1150)
+[Dec 27 00:10:37.789] 00:10:37.300 [E] ot: no session memory, up req dropped. (ot_up_rpc_delegate_execute,1150)
+[Dec 27 00:10:37.801] 00:10:37.300 [W] miio_info: no "result" in property_ack (send_property_ack,815)
+[Dec 27 00:10:37.806] 00:10:37.310 [E] ot: no session memory, up req dropped. (ot_up_rpc_delegate_execute,1150)
+[Dec 27 00:10:37.817] 00:10:37.320 [W] miio_info: no "result" in property_ack (send_event_ack,1318)
+[Dec 27 00:10:37.982] 00:10:37.490 [E] executor: _changed_ack called (_changed_ack,385)
+[Dec 27 00:10:37.987] 00:10:37.490 [E] jsmi: tok_array alloc err. (jsmi_parse_start,453)
+[Dec 27 00:10:37.993] 00:10:37.500 [E] jsmi: tok_array alloc err. (jsmi_parse_start,453)
+[Dec 27 00:10:37.998] 00:10:37.500 [E] jsmi: tok_array alloc err. (jsmi_parse_start,453)
+[Dec 27 00:10:38.004] 00:10:37.510 [E] executor: _changed_ack called (_changed_ack,385)
+[Dec 27 00:10:38.019] 00:10:37.530 [E] executor: _changed_ack called (_changed_ack,385)
+[Dec 27 00:10:39.752] 00:10:39.260 [I] ots: -->sync sent.
+[Dec 27 00:10:39.829] 00:10:39.340 [I] ots: <--sync ack.
+[Dec 27 00:10:40.527] 00:10:40.030 [W] otu: Token private!!. (otu_packet_handle,878)
+[Dec 27 00:10:41.578] 00:10:41.090 [W] ot: up session[id=732823562] timeout (ot_timer_up_session_timeout,1010)
+[Dec 27 00:10:41.584] 00:10:41.090 [E] executor: _changed_ack called (_changed_ack,385)
+[Dec 27 00:10:41.589] 00:10:41.100 [W] ot: up session[id=796721163] timeout (ot_timer_up_session_timeout,1010)
+[Dec 27 00:10:41.600] 00:10:41.100 [E] executor: _changed_ack called (_changed_ack,385)
+[Dec 27 00:10:41.606] 00:10:41.110 [W] ot: up session[id=289210380] timeout (ot_timer_up_session_timeout,1010)
+[Dec 27 00:10:41.617] 00:10:41.120 [E] executor: _changed_ack called (_changed_ack,385)
+[Dec 27 00:10:47.752] 00:10:47.260 [I] ots: -->sync sent.
+[Dec 27 00:10:47.809] 00:10:47.310 [I] ots: <--sync ack.
+[Dec 27 00:10:56.852] 00:10:56.360 [I] ots: -->kplv sent.
+[Dec 27 00:10:56.917] 00:10:56.420 [I] ots: <--kplv ack.
+[Dec 27 00:11:03.755] 00:11:03.260 [I] ots: -->sync sent.
+[Dec 27 00:11:03.782] 00:11:03.290 [I] ots: <--sync ack.
+[Dec 27 00:11:12.912] 00:11:12.420 [I] ots: -->kplv sent.
+[Dec 27 00:11:12.997] 00:11:12.500 [I] ots: <--kplv ack.
+[Dec 27 00:11:25.446] 00:11:24.950 [W] otu: Token private!!. (otu_packet_handle,878)
+[Dec 27 00:11:28.992] 00:11:28.500 [I] ots: -->kplv sent.
+[Dec 27 00:11:29.048] 00:11:28.550 [I] ots: <--kplv ack.
+[Dec 27 00:11:29.743] 00:11:29.250 [W] otu: Token private!!. (otu_packet_handle,878)
+[Dec 27 00:11:35.475] 00:11:34.980 [W] otu: Token private!!. (otu_packet_handle,878)
+[Dec 27 00:11:35.480] 00:11:34.990 [W] otu: Token private!!. (otu_packet_handle,878)
+[Dec 27 00:11:35.608] 00:11:35.110 [E] executor: _changed_ack called (_changed_ack,385)
+[Dec 27 00:11:35.752] 00:11:35.260 [I] ots: -->sync sent.
+[Dec 27 00:11:35.782] 00:11:35.290 [E] executor: _changed_ack called (_changed_ack,385)
+[Dec 27 00:11:35.886] 00:11:35.390 [I] ots: <--sync ack.
+[Dec 27 00:11:36.804] 00:11:36.310 [E] executor: _changed_ack called (_changed_ack,385)
+[Dec 27 00:11:36.843] 00:11:36.350 [E] executor: _changed_ack called (_changed_ack,385)
+[Dec 27 00:11:36.848] 00:11:36.350 [E] executor: _changed_ack called (_changed_ack,385)
+[Dec 27 00:11:36.854] 00:11:36.360 [E] executor: _changed_ack called (_changed_ack,385)
+[Dec 27 00:11:40.919] Value Changed
+[Dec 27 00:11:40.919] Value Changed
+[Dec 27 00:11:41.451] 00:11:40.960 [E] executor: _changed_ack called (_changed_ack,385)
+[Dec 27 00:11:41.533] 00:11:41.040 [E] executor: _changed_ack called (_changed_ack,385)
+[Dec 27 00:11:41.538] 00:11:41.040 [E] executor: _changed_ack called (_changed_ack,385)
+[Dec 27 00:11:41.544] 00:11:41.050 [E] executor: _changed_ack called (_changed_ack,385)
+[Dec 27 00:11:41.550] 00:11:41.050 [E] executor: _changed_ack called (_changed_ack,385)
+[Dec 27 00:11:41.555] 00:11:41.060 [E] executor: _changed_ack called (_changed_ack,385)

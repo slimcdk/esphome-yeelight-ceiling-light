@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yeelight.yeelib.p142ui.view.ColorsLinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/color_flow_bg" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="@dimen/titlebar_height">
+        <ImageView android:id="@+id/header_left_btn" android:paddingLeft="@dimen/std_title_bar_margin_left_right" android:paddingRight="@dimen/std_title_bar_margin_left_right" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/std_tittlebar_main_device_back_white" android:scaleType="center" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <TextView android:textSize="16sp" android:textColor="@color/text_white" android:id="@+id/btn_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="25dp" android:text="@string/activity_color_flow_pickup" android:layout_weight="1"/>
+            <TextView android:textSize="16sp" android:textColor="@color/text_white" android:id="@+id/btn_photo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="25dp" android:text="@string/activity_color_flow_picture" android:layout_weight="1" android:alpha="0.3"/>
+        </LinearLayout>
+        <TextView android:textSize="@dimen/font_size_15sp" android:textColor="@color/common_text_color_white" android:gravity="center" android:id="@+id/title_bar_more" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/capture_apply" android:layout_centerVertical="true" android:paddingStart="5dp" android:paddingEnd="20dp" android:layout_alignParentEnd="true"/>
+    </RelativeLayout>
+    <FrameLayout android:id="@+id/colorflow_content" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+</com.yeelight.yeelib.p142ui.view.ColorsLinearLayout>

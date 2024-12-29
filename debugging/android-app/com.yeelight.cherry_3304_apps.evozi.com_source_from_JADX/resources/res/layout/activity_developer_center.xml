@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/common_color_secondary_white_f8" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.yeelight.yeelib.p194ui.view.CommonTitleBar android:id="@+id/title_bar" android:layout_width="match_parent" android:layout_height="wrap_content" app:backgroundTranslucent="true" app:leftButtonResource="@drawable/icon_yeelight_back_black" app:leftButtonVisible="true" app:textColor="@color/setting_item_theme_text_color"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <Button android:layout_gravity="center" android:id="@+id/btn_exit_dev_mode" android:layout_width="200dp" android:layout_height="50dp" android:layout_marginTop="40dp" android:layout_marginBottom="40dp" android:text="Disable Dev Mode" android:textAllCaps="false"/>
+        <Button android:layout_gravity="center" android:id="@+id/btn_ar_core_demo" android:layout_width="200dp" android:layout_height="50dp" android:layout_marginTop="40dp" android:layout_marginBottom="40dp" android:text="AR Core Demo" android:textAllCaps="false"/>
+        <Button android:layout_gravity="center" android:id="@+id/btn_augmented_image_demo" android:layout_width="200dp" android:layout_height="50dp" android:layout_marginTop="40dp" android:layout_marginBottom="40dp" android:text="Augmented Image Demo" android:textAllCaps="false"/>
+        <Button android:layout_gravity="center" android:id="@+id/btn_log_upload" android:visibility="gone" android:layout_width="200dp" android:layout_height="50dp" android:layout_marginTop="40dp" android:text="Log Control" android:textAllCaps="false"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="4">
+        <FrameLayout android:id="@+id/layout_backgroundView" android:background="@color/color_music_mode" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="137dp">
+            <com.yeelight.yeelib.p142ui.view.CommonTitleBar android:id="@+id/music_titlebar" android:layout_width="match_parent" android:layout_height="wrap_content" app:bottomDividerVisible="false"/>
+        </FrameLayout>
+        <FrameLayout android:id="@+id/layout_panView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+            <ImageView android:layout_gravity="center" android:id="@+id/disco_default_view" android:background="@drawable/icon_yeelightimg_album" android:layout_width="275dp" android:layout_height="275dp"/>
+            <com.yeelight.cherry.p141ui.view.WaveView android:layout_gravity="center" android:id="@+id/disco_wave_view" android:visibility="invisible" android:layout_width="275dp" android:layout_height="275dp"/>
+        </FrameLayout>
+    </RelativeLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="3" android:layout_below="@+id/layout_panView">
+        <TextView android:textSize="12sp" android:textColor="@color/common_text_color_secondary_66" android:gravity="center" android:id="@+id/music_mode_audio_type" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/music_mode_audio_type_mic"/>
+        <RadioGroup android:orientation="horizontal" android:id="@+id/rg_music_mode_switch" android:background="@drawable/music_mode_audio_switch_bg_shape" android:layout_width="152dp" android:layout_height="38dp" android:layout_marginTop="18dp" android:layout_marginBottom="18dp">
+            <RadioButton android:gravity="center" android:id="@+id/rb_music_mode_mic" android:background="@drawable/music_mode_audio_mic_bg" android:layout_width="84dp" android:layout_height="match_parent" android:button="@null" android:layout_marginEnd="-8dp"/>
+            <RadioButton android:gravity="center" android:id="@+id/rb_music_mode_audio" android:background="@drawable/music_mode_audio_bg" android:layout_width="84dp" android:layout_height="match_parent" android:button="@null" android:layout_marginStart="-8dp"/>
+        </RadioGroup>
+        <TextView android:textSize="12sp" android:textColor="@color/common_text_color_secondary_66" android:gravity="center" android:id="@+id/music_mode_device_number_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10dp" android:text="@string/music_mode_current_music"/>
+        <TextView android:textSize="23sp" android:textColor="@color/common_text_color_secondary_66" android:gravity="center" android:id="@+id/music_mode_device_number" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10dp" android:text="6 / 10"/>
+        <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:gravity="center" android:layout_gravity="center" android:id="@+id/btn_control" android:background="@drawable/icon_yeelight_btn_start" android:layout_width="55dp" android:layout_height="55dp"/>
+            <ProgressBar android:layout_gravity="center" android:id="@+id/btn_control_progress" android:visibility="gone" android:layout_width="20dp" android:layout_height="20dp" android:indeterminate="true" android:indeterminateDrawable="@drawable/progressbar_rotate"/>
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>

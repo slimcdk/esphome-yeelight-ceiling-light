@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/rootview" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/title_view" android:layout_width="match_parent" android:layout_height="44dp">
+        <ImageView android:id="@+id/img_back_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_yeelight_back_black" android:layout_marginStart="7dp"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:paddingBottom="30dp" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="33">
+        <TextView android:textSize="27sp" android:textStyle="bold" android:textColor="@color/common_text_color_secondary_66" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10dp" android:text="@string/feature_focus" android:layout_marginStart="31dp"/>
+        <TextView android:textSize="@dimen/font_size_14sp" android:textColor="@color/common_text_color_primary_33" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pomodoro_info_new" android:lineSpacingExtra="2dp" android:layout_marginStart="31dp" android:layout_marginEnd="31dp"/>
+    </LinearLayout>
+    <FrameLayout android:gravity="center" android:orientation="vertical" android:background="@color/common_color_secondary_white_f8" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="50">
+        <FrameLayout android:id="@+id/time_set_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:background="@color/common_text_color_not_clickable_cc" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginBottom="34dp"/>
+                <TextView android:background="@color/common_text_color_not_clickable_cc" android:layout_width="match_parent" android:layout_height="1px"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+                <LinearLayout android:gravity="center" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+                    <TextView android:textSize="@dimen/font_size_12sp" android:textColor="@color/common_text_color_secondary_66" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pomodoro_work"/>
+                    <com.yeelight.yeelib.p194ui.widget.WheelPicker android:id="@+id/work_time_picker_view" android:layout_width="30dp" android:layout_height="match_parent" android:layout_marginTop="20dp" android:layout_marginBottom="20dp" android:layout_marginStart="5dp" android:layout_marginEnd="5dp" app:wheel_atmospheric="true" app:wheel_curtain="false" app:wheel_curved="true" app:wheel_cyclic="true" app:wheel_data="@array/delay_minute_display" app:wheel_item_space="3dp" app:wheel_item_text_color="@color/common_text_color_secondary_66" app:wheel_selected_item_text_color="@color/common_text_color_primary_33" app:wheel_visible_item_count="7"/>
+                    <TextView android:textSize="@dimen/font_size_12sp" android:textColor="@color/common_text_color_secondary_66" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/delay_count_unit"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+                    <TextView android:textSize="@dimen/font_size_12sp" android:textColor="@color/common_text_color_secondary_66" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pomodoro_rest"/>
+                    <com.yeelight.yeelib.p194ui.widget.WheelPicker android:id="@+id/rest_time_picker_view" android:layout_width="30dp" android:layout_height="match_parent" android:layout_marginTop="20dp" android:layout_marginBottom="20dp" android:layout_marginStart="5dp" android:layout_marginEnd="5dp" app:wheel_atmospheric="true" app:wheel_curtain="false" app:wheel_curved="true" app:wheel_cyclic="true" app:wheel_data="@array/delay_minute_display" app:wheel_item_space="3dp" app:wheel_item_text_color="@color/common_text_color_secondary_66" app:wheel_selected_item_text_color="@color/common_text_color_primary_33" app:wheel_visible_item_count="7"/>
+                    <TextView android:textSize="@dimen/font_size_12sp" android:textColor="@color/common_text_color_secondary_66" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/delay_count_unit"/>
+                </LinearLayout>
+            </LinearLayout>
+        </FrameLayout>
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@+id/pomodoro_time_info_layout" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="70sp" android:textColor="@color/common_text_color_secondary_66" android:id="@+id/pomodoro_time_text" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <TextView android:textSize="15sp" android:textColor="@color/common_text_color_secondary_66" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/pomodoro_time_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=""/>
+        </LinearLayout>
+    </FrameLayout>
+    <FrameLayout android:gravity="center" android:layout_gravity="center" android:paddingBottom="30dp" android:layout_width="wrap_content" android:layout_height="0dp" android:layout_weight="41">
+        <ImageView android:layout_gravity="center" android:layout_width="69dp" android:layout_height="69dp" android:src="@drawable/icon_yeelight_firmware_upgrade_success"/>
+        <TextView android:textSize="@dimen/font_size_17sp" android:textColor="@color/common_text_color_white" android:gravity="center" android:layout_gravity="center" android:id="@+id/btn_control" android:background="@drawable/btn_circle_full_red_bg" android:layout_width="63dp" android:layout_height="63dp" android:text="@string/common_text_start"/>
+    </FrameLayout>
+</LinearLayout>

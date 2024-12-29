@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <fragment android:name="com.google.p017ar.sceneform.p018ux.ArFragment" android:id="@+id/ux_fragment" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="0.7"/>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginLeft="20dp" android:layout_marginRight="20dp" android:layout_weight="0.3">
+        <Button android:layout_gravity="center" android:id="@+id/btn_delete_node" android:layout_width="100dp" android:layout_height="50dp" android:layout_margin="10dp" android:text="Delete"/>
+    </LinearLayout>
+</LinearLayout>

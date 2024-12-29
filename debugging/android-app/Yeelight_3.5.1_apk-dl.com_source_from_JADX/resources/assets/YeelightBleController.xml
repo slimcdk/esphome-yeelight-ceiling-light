@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<root xmlns="urn:schemas-mi-com:device-1-0">
+    <specVersion>
+        <major>1</major>
+        <minor>0</minor>
+    </specVersion>
+    <device>
+        <type>urn:schemas-mi-com:device:Yeelight:BleController:1</type>
+        <friendlyName>Yeelight 蓝牙遥控器</friendlyName>
+        <firmwareVersion>1</firmwareVersion>
+        <modelNumber>1</modelNumber>
+        <modelName>yeelink.bleremote.v1</modelName>
+        <modelDescription>Yeelight 蓝牙遥控器</modelDescription>
+        <modelURL>http://www.mi.com</modelURL>
+        <manufacturer>Xiaomi</manufacturer>
+        <manufacturerURL>http://www.mi.com</manufacturerURL>
+
+        <serviceList>
+            <service>
+                <type>urn:schemas-mi-com:service:BleController:Service:1</type>
+                <description></description>
+
+                <propertyList>
+
+                </propertyList>
+
+                <actionList>
+
+                </actionList>
+            </service>
+        </serviceList>
+    </device>
+</root>
+

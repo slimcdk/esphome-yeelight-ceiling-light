@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <androidx.viewpager.widget.ViewPager android:id="@+id/view_pager" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@+id/view_page_indicator" android:fitsSystemWindows="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="45dp"/>
+    </FrameLayout>
+    <TextView android:background="@color/common_divider_line_control_bottom_color" android:layout_width="match_parent" android:layout_height="1px"/>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@color/common_text_color_white" android:layout_width="match_parent" android:layout_height="100dp">
+        <Button android:textSize="15sp" android:textColor="@color/white" android:id="@+id/account_login" android:background="@drawable/round_btn_red" android:layout_width="match_parent" android:layout_height="39dp" android:text="@string/application_experience_now" android:textAllCaps="false" android:layout_marginStart="67dp" android:layout_marginEnd="67dp" style="?android:attr/borderlessButtonStyle"/>
+    </LinearLayout>
+</LinearLayout>

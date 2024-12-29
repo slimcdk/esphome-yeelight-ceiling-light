@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:orientation="vertical" android:layout_width="80dp" android:layout_height="match_parent" android:minWidth="80dp">
+    <com.yeelight.yeelib.p194ui.view.CircleImageView android:id="@+id/user_profile_image" android:layout_width="44dp" android:layout_height="44dp" android:layout_marginBottom="10dp"/>
+    <TextView android:textSize="@dimen/font_size_11sp" android:textColor="@color/common_text_color_description_99" android:ellipsize="end" android:gravity="center" android:id="@+id/user_profile_name" android:layout_width="66dp" android:layout_height="wrap_content" android:maxLines="1"/>
+</LinearLayout>

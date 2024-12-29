@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="65dp">
+        <ImageView android:id="@+id/img_schedule" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_yeelight_default_schedule_kid" android:layout_marginStart="24dp" android:layout_marginEnd="15dp"/>
+        <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <TextView android:textSize="15sp" android:textColor="@color/common_text_color_primary_33" android:id="@+id/tv_schedule_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/vision_default_schedule_kid"/>
+            <TextView android:textSize="12sp" android:textColor="@color/common_text_color_secondary_66" android:id="@+id/tv_schedule_introduce" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7dp" android:text="@string/vision_default_schedule_kid_introduce"/>
+        </LinearLayout>
+        <ImageView android:id="@+id/img_select" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_yeelight_default_schedule_choice_normal" android:layout_marginEnd="20dp"/>
+    </LinearLayout>
+    <View android:id="@+id/line" android:layout_marginStart="24dp" style="@style/horizontal_line_v3"/>
+</LinearLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <drawable name="common_list_item_pressed">#ff3fb57d</drawable>
+    <drawable name="mj_color_black_00_transparent">#00000000</drawable>
+    <drawable name="mj_color_gray_lighter">#999999</drawable>
+    <drawable name="mj_color_green_50_percent">#8032bac0</drawable>
+    <drawable name="mj_color_green_normal">#32bac0</drawable>
+    <drawable name="mj_color_white">#ffffff</drawable>
+    <drawable name="mj_color_white_00_transparent">#00ffffff</drawable>
+    <drawable name="notification_template_icon_bg">#3333b5e5</drawable>
+    <drawable name="notification_template_icon_low_bg">#0cffffff</drawable>
+    <drawable name="sh_main">#e2e2e3</drawable>
+    <drawable name="transparent">#00ffffff</drawable>
+    <drawable name="white">#ffffff</drawable>
+</resources>

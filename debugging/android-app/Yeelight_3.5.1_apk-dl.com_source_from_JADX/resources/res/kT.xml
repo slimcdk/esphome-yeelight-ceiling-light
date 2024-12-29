@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/rootview" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.yeelight.yeelib.p142ui.view.CommonTitleBar android:id="@+id/title_bar" android:layout_width="match_parent" android:layout_height="wrap_content" app:backgroundTranslucent="true" app:leftButtonResource="@drawable/icon_yeelight_back_black" app:leftButtonVisible="true" app:rightButtonVisible="false" app:textColor="@color/setting_item_theme_text_color"/>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/icon_yeelight_add_shortcut_bg" android:scaleType="fitXY"/>
+    </FrameLayout>
+    <View android:background="@color/common_divider_line_control_bottom_color" android:layout_width="match_parent" android:layout_height="1px"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/layout_toggle" android:background="@color/common_color_secondary_white_f8" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:background="@color/white" android:layout_width="match_parent" android:layout_height="58dp">
+            <TextView android:textSize="@dimen/font_size_15sp" android:textColor="@color/common_text_color_primary_33" android:layout_gravity="center_vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/add_shortcut_toggle" android:layout_weight="1" android:layout_marginStart="20dp"/>
+            <ProgressBar android:layout_gravity="center_vertical" android:id="@+id/progress_toggle" android:visibility="gone" android:layout_width="25dp" android:layout_height="25dp" android:layout_marginTop="5dp" android:layout_marginBottom="5dp" android:indeterminateDrawable="@drawable/common_progressbar_circle_drawable" android:indeterminateDuration="1500" android:layout_marginEnd="13dp" style="@style/Widget.Holo.ProgressBar"/>
+        </LinearLayout>
+        <View android:background="@color/common_divider_line_content_color" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginStart="20dp"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/layout_dimmer" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:background="@color/white" android:layout_width="match_parent" android:layout_height="58dp">
+            <TextView android:textSize="@dimen/font_size_15sp" android:textColor="@color/common_text_color_primary_33" android:layout_gravity="center_vertical" android:id="@+id/textView" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/add_shortcut_dimmer" android:layout_weight="1" android:layout_marginStart="20dp"/>
+            <ProgressBar android:layout_gravity="center_vertical" android:id="@+id/progress_dimmer" android:visibility="gone" android:layout_width="25dp" android:layout_height="25dp" android:layout_marginTop="5dp" android:layout_marginBottom="5dp" android:indeterminateDrawable="@drawable/common_progressbar_circle_drawable" android:indeterminateDuration="1500" android:layout_marginEnd="13dp"/>
+        </LinearLayout>
+        <View android:background="@color/common_divider_line_content_color" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginStart="20dp"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/layout_scene" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:background="@color/white" android:layout_width="match_parent" android:layout_height="58dp">
+            <TextView android:textSize="@dimen/font_size_15sp" android:textColor="@color/common_text_color_primary_33" android:layout_gravity="center_vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/add_shortcut_scene" android:layout_weight="1" android:layout_marginStart="20dp"/>
+            <ProgressBar android:layout_gravity="center_vertical" android:id="@+id/progress_scene" android:visibility="gone" android:layout_width="25dp" android:layout_height="25dp" android:layout_marginTop="5dp" android:layout_marginBottom="5dp" android:indeterminateDrawable="@drawable/common_progressbar_circle_drawable" android:indeterminateDuration="1500" android:layout_marginEnd="13dp"/>
+        </LinearLayout>
+        <View android:background="@color/common_divider_line_control_bottom_color" android:layout_width="match_parent" android:layout_height="1px"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_gravity="bottom" android:orientation="vertical" android:id="@+id/prompt_layout" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="@dimen/font_size_13sp" android:textColor="@color/common_text_color_description_99" android:gravity="center" android:layout_width="match_parent" android:layout_height="50dp" android:text="@string/dialog_share_channel_title"/>
+    <TextView android:background="@color/item_alarm_disable_color" android:layout_width="match_parent" android:layout_height="2dp"/>
+    <com.yeelight.yeelib.p194ui.view.HorizontalListView android:id="@+id/app_list" android:layout_width="match_parent" android:layout_height="151dp"/>
+    <TextView android:background="@color/item_alarm_disable_color" android:layout_width="match_parent" android:layout_height="13dp"/>
+    <TextView android:textSize="@dimen/font_size_17sp" android:textColor="@color/common_text_color_primary_33" android:gravity="center" android:id="@+id/cancel_view" android:layout_width="match_parent" android:layout_height="50dp" android:text="@string/common_text_cancel"/>
+</LinearLayout>

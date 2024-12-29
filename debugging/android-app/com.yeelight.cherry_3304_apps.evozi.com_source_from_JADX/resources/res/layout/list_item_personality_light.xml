@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.chauthai.swipereveallayout.SwipeRevealLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/swipe_reveal_layout" android:layout_width="match_parent" android:layout_height="wrap_content" app:dragEdge="2" app:modeSwipe="0">
+    <LinearLayout android:id="@+id/layout_right_view" android:background="@color/common_color_secondary_white_f8" android:layout_width="wrap_content" android:layout_height="90dp">
+        <LinearLayout android:id="@+id/layout_middle_view" android:layout_width="wrap_content" android:layout_height="match_parent" android:paddingStart="30dp">
+            <ImageView android:layout_gravity="center" android:id="@+id/img_hide_middle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/common_list_side_share"/>
+        </LinearLayout>
+        <LinearLayout android:id="@+id/layout_right_view" android:layout_width="wrap_content" android:layout_height="match_parent" android:paddingStart="30dp" android:paddingEnd="30dp">
+            <ImageView android:layout_gravity="center" android:id="@+id/img_hide_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/common_list_side_delete"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/personality_light_item_layout" android:background="@drawable/common_item_selector" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="90dp" android:paddingStart="20dp" android:paddingEnd="20dp">
+            <ImageView android:layout_gravity="center" android:id="@+id/personality_light_type_view" android:layout_width="58dp" android:layout_height="58dp"/>
+            <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginStart="20dp">
+                <TextView android:textSize="@dimen/font_size_15sp" android:textColor="@color/common_text_color_primary_33" android:layout_gravity="left|center_vertical|center_horizontal|center" android:id="@+id/personality_light_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:singleLine="true"/>
+                <TextView android:textSize="@dimen/font_size_12sp" android:textColor="@color/common_text_color_description_99" android:layout_gravity="left|center_vertical|center_horizontal|center" android:id="@+id/personality_light_frame_count" android:layout_width="match_parent" android:layout_height="wrap_content" android:singleLine="true"/>
+                <TextView android:textSize="@dimen/font_size_12sp" android:textColor="@color/common_text_color_description_99" android:layout_gravity="left|center_vertical|center_horizontal|center" android:id="@+id/personality_light_duration" android:layout_width="match_parent" android:layout_height="wrap_content" android:singleLine="true"/>
+            </LinearLayout>
+            <TextView android:textSize="@dimen/font_size_12sp" android:textColor="@color/common_text_color_white" android:gravity="center" android:layout_gravity="center" android:id="@+id/light_item_action_view" android:background="@drawable/common_corner_rectangle_solid_red" android:layout_width="wrap_content" android:layout_height="27dp" android:maxWidth="67dp" android:minWidth="58dp" android:text="@string/personality_light_apply" android:singleLine="true" android:paddingStart="2dp" android:paddingEnd="2dp"/>
+        </LinearLayout>
+        <TextView android:id="@+id/divider_line" android:background="@color/common_divider_line_control_bottom_color" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginStart="20dp"/>
+    </LinearLayout>
+</com.chauthai.swipereveallayout.SwipeRevealLayout>

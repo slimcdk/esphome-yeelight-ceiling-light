@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/activity_title_bg" android:fitsSystemWindows="true" android:clipToPadding="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.yeelight.yeelib.p194ui.view.CommonTitleBar android:id="@+id/title_bar" android:layout_width="match_parent" android:layout_height="wrap_content" app:bottomDividerColor="@color/setting_title_bar_bg_color" app:leftButtonResource="@drawable/icon_yeelight_back_black" app:leftButtonVisible="true" app:textColor="@color/title_bar_text_color"/>
+    <View android:background="#e8e8e8" android:layout_width="match_parent" android:layout_height="1px"/>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/dev_category_list" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</LinearLayout>

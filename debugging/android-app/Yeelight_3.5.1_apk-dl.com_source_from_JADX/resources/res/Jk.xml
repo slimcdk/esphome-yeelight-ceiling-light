@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="105dp" android:layout_marginBottom="105dp" android:layout_marginStart="41dp" android:layout_marginEnd="41dp">
+    <TextView android:textSize="20sp" android:textStyle="bold" android:textColor="@color/black" android:gravity="center" android:layout_gravity="center" android:paddingTop="15dp" android:layout_width="wrap_content" android:layout_height="0dp" android:text="@string/operate_attention" android:layout_weight="22"/>
+    <ScrollView android:background="#f5f5f5" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="68" android:layout_marginStart="27dp" android:layout_marginEnd="27dp">
+        <TextView android:textSize="@dimen/font_size_13sp" android:textColor="@color/common_text_color_primary_33" android:padding="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/operate_attation_content" android:lineSpacingExtra="6dp"/>
+    </ScrollView>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/items_and_conditions_layout" android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginTop="10dp" android:layout_marginBottom="10dp" android:layout_weight="21" android:layout_above="@+id/account_login" android:layout_marginStart="27dp" android:layout_marginEnd="27dp">
+        <ImageView android:id="@+id/items_and_conditions_agree" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/items_and_conditions_bg" android:layout_marginEnd="6dp"/>
+        <TextView android:textSize="@dimen/font_size_13sp" android:textColor="@color/common_text_color_primary_33" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/operate_attation_risk_prompt"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:paddingBottom="20dp" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="23" android:layout_marginStart="27dp" android:layout_marginEnd="27dp">
+        <Button android:id="@+id/dialog_btn_reselect" android:layout_width="0dp" android:layout_height="44dp" android:text="@string/server_reselect" android:layout_weight="1" android:layout_marginEnd="12dp" style="@style/yl_dialog_btn_cancel_style"/>
+        <Button android:id="@+id/dialog_btn_continue" android:layout_width="0dp" android:layout_height="44dp" android:text="@string/operate_continue" android:layout_weight="1" style="@style/yl_dialog_btn_confirm_style"/>
+    </LinearLayout>
+</LinearLayout>

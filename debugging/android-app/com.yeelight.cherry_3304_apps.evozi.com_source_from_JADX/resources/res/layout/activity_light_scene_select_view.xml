@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <com.yeelight.yeelib.p194ui.view.CommonTitleBar android:id="@+id/title_bar" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="wrap_content" app:backgroundTranslucent="true" app:leftButtonResource="@drawable/icon_yeelight_back_black" app:leftButtonVisible="true" app:rightButtonVisible="false" app:textColor="@color/setting_item_theme_text_color"/>
+        <LinearLayout android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.google.android.material.tabs.TabLayout android:id="@+id/tabLayout_view" android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="44dp" android:overScrollMode="never" app:tabBackground="@color/transparent" app:tabIndicatorColor="@color/common_color_primary" app:tabIndicatorHeight="2dp" app:tabPaddingEnd="1dp" app:tabPaddingStart="1dp" app:tabSelectedTextColor="@color/common_color_primary" app:tabTextAppearance="@style/tab_view_text_style" app:tabTextColor="@color/common_text_color_description_99"/>
+        </LinearLayout>
+        <TextView android:background="@color/common_divider_line_control_bottom_color" android:layout_width="match_parent" android:layout_height="1px"/>
+        <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <GridView android:id="@+id/recommend_scene_grid_view" android:background="@color/common_divider_line_content_color" android:layout_width="match_parent" android:layout_height="wrap_content" android:horizontalSpacing="1px" android:verticalSpacing="1px" android:numColumns="2"/>
+            <androidx.recyclerview.widget.RecyclerView android:orientation="vertical" android:id="@+id/personality_light_list" android:background="@color/white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            <androidx.recyclerview.widget.RecyclerView android:orientation="vertical" android:id="@+id/favorite_list_view" android:background="@color/white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@+id/no_update_layout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:layout_width="130dp" android:layout_height="130dp" android:layout_marginTop="136dp" android:src="@drawable/icon_yeelight_no_favorite_view"/>
+                <TextView android:textSize="@dimen/font_size_15sp" android:textColor="@color/common_text_color_description_99" android:id="@+id/no_data_tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp"/>
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:background="@color/common_divider_line_content_color" android:layout_width="match_parent" android:layout_height="1px"/>
+        <LinearLayout android:orientation="horizontal" android:background="@color/white" android:layout_width="match_parent" android:layout_height="50dp">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/layout_left" android:background="@drawable/item_click_background" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+                <TextView android:textSize="@dimen/font_size_17sp" android:textColor="@color/common_text_color_secondary_66" android:id="@+id/tv_preview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/personality_light_preview"/>
+            </LinearLayout>
+            <TextView android:background="@color/timeline_line_color" android:layout_width="1px" android:layout_height="match_parent" android:layout_marginTop="5dp" android:layout_marginBottom="5dp"/>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/layout_right" android:background="@drawable/item_click_background" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+                <TextView android:textSize="@dimen/font_size_17sp" android:textColor="@color/common_text_color_tips" android:id="@+id/tv_save" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/common_text_save"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

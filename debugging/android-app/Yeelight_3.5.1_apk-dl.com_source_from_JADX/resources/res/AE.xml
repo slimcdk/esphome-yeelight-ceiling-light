@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_gravity="center" android:orientation="vertical" android:id="@+id/prompt_layout" android:background="@drawable/view_corner_five_dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="20dp" android:layout_marginStart="41dp" android:layout_marginEnd="41dp">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/view_close_dialog" android:layout_width="22dp" android:layout_height="22dp" android:layout_marginTop="9dp" android:src="@drawable/icon_yeelight_common_dialog_close" android:layout_alignParentRight="true" android:layout_marginEnd="9dp"/>
+    </RelativeLayout>
+    <ImageView android:layout_gravity="center_horizontal" android:id="@+id/share_tag_icon" android:layout_width="82dp" android:layout_height="82dp" android:layout_marginTop="23dp" android:layout_marginBottom="27dp" android:layerType="software"/>
+    <TextView android:textSize="14sp" android:textColor="@color/common_text_color_secondary_66" android:gravity="center_horizontal" android:id="@+id/share_light_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="25dp" android:text="@string/dialog_accept_sharing_content" android:layout_marginStart="41dp" android:layout_marginEnd="41dp"/>
+    <Button android:id="@+id/dialog_btn_down" android:layout_width="match_parent" android:layout_height="44dp" android:layout_marginBottom="25dp" android:text="@string/dialog_accept_sharing_btn_open" android:layout_marginStart="27dp" android:layout_marginEnd="27dp" style="@style/yl_dialog_btn_confirm_style"/>
+</LinearLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/common_color_secondary_white_f8" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.yeelight.yeelib.p142ui.view.CommonTitleBar android:id="@+id/title_bar" android:layout_width="match_parent" android:layout_height="wrap_content" app:backgroundTranslucent="true" app:leftButtonResource="@drawable/icon_yeelight_back_black" app:leftButtonVisible="true" app:textColor="@color/setting_item_theme_text_color"/>
+        <TextView android:background="@color/common_divider_line_control_bottom_color" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginTop="15dp"/>
+        <ListView android:id="@+id/list_locale_candidate" android:background="@color/white_50_transparent" android:layout_width="match_parent" android:layout_height="wrap_content" android:divider="@drawable/group_list_divider_music_mode" android:dividerHeight="1px"/>
+        <TextView android:background="@color/common_divider_line_control_bottom_color" android:layout_width="match_parent" android:layout_height="1px"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:id="@+id/items_and_conditions_layout" android:paddingTop="5dp" android:paddingBottom="12dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_above="@+id/account_login" android:layout_marginStart="15dp" android:layout_marginEnd="15dp">
+        <ImageView android:id="@+id/items_and_conditions_image" android:layout_width="16dp" android:layout_height="wrap_content" android:src="@drawable/items_and_conditions_bg" android:layout_marginEnd="6dp"/>
+        <TextView android:textSize="@dimen/font_size_12sp" android:textColor="@color/common_text_color_primary_33" android:gravity="center" android:id="@+id/terms_privacy_text" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <Button android:textSize="15sp" android:textColor="@color/white" android:id="@+id/account_login" android:background="@drawable/round_btn_red" android:layout_width="match_parent" android:layout_height="39dp" android:layout_marginBottom="30dp" android:text="@string/operate_continue" android:layout_alignParentBottom="true" android:textAllCaps="false" android:layout_marginStart="67dp" android:layout_marginEnd="67dp" style="?android:attr/borderlessButtonStyle"/>
+</RelativeLayout>

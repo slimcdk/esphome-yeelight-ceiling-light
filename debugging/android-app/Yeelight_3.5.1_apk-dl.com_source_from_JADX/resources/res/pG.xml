@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/common_color_secondary_white_f8" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.yeelight.yeelib.p142ui.view.CommonTitleBar android:id="@+id/title_bar" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="wrap_content" app:backgroundTranslucent="true" app:leftButtonResource="@drawable/icon_yeelight_back_black" app:leftButtonVisible="true" app:rightButtonResource="@drawable/icon_yeelight_share_record" app:rightButtonVisible="true" app:textColor="@color/setting_item_theme_text_color"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/device_share_img" android:layout_width="match_parent" android:layout_height="302dp">
+        <LinearLayout android:gravity="center" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_yeelight_share_img"/>
+        </LinearLayout>
+        <TextView android:textSize="@dimen/font_size_15sp" android:textColor="@color/common_text_color_primary_33" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10dp" android:text="@string/device_share_info_1"/>
+        <TextView android:textSize="@dimen/font_size_13sp" android:textColor="@color/common_text_color_description_99" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/device_share_info_2"/>
+        <TextView android:textSize="@dimen/font_size_13sp" android:textColor="@color/common_text_color_description_99" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="35dp" android:text="@string/device_share_info_3"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/layout_search" android:background="@color/common_color_secondary_white_f8" android:paddingTop="9dp" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="horizontal" android:background="@color/white" android:layout_width="match_parent" android:layout_height="44dp" android:layout_marginBottom="48dp" android:layout_marginStart="20dp" android:layout_marginEnd="20dp">
+            <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_yeelight_share_search" android:layout_marginStart="12dp" android:layout_marginEnd="12dp"/>
+            <EditText android:textSize="@dimen/font_size_15sp" android:textColor="@color/common_text_color_primary_33" android:textColorHint="@color/common_text_color_not_clickable_cc" android:layout_gravity="center_vertical" android:id="@+id/edit_textView" android:background="@null" android:layout_width="0dp" android:layout_height="wrap_content" android:hint="@string/device_share_account_hint" android:maxLines="1" android:layout_weight="1" android:inputType="text" android:imeOptions="actionSearch"/>
+            <ImageView android:layout_gravity="center_vertical" android:id="@+id/edit_reset" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_yeelight_share_reset" android:layout_marginStart="12dp" android:layout_marginEnd="12dp"/>
+        </LinearLayout>
+        <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <FrameLayout android:id="@+id/search_history" android:layout_width="match_parent" android:layout_height="match_parent">
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="@dimen/font_size_12sp" android:textColor="@color/common_text_color_primary_33" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8dp" android:text="@string/device_share_recently" android:layout_marginStart="20dp"/>
+                    <TextView android:background="@color/common_divider_line_control_bottom_color" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginStart="20dp"/>
+                </LinearLayout>
+                <com.yeelight.yeelib.p142ui.view.HorizontalListView android:id="@+id/share_list" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="59dp" android:layout_marginStart="20dp" android:layout_marginEnd="20dp"/>
+                <TextView android:textSize="@dimen/font_size_12sp" android:textColor="@color/common_text_color_description_99" android:layout_gravity="center_horizontal" android:id="@+id/no_share_history_tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="80dp" android:text="@string/device_share_search_no_result"/>
+            </FrameLayout>
+            <LinearLayout android:orientation="vertical" android:id="@+id/search_result_layout" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="252dp" android:layout_marginStart="20dp" android:layout_marginEnd="20dp">
+                <TextView android:textSize="@dimen/font_size_12sp" android:textColor="@color/common_text_color_primary_33" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="14dp" android:text="@string/device_share_search_result"/>
+                <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="216dp">
+                    <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <com.yeelight.yeelib.p142ui.view.CircleImageView android:id="@+id/search_result_profile" android:layout_width="64dp" android:layout_height="64dp" android:layout_marginTop="55dp"/>
+                        <ImageView android:id="@+id/search_no_result" android:visibility="invisible" android:layout_width="52dp" android:layout_height="49dp" android:layout_marginTop="60dp" android:src="@drawable/icon_yeelight_search_no_result"/>
+                    </FrameLayout>
+                    <TextView android:textSize="@dimen/font_size_13sp" android:textColor="@color/common_text_color_primary_33" android:id="@+id/search_result_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp"/>
+                </LinearLayout>
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>

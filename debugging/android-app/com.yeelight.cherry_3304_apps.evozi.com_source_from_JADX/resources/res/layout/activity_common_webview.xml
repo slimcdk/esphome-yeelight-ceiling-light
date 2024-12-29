@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/setting_title_bar_bg_color" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.yeelight.yeelib.p194ui.view.CommonTitleBar android:id="@+id/title_bar" android:layout_width="match_parent" android:layout_height="wrap_content" app:backgroundTranslucent="true" app:leftButtonResource="@drawable/icon_yeelight_back_black" app:leftButtonVisible="true" app:rightButtonVisible="false" app:textColor="@color/setting_item_theme_text_color"/>
+    <ProgressBar android:id="@+id/pb_loading" android:layout_width="match_parent" android:layout_height="2dp" android:progressDrawable="@drawable/progress_bar_common" style="?android:attr/progressBarStyleHorizontal"/>
+    <WebView android:id="@+id/layout_webview" android:background="@color/setting_bg_color" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_x="0dp" android:layout_y="0dp" android:layout_weight="1"/>
+</LinearLayout>

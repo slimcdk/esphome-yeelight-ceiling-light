@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_gravity="bottom" android:orientation="vertical" android:paddingTop="5dp" android:paddingBottom="5dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:id="@+id/scene_bundle_select_current_state" android:text="@string/scene_select_from_current_state" style="@style/scene_bundle_select_item_style"/>
+    <TextView android:background="@color/black_30_transparent" android:layout_width="match_parent" android:layout_height="1px"/>
+    <TextView android:id="@+id/scene_bundle_select_adjust_save" android:text="@string/scene_select_from_adjust_and_save" style="@style/scene_bundle_select_item_style"/>
+    <TextView android:background="@color/black_30_transparent" android:layout_width="match_parent" android:layout_height="1px"/>
+    <TextView android:id="@+id/scene_bundle_select_favorite" android:text="@string/scene_select_from_favorite" style="@style/scene_bundle_select_item_style"/>
+    <TextView android:background="@color/black_30_transparent" android:layout_width="match_parent" android:layout_height="1px"/>
+    <TextView android:id="@+id/scene_bundle_select_personal" android:text="选择个性化灯光" style="@style/scene_bundle_select_item_style"/>
+    <TextView android:background="@color/black_30_transparent" android:layout_width="match_parent" android:layout_height="1px"/>
+</LinearLayout>

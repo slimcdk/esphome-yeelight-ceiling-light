@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+        <include layout="@layout/quick_connect_setting_indicate"/>
+        <TextView android:textSize="@dimen/font_size_23sp" android:textColor="@color/common_text_color_secondary_66" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="52dp" android:layout_marginBottom="15dp" android:text="@string/yeelight_selected_room" android:layout_marginStart="30dp" android:layout_marginEnd="30dp"/>
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/room_list" android:paddingTop="30dp" android:paddingBottom="119dp" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginStart="30dp" android:layout_marginEnd="30dp"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_horizontal" android:layout_gravity="bottom|center_vertical|center_horizontal|center" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <Button android:textSize="@dimen/font_size_14sp" android:textColor="@color/white" android:id="@+id/next" android:background="@drawable/round_btn_red" android:layout_width="240dp" android:layout_height="39dp" android:layout_marginTop="15dp" android:layout_marginBottom="55dp" android:text="@string/personality_light_select_next_step" android:textAllCaps="false" app:layout_marginBottomPercent="30%" app:layout_widthPercent="63%" style="?android:attr/borderlessButtonStyle"/>
+    </LinearLayout>
+</FrameLayout>

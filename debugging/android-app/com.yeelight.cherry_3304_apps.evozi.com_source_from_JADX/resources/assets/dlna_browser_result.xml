@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DIDL-Lite xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:sec="http://www.sec.co.kr/"
+    xmlns:upnp="urn:schemas-upnp-org:metadata-1-0/upnp/"
+    xmlns="urn:schemas-upnp-org:metadata-1-0/DIDL-Lite/">
+
+    <container
+        id="music"
+        parentID="1"
+        restricted="1"
+        searchable="0">
+
+        <dc:title>Music</dc:title>
+
+        <upnp:class>object.container</upnp:class>
+    </container>
+
+    <container
+        id="video"
+        parentID="1"
+        restricted="1"
+        searchable="0">
+
+        <dc:title>Video</dc:title>
+
+        <upnp:class>object.container</upnp:class>
+    </container>
+
+    <container
+        id="/external/images/media"
+        parentID="1"
+        restricted="1"
+        searchable="0">
+
+        <dc:title>Images</dc:title>
+
+        <upnp:class>object.container</upnp:class>
+    </container>
+
+    <container
+        id="/storage/emulated/0"
+        parentID="1"
+        restricted="1"
+        searchable="0">
+
+        <dc:title>Internal storage</dc:title>
+
+        <upnp:class>object.container.storageFolder</upnp:class>
+    </container>
+
+    <container
+        id="saved_playlists"
+        parentID="1"
+        restricted="1"
+        searchable="0">
+
+        <dc:title>Saved playlists</dc:title>
+
+        <upnp:class>object.container</upnp:class>
+    </container>
+
+    <container
+        id="gmusic"
+        parentID="1"
+        restricted="1"
+        searchable="0">
+
+        <dc:title>Google Music</dc:title>
+
+        <upnp:class>object.container</upnp:class>
+
+        <upnp:albumArtURI xmlns:dlna="urn:schemas-dlna-org:metadata-1-0/"
+            dlna:profileID="PNG_TN">http://192.168.43.1:57645/drawable/gmusic
+        </upnp:albumArtURI>
+    </container>
+
+    <container
+        id="gdrive://root"
+        parentID="1"
+        restricted="1"
+        searchable="0">
+
+        <dc:title>Google Drive</dc:title>
+
+        <upnp:class>object.container</upnp:class>
+
+        <upnp:albumArtURI xmlns:dlna="urn:schemas-dlna-org:metadata-1-0/"
+            dlna:profileID="PNG_TN">http://192.168.43.1:57645/drawable/gdrive
+        </upnp:albumArtURI>
+    </container>
+
+    <container
+        id="gplus://"
+        parentID="1"
+        restricted="1"
+        searchable="0">
+
+        <dc:title>Google Photos</dc:title>
+
+        <upnp:class>object.container</upnp:class>
+
+        <upnp:albumArtURI xmlns:dlna="urn:schemas-dlna-org:metadata-1-0/"
+            dlna:profileID="PNG_TN">http://192.168.43.1:57645/drawable/gphotos
+        </upnp:albumArtURI>
+    </container>
+
+    <container
+        id="db:///"
+        parentID="1"
+        restricted="1"
+        searchable="0">
+
+        <dc:title>Dropbox</dc:title>
+
+        <upnp:class>object.container</upnp:class>
+
+        <upnp:albumArtURI xmlns:dlna="urn:schemas-dlna-org:metadata-1-0/"
+            dlna:profileID="PNG_TN">http://192.168.43.1:57645/drawable/dropbox
+        </upnp:albumArtURI>
+    </container>
+
+    <container
+        id="box://0"
+        parentID="1"
+        restricted="1"
+        searchable="0">
+
+        <dc:title>Box</dc:title>
+
+        <upnp:class>object.container</upnp:class>
+
+        <upnp:albumArtURI xmlns:dlna="urn:schemas-dlna-org:metadata-1-0/"
+            dlna:profileID="PNG_TN">http://192.168.43.1:57645/drawable/box
+        </upnp:albumArtURI>
+    </container>
+
+    <container
+        id="skydrive://me/skydrive"
+        parentID="1"
+        restricted="1"
+        searchable="0">
+
+        <dc:title>OneDrive</dc:title>
+
+        <upnp:class>object.container</upnp:class>
+
+        <upnp:albumArtURI xmlns:dlna="urn:schemas-dlna-org:metadata-1-0/"
+            dlna:profileID="PNG_TN">http://192.168.43.1:57645/drawable/onedrive
+        </upnp:albumArtURI>
+    </container>
+</DIDL-Lite>
+

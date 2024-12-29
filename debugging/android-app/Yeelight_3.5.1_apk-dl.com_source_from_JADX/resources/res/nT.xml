@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yeelight.cherry.p141ui.view.SquareLinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:orientation="vertical" android:background="@drawable/product_list_selector" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ImageView android:id="@+id/type_img" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="23dp" android:src="@drawable/icon_yeelight_room_type_2" android:scaleType="fitCenter"/>
+</com.yeelight.cherry.p141ui.view.SquareLinearLayout>

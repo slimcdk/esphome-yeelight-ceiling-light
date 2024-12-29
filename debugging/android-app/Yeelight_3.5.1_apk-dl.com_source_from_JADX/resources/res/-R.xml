@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="#e6ffffff" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:background="@color/alarm_item_line_color" android:layout_width="match_parent" android:layout_height="1px"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/repeat_once_layout" android:background="@drawable/common_click_item_bg" android:clickable="true" android:layout_width="match_parent" android:layout_height="@dimen/setting_item_height">
+        <com.yeelight.yeelib.p142ui.view.AlarmTextView android:textColor="@color/alarm_text_red" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@+id/repeat_once" android:focusable="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="@string/common_text_repeat_once" android:drawablePadding="10dp" android:layout_weight="1"/>
+    </LinearLayout>
+    <TextView android:background="@color/alarm_item_line_color" android:layout_width="match_parent" android:layout_height="1px"/>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/repeat_everyday_layout" android:background="@drawable/common_click_item_bg" android:clickable="true" android:layout_width="match_parent" android:layout_height="@dimen/setting_item_height">
+        <com.yeelight.yeelib.p142ui.view.AlarmTextView android:textColor="@color/alarm_text_red" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@+id/repeat_everyday" android:focusable="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="@string/common_text_repeat_everyday" android:drawablePadding="10dp" android:layout_weight="1"/>
+    </LinearLayout>
+    <TextView android:background="@color/alarm_item_line_color" android:layout_width="match_parent" android:layout_height="1px"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/repeat_1_5_layout" android:background="@drawable/common_click_item_bg" android:clickable="true" android:layout_width="match_parent" android:layout_height="@dimen/setting_item_height">
+        <com.yeelight.yeelib.p142ui.view.AlarmTextView android:textColor="@color/alarm_text_red" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@+id/repeat_1_5" android:focusable="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="@string/common_text_repeat_1_5" android:drawablePadding="10dp" android:layout_weight="1"/>
+    </LinearLayout>
+    <TextView android:background="@color/alarm_item_line_color" android:layout_width="match_parent" android:layout_height="1px"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/repeat_custom_layout" android:background="@drawable/common_click_item_bg" android:clickable="true" android:layout_width="match_parent" android:layout_height="@dimen/setting_item_height">
+        <com.yeelight.yeelib.p142ui.view.AlarmTextView android:textColor="@color/alarm_text_red" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@+id/repeat_custom" android:focusable="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="@string/common_text_repeat_custom" android:drawablePadding="10dp" android:layout_weight="1"/>
+    </LinearLayout>
+    <TextView android:background="@color/alarm_item_line_color" android:layout_width="match_parent" android:layout_height="1px"/>
+</LinearLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.google.android.material.tabs.TabLayout android:id="@+id/tabLayout_view" android:layout_width="match_parent" android:layout_height="44dp" android:overScrollMode="never" app:tabBackground="@color/transparent" app:tabIndicatorColor="@color/common_color_primary" app:tabIndicatorHeight="2dp" app:tabPaddingEnd="1dp" app:tabPaddingStart="1dp" app:tabSelectedTextColor="@color/common_color_primary" app:tabTextAppearance="@style/tab_view_text_style" app:tabTextColor="@color/common_text_color_description_99"/>
+    <TextView android:background="@color/common_divider_line_control_bottom_color" android:layout_width="match_parent" android:layout_height="1px"/>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <GridView android:layout_gravity="center" android:id="@+id/recommend_scene_grid_view" android:background="@color/common_divider_line_content_color" android:layout_width="match_parent" android:layout_height="wrap_content" android:horizontalSpacing="1px" android:verticalSpacing="1px" android:numColumns="2"/>
+        <com.yeelight.yeelib.p142ui.view.GradientView android:id="@+id/color_gradient_view" android:background="@drawable/icon_yeelight_control_view_color" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" app:lockPointerInBounds="false" app:pointerDrawable="@drawable/icon_yeelight_control_view_btn_color_picker" app:radius="0dp"/>
+        <com.yeelight.yeelib.p142ui.view.GradientView android:id="@+id/ct_gradient_view" android:background="@drawable/icon_yeelight_control_view_ct" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" app:ctMode="true" app:lockPointerInBounds="false" app:pointerDrawable="@drawable/icon_yeelight_control_view_btn_color_picker" app:radius="0dp"/>
+        <FrameLayout android:id="@+id/sun_mode_layout" android:background="#ffffefc0" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+            <ImageView android:layout_gravity="center" android:background="@drawable/icon_yeelight_control_view_sun_mode_badge" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </FrameLayout>
+        <FrameLayout android:id="@+id/moon_mode_layout" android:background="#ff699acf" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+            <ImageView android:layout_gravity="center" android:background="@drawable/icon_yeelight_control_view_moon_mode_badge" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </FrameLayout>
+        <com.yeelight.yeelib.p142ui.view.FlowSettingView android:id="@+id/flow_mode_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </FrameLayout>
+    <TextView android:background="@color/common_divider_line_control_bottom_color" android:layout_width="match_parent" android:layout_height="1px"/>
+</LinearLayout>

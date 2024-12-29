@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/common_color_secondary_white_f8" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.yeelight.yeelib.p142ui.view.CommonTitleBar android:id="@+id/title_bar" android:layout_width="match_parent" android:layout_height="wrap_content" app:backgroundTranslucent="true" app:leftButtonResource="@drawable/icon_yeelight_back_black" app:leftButtonVisible="true" app:textColor="@color/setting_item_theme_text_color"/>
+    <LinearLayout android:orientation="vertical" android:background="@color/common_text_color_white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15dp">
+        <TextView android:background="@color/common_divider_line_control_bottom_color" android:layout_width="match_parent" android:layout_height="1px"/>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/light_type_layout" android:layout_width="match_parent" android:layout_height="58dp">
+            <TextView android:textSize="@dimen/font_size_15sp" android:textColor="@color/common_text_color_primary_33" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/common_text_icon" android:layout_weight="1" android:layout_marginStart="20dp"/>
+            <ImageView android:id="@+id/light_type_img" android:layout_width="34dp" android:layout_height="34dp" android:layout_marginEnd="12dp"/>
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/right_arrow_white" android:layout_marginEnd="20dp"/>
+        </LinearLayout>
+        <TextView android:background="@color/common_divider_line_control_bottom_color" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginStart="20dp"/>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/light_name_layout" android:layout_width="match_parent" android:layout_height="44dp">
+            <TextView android:textSize="@dimen/font_size_15sp" android:textColor="@color/common_text_color_primary_33" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/common_text_name" android:layout_marginStart="20dp"/>
+            <TextView android:textSize="@dimen/font_size_14sp" android:textColor="@color/common_text_color_secondary_66" android:gravity="right" android:id="@+id/light_name" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginEnd="12dp"/>
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/right_arrow_white" android:layout_marginEnd="20dp"/>
+        </LinearLayout>
+        <TextView android:background="@color/common_divider_line_control_bottom_color" android:layout_width="match_parent" android:layout_height="1px"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:background="@color/common_text_color_white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15dp">
+        <TextView android:background="@color/common_divider_line_control_bottom_color" android:layout_width="match_parent" android:layout_height="1px"/>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/light_repeat_layout" android:layout_width="match_parent" android:layout_height="44dp">
+            <TextView android:textSize="@dimen/font_size_15sp" android:textColor="@color/common_text_color_primary_33" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/personality_light_create_repeat" android:layout_marginStart="20dp"/>
+            <TextView android:textSize="@dimen/font_size_14sp" android:textColor="@color/common_text_color_secondary_66" android:gravity="right" android:id="@+id/light_repeat" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginEnd="12dp"/>
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/right_arrow_white" android:layout_marginEnd="20dp"/>
+        </LinearLayout>
+        <TextView android:background="@color/common_divider_line_control_bottom_color" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginStart="20dp"/>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/light_stop_layout" android:layout_width="match_parent" android:layout_height="44dp">
+            <TextView android:textSize="@dimen/font_size_15sp" android:textColor="@color/common_text_color_primary_33" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/personality_light_create_stop_status" android:layout_marginStart="20dp"/>
+            <TextView android:textSize="@dimen/font_size_14sp" android:textColor="@color/common_text_color_secondary_66" android:gravity="right" android:id="@+id/light_stop" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginEnd="12dp"/>
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/right_arrow_white" android:layout_marginEnd="20dp"/>
+        </LinearLayout>
+        <TextView android:background="@color/common_divider_line_control_bottom_color" android:layout_width="match_parent" android:layout_height="1px"/>
+    </LinearLayout>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+    <TextView android:background="@color/common_divider_line_control_bottom_color" android:layout_width="match_parent" android:layout_height="1px"/>
+    <TextView android:textSize="16sp" android:textColor="@color/common_color_primary" android:gravity="center" android:id="@+id/scene_delete" android:background="@drawable/common_create_bottom_btn" android:layout_width="match_parent" android:layout_height="48dp" android:text="@string/common_text_delete"/>
+</LinearLayout>

@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<view xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/select_dialog_listview" android:scrollbars="none" android:layoutAnimation="@null" android:layout_width="match_parent" android:layout_height="match_parent" android:cacheColorHint="@null" android:divider="@android:drawable/divider_horizontal_bright" android:overScrollMode="ifContentScrolls" class="com.yeelight.yeelib.ui.widget.YLAlertController$RecycleListView"/>

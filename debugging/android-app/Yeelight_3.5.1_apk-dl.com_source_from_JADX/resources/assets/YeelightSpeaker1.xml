@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<root xmlns="urn:schemas-mi-com:device-1-0">
+    <specVersion>
+        <major>1</major>
+        <minor>0</minor>
+    </specVersion>
+    <device>
+        <type>urn:schemas-mi-com:device:Yeelight:WifiSpeaker:1</type>
+        <friendlyName>Yeelight智能音箱</friendlyName>
+        <firmwareVersion>1</firmwareVersion>
+        <modelNumber>1</modelNumber>
+        <modelName>yeelink.wifispeaker.v1</modelName>
+        <modelDescription>Yeelight智能音箱</modelDescription>
+        <modelURL>http://www.mi.com</modelURL>
+        <manufacturer>Xiaomi</manufacturer>
+        <manufacturerURL>http://www.mi.com</manufacturerURL>
+
+        <serviceList>
+            <service>
+                <type>urn:schemas-mi-com:service:WifiSpeaker:Service:1</type>
+                <friendlyName>Yeelight智能音箱服务</friendlyName>
+                <internalName />
+                <description />
+
+                <actionList>
+
+                    <action>
+                        <friendlyName>setAiProvider</friendlyName>
+                        <internalName>switch_ai</internalName>
+                        <description>AI切换</description>
+                        <argumentList>
+                            <argument>
+                                <name>aiProvider</name>
+                                <direction>in</direction>
+                                <relatedProperty>AiProvider</relatedProperty>
+                            </argument>
+                        </argumentList>
+                    </action>
+
+                </actionList>
+
+                <eventList></eventList>
+
+                <propertyList>
+
+                    <property gettable="true" notifiable="true" settable="true">
+                        <friendlyName>AiProvider</friendlyName>
+                        <internalName>ai_provider</internalName>
+                        <description>ai provider</description>
+                        <dataType>string</dataType>
+                        <allowedValueList>
+                            <allowedValue>mibrain</allowedValue>
+                            <allowedValue>xiaobing</allowedValue>
+                        </allowedValueList>
+                    </property>
+
+                </propertyList>
+            </service>
+        </serviceList>
+    </device>
+</root>
+

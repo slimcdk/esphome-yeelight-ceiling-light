@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/root_view" android:background="@android:color/transparent" android:layout_width="300dp" android:layout_height="wrap_content">
+    <FrameLayout android:background="@drawable/dimmer_title_background" android:layout_width="match_parent" android:layout_height="44dp">
+        <ImageView android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <TextView android:textSize="16sp" android:layout_gravity="center" android:id="@+id/tv_device_name" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </FrameLayout>
+    <FrameLayout android:background="@drawable/dimmer_content_background" android:paddingTop="10dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="60dp">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/prompt_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginBottom="10dp">
+            <ProgressBar android:layout_width="50dp" android:layout_height="50dp"/>
+            <TextView android:textSize="14sp" android:textColor="#cc000000" android:id="@+id/prompt_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/common_text_status_connecting"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/dimmer_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="60dp">
+            <SeekBar android:id="@+id/bright_bar" android:layout_width="240dp" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginBottom="10dp" android:maxHeight="20dp" android:progressDrawable="@drawable/progress_bar_bright" android:minHeight="20dp" style="@style/Widget.SeekBar.Dimmer.Bright"/>
+            <SeekBar android:id="@+id/color_temp_bar" android:layout_width="240dp" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginBottom="10dp" android:maxHeight="20dp" android:progressDrawable="@drawable/progress_bar_ct" android:minHeight="20dp" style="@style/Widget.SeekBar.Dimmer.Ct"/>
+            <SeekBar android:id="@+id/color_bar" android:layout_width="240dp" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginBottom="10dp" android:maxHeight="20dp" android:progressDrawable="@drawable/progress_bar_color" android:minHeight="20dp" style="@style/Widget.SeekBar.Dimmer.Color"/>
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/room_widget_layout" android:background="@color/black_00_transparent" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="30dp">
+        <FrameLayout android:id="@+id/room_widget_skin_layout" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_centerVertical="true">
+            <ImageView android:layout_gravity="center_vertical" android:id="@+id/room_widget_skin" android:background="@drawable/icon_yeelight_widget_skin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="15dp" android:layout_marginEnd="15dp"/>
+        </FrameLayout>
+        <FrameLayout android:id="@+id/room_widget_logo_layout" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_centerInParent="true">
+            <ImageView android:layout_gravity="center_vertical" android:id="@+id/room_widget_logo" android:background="@drawable/icon_yeelight_logo" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </FrameLayout>
+        <FrameLayout android:id="@+id/room_widget_refesh_layout" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_centerVertical="true" android:layout_alignParentEnd="true">
+            <ImageView android:layout_gravity="center_vertical" android:id="@+id/room_widget_refesh" android:background="@drawable/icon_yeelight_refresh" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="15dp" android:layout_marginEnd="15dp"/>
+        </FrameLayout>
+        <ProgressBar android:id="@+id/room_widget_refresh_progress" android:visibility="gone" android:layout_width="18dp" android:layout_height="18dp" android:maxWidth="18dp" android:maxHeight="18dp" android:layout_centerVertical="true" android:layout_marginEnd="15dp" android:layout_alignParentEnd="true"/>
+    </RelativeLayout>
+    <ImageView android:background="@color/white_30_transparent" android:layout_width="match_parent" android:layout_height="1dp"/>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@+id/room_weiget_add" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="60dp" android:layout_marginStart="10dp" android:layout_marginEnd="15dp">
+            <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_yeelight_add_normal"/>
+            <TextView android:textColor="@android:color/white" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:text="@string/widget_add_room" android:singleLine="true"/>
+        </LinearLayout>
+        <RelativeLayout android:layout_gravity="center_vertical" android:id="@+id/room_weight_card" android:visibility="gone" android:layout_width="match_parent" android:layout_height="60dp">
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_toStartOf="@+id/widget_room_switch_layout">
+                <RelativeLayout android:id="@+id/room_weight_title_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentStart="true">
+                    <ImageView android:gravity="center" android:id="@+id/widget_room_card_icon" android:layout_width="45dp" android:layout_height="45dp" android:layout_centerVertical="true" android:layout_marginStart="10dp"/>
+                    <LinearLayout android:orientation="vertical" android:id="@+id/widget_room_card_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginStart="12dp" android:layout_toEndOf="@+id/widget_room_card_icon">
+                        <TextView android:textSize="16sp" android:textColor="@color/white" android:id="@+id/widget_room_main_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true"/>
+                        <TextView android:textSize="13sp" android:textColor="@android:color/white" android:id="@+id/widget_room_sub_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true"/>
+                    </LinearLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+            <FrameLayout android:id="@+id/widget_room_switch_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_alignParentEnd="true">
+                <ImageView android:textSize="@dimen/font_size_12sp" android:layout_gravity="center_vertical" android:id="@+id/widget_room_switch" android:background="@drawable/device_card_view_switch_background" android:layout_width="50dp" android:layout_height="40dp" android:layout_marginStart="20dp"/>
+                <ProgressBar android:layout_gravity="center_vertical" android:id="@+id/widget_room_progress_bar" android:visibility="gone" android:layout_width="30dp" android:layout_height="30dp" android:layout_marginStart="20dp" android:layout_marginEnd="10dp"/>
+            </FrameLayout>
+        </RelativeLayout>
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/common_color_secondary_white_f8" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.yeelight.yeelib.p142ui.view.CommonTitleBar android:id="@+id/title_bar" android:layout_width="match_parent" android:layout_height="wrap_content" app:backgroundTranslucent="true" app:leftButtonResource="@drawable/icon_yeelight_back_black" app:leftButtonVisible="true" app:rightTextColor="@color/common_text_color_tips" app:rightTextResource="@string/common_text_save" app:rightTextVisible="true" app:textColor="@color/setting_item_theme_text_color"/>
+    <FrameLayout android:background="@color/white" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="3">
+                <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@+id/layout_alarm_name" android:clickable="true" style="@style/setting_click_item_style">
+                    <TextView android:layout_marginLeft="10dp" android:text="@string/common_text_name" style="@style/setting_text_style"/>
+                    <TextView android:layout_gravity="center_vertical" android:id="@+id/alarm_name_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5dp" android:maxWidth="100dp" android:text="@string/common_text_alarm_name" android:singleLine="true" style="@style/setting_text_style.sub"/>
+                    <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/common_item_more"/>
+                </LinearLayout>
+                <TextView style="@style/horizontal_line.padding"/>
+                <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@+id/layout_repeat" android:clickable="true" style="@style/setting_click_item_style">
+                    <TextView android:layout_marginLeft="10dp" android:text="@string/common_text_repeat" style="@style/setting_text_style"/>
+                    <TextView android:layout_gravity="center_vertical" android:id="@+id/repeat_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5dp" android:text="@string/common_text_repeat_once" android:singleLine="true" style="@style/setting_text_style.sub"/>
+                    <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/common_item_more"/>
+                </LinearLayout>
+                <TextView style="@style/horizontal_line.padding"/>
+                <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@+id/layout_action_open" android:clickable="true" style="@style/setting_click_item_style">
+                    <TextView android:layout_marginLeft="10dp" android:text="@string/alarm_time_to_switch_on" style="@style/setting_text_style"/>
+                    <TextView android:layout_gravity="center_vertical" android:id="@+id/open_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5dp" style="@style/setting_text_style.sub"/>
+                    <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/common_item_more"/>
+                </LinearLayout>
+                <TextView style="@style/horizontal_line.padding"/>
+                <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@+id/layout_action_close" android:clickable="true" style="@style/setting_click_item_style">
+                    <TextView android:layout_marginLeft="10dp" android:text="@string/alarm_time_to_switch_off" style="@style/setting_text_style"/>
+                    <TextView android:layout_gravity="center_vertical" android:id="@+id/close_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5dp" style="@style/setting_text_style.sub"/>
+                    <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/common_item_more"/>
+                </LinearLayout>
+                <TextView style="@style/horizontal_line.padding"/>
+                <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@+id/layout_scene" android:clickable="true" style="@style/setting_click_item_style">
+                    <TextView android:id="@+id/alarm_scene_name_view" android:layout_marginLeft="10dp" android:text="@string/common_text_alarm_scene_name" style="@style/setting_text_style"/>
+                    <TextView android:layout_gravity="center_vertical" android:id="@+id/alarm_scene_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5dp" android:maxWidth="80dp" android:text="none" android:singleLine="true" style="@style/setting_text_style.sub"/>
+                    <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/common_item_more"/>
+                </LinearLayout>
+                <TextView android:id="@+id/line_scence" style="@style/horizontal_line.padding"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/alarm_mask" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/black" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <SurfaceView android:id="@+id/preview_view" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <com.yeelight.yeelib.pickcolor.ViewfinderView android:id="@+id/viewfinder_view" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <ImageView android:layout_gravity="top|left|center_vertical|center_horizontal|center" android:id="@+id/capture_light" android:layout_width="30dp" android:layout_height="30dp" android:layout_marginLeft="10dp" android:layout_marginTop="15dp" android:src="@drawable/capture_light"/>
+    <ImageView android:layout_gravity="top|right|center_vertical|center_horizontal|center" android:id="@+id/capture_convert" android:layout_width="30dp" android:layout_height="30dp" android:layout_marginTop="15dp" android:layout_marginRight="10dp" android:src="@drawable/capture_convert"/>
+    <ImageView android:layout_gravity="bottom|left|center_vertical|center_horizontal|center" android:id="@+id/capture_return" android:layout_width="40dp" android:layout_height="40dp" android:layout_marginLeft="20dp" android:layout_marginBottom="110dp" android:src="@drawable/capture_close"/>
+    <ImageButton android:layout_gravity="bottom|right|center_vertical|center_horizontal|center" android:id="@+id/capture_type" android:background="@null" android:layout_width="40dp" android:layout_height="40dp" android:layout_marginRight="20dp" android:layout_marginBottom="110dp" android:src="@drawable/capture_picture"/>
+    <FrameLayout android:layout_gravity="bottom" android:padding="10dp" android:layout_width="match_parent" android:layout_height="100dp">
+        <TextView android:textSize="12sp" android:textColor="@color/white_40_transparent" android:layout_gravity="center_horizontal" android:id="@+id/capture_rgb" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <LinearLayout android:layout_gravity="bottom|center_vertical|center_horizontal|center" android:orientation="horizontal" android:layout_width="260dp" android:layout_height="40dp">
+            <TextView android:textSize="16sp" android:textColor="@color/white_60_transparent" android:gravity="center" android:id="@+id/capture_apply" android:background="@drawable/capture_button_bg" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/capture_apply" android:layout_weight="1"/>
+        </LinearLayout>
+    </FrameLayout>
+</FrameLayout>

@@ -1,0 +1,74 @@
+reading partition table...
+entry 0:
+  label      : nvs
+  offset     : 0x9000
+  length     : 16384
+  type       : 1 [DATA]
+  sub type   : 2 [WIFI]
+
+entry 1:
+  label      : otadata
+  offset     : 0xd000
+  length     : 8192
+  type       : 1 [DATA]
+  sub type   : 0 [OTA]
+
+entry 2:
+  label      : phy_init
+  offset     : 0xf000
+  length     : 4096
+  type       : 1 [DATA]
+  sub type   : 1 [RF]
+
+entry 3:
+  label      : miio_fw1
+  offset     : 0x10000
+  length     : 1966080
+  type       : 0 [APP]
+  sub type   : 16 [ota_0]
+
+entry 4:
+  label      : miio_fw2
+  offset     : 0x1f0000
+  length     : 1966080
+  type       : 0 [APP]
+  sub type   : 17 [ota_1]
+
+entry 5:
+  label      : test
+  offset     : 0x3d0000
+  length     : 77824
+  type       : 0 [APP]
+  sub type   : 32 [TEST]
+
+entry 6:
+  label      : mfi_p
+  offset     : 0x3e3000
+  length     : 4096
+  type       : 1 [DATA]
+  sub type   : 130 [unknown]
+
+entry 7:
+  label      : factory_nvs
+  offset     : 0x3e4000
+  length     : 16384
+  type       : 1 [DATA]
+  sub type   : 2 [WIFI]
+
+entry 8:
+  label      : coredump
+  offset     : 0x3e8000
+  length     : 65536
+  type       : 1 [DATA]
+  sub type   : 3 [unknown]
+
+entry 9:
+  label      : minvs
+  offset     : 0x3f8000
+  length     : 16384
+  type       : 1 [DATA]
+  sub type   : 254 [unknown]
+
+MD5sum: 
+6b21e3af49951675707f630121196f57
+Done

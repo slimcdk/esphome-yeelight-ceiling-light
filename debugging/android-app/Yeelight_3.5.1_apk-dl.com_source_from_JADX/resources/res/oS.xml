@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/activity_add_group_layout" android:background="@color/common_color_secondary_white_f8" android:fitsSystemWindows="true" android:clipToPadding="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.yeelight.yeelib.p142ui.view.CommonTitleBar android:id="@+id/title_bar" android:layout_width="match_parent" android:layout_height="wrap_content" app:backgroundTranslucent="true" app:leftButtonResource="@drawable/icon_yeelight_back_black" app:leftButtonVisible="true" app:textColor="@color/setting_item_theme_text_color"/>
+    <ListView android:id="@+id/device_list" android:layout_width="match_parent" android:layout_height="0dp" android:divider="@drawable/group_list_divider_music_mode" android:dividerHeight="1px" android:layout_weight="1"/>
+    <ImageView android:id="@+id/tile_bar_bottom_divider" android:background="@color/main_title_common_divider_bar" android:layout_width="match_parent" android:layout_height="1px"/>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="14sp" android:textColor="#666666" android:gravity="center" android:id="@+id/music_all_stop" android:background="@drawable/common_group_music_mode_control" android:layout_width="0dp" android:layout_height="43dp" android:text="@string/music_mode_group_stop_all" android:layout_weight="1"/>
+        <TextView android:textSize="14sp" android:textColor="#666666" android:gravity="center" android:id="@+id/music_all_start" android:background="@drawable/common_group_music_mode_control" android:layout_width="0dp" android:layout_height="43dp" android:text="@string/music_mode_group_start_all" android:layout_weight="1"/>
+    </LinearLayout>
+</LinearLayout>

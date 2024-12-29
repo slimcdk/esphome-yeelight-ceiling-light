@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@drawable/yl_dialog_bg" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <FrameLayout android:layout_gravity="end" android:id="@+id/view_close" android:layout_width="40dp" android:layout_height="40dp">
+        <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_yeelight_common_dialog_close"/>
+    </FrameLayout>
+    <TextView android:id="@+id/yl_dialog_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="27dp" android:layout_marginTop="10dp" android:layout_marginRight="27dp" android:text="@string/google_custom_connect_hint" style="@style/yl_dialog_title_style"/>
+    <Button android:id="@+id/btn_confirm" android:layout_width="match_parent" android:layout_height="44dp" android:layout_marginTop="34dp" android:layout_marginBottom="27dp" android:text="@string/google_custom_connect_hint_view" android:layout_marginStart="27dp" android:layout_marginEnd="27dp" style="@style/yl_dialog_btn_confirm_style"/>
+</LinearLayout>

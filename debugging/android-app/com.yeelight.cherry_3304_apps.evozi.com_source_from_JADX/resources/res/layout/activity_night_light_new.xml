@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/rootview" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/title_view" android:layout_width="match_parent" android:layout_height="44dp">
+        <ImageView android:id="@+id/img_back_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_yeelight_back_black" android:layout_marginStart="7dp"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:paddingBottom="30dp" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="33">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:paddingTop="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10dp">
+            <TextView android:textSize="27sp" android:textStyle="bold" android:textColor="@color/common_text_color_secondary_66" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/feature_night_light" android:layout_weight="1" android:layout_marginStart="31dp"/>
+            <ImageView android:id="@+id/img_switch_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_yeelight_switch_point_off_new" android:layout_marginEnd="25dp"/>
+        </LinearLayout>
+        <TextView android:textSize="@dimen/font_size_14sp" android:textColor="@color/common_text_color_primary_33" android:id="@+id/night_light_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/night_light_info" android:lineSpacingExtra="2dp" android:layout_marginStart="31dp" android:layout_marginEnd="31dp"/>
+    </LinearLayout>
+    <FrameLayout android:gravity="center" android:background="@color/common_color_secondary_white_f8" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="50">
+        <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:background="@color/common_text_color_not_clickable_cc" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginBottom="34dp"/>
+            <TextView android:background="@color/common_text_color_not_clickable_cc" android:layout_width="match_parent" android:layout_height="1px"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:layout_width="match_parent" android:layout_height="match_parent">
+            <com.yeelight.yeelib.p194ui.widget.WheelPicker android:id="@+id/minute_picker_start_view" android:layout_width="0dp" android:layout_height="match_parent" android:layout_marginTop="20dp" android:layout_marginBottom="20dp" android:layout_weight="1" app:wheel_atmospheric="true" app:wheel_curtain="false" app:wheel_data="@array/night_light_time_duration" app:wheel_item_space="3dp" app:wheel_item_text_color="@color/common_text_color_secondary_66" app:wheel_selected_item_text_color="@color/common_text_color_primary_33" app:wheel_visible_item_count="7"/>
+            <TextView android:textSize="@dimen/font_size_23sp" android:gravity="center" android:background="@color/common_text_color_primary_33" android:layout_width="10dp" android:layout_height="1dp"/>
+            <com.yeelight.yeelib.p194ui.widget.WheelPicker android:id="@+id/minute_picker_end_view" android:layout_width="0dp" android:layout_height="match_parent" android:layout_marginTop="20dp" android:layout_marginBottom="20dp" android:layout_weight="1" app:wheel_atmospheric="true" app:wheel_curtain="false" app:wheel_data="@array/night_light_time_duration" app:wheel_item_space="3dp" app:wheel_item_text_color="@color/common_text_color_secondary_66" app:wheel_selected_item_text_color="@color/common_text_color_primary_33" app:wheel_visible_item_count="7"/>
+        </LinearLayout>
+    </FrameLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="41">
+        <LinearLayout android:orientation="vertical" android:id="@+id/delay_time_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="44dp" android:layout_marginStart="32dp" android:layout_marginEnd="20dp">
+                <TextView android:textSize="@dimen/font_size_15sp" android:textColor="@color/common_text_color_primary_33" android:gravity="center_vertical" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/night_light_auto_delay_off" android:layout_weight="1"/>
+                <TextView android:textSize="@dimen/font_size_15sp" android:textColor="@color/common_text_color_not_clickable_cc" android:gravity="center_vertical" android:id="@+id/select_text_info" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/night_light_auto_delay_not_set"/>
+            </LinearLayout>
+            <TextView android:background="@color/common_color_divider_line" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginStart="20dp"/>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="72dp" android:layout_marginStart="12dp" android:layout_marginEnd="12dp">
+                <LinearLayout android:gravity="center" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+                    <CheckedTextView android:textSize="@dimen/font_size_15sp" android:textColor="@color/common_text_color_not_clickable_cc" android:gravity="center" android:layout_gravity="center" android:id="@+id/delay_off_time_1" android:background="@drawable/night_light_delay_time" android:clickable="true" android:layout_width="34dp" android:layout_height="34dp" android:text="1" android:textAlignment="center"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+                    <CheckedTextView android:textSize="@dimen/font_size_15sp" android:textColor="@color/common_text_color_not_clickable_cc" android:gravity="center" android:layout_gravity="center" android:id="@+id/delay_off_time_3" android:background="@drawable/night_light_delay_time" android:clickable="true" android:layout_width="34dp" android:layout_height="34dp" android:text="3" android:textAlignment="center"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+                    <CheckedTextView android:textSize="@dimen/font_size_15sp" android:textColor="@color/common_text_color_not_clickable_cc" android:gravity="center" android:layout_gravity="center" android:id="@+id/delay_off_time_5" android:background="@drawable/night_light_delay_time" android:clickable="true" android:layout_width="34dp" android:layout_height="34dp" android:text="5" android:textAlignment="center"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+                    <CheckedTextView android:textSize="@dimen/font_size_15sp" android:textColor="@color/common_text_color_not_clickable_cc" android:gravity="center" android:layout_gravity="center" android:id="@+id/delay_off_time_10" android:background="@drawable/night_light_delay_time" android:clickable="true" android:layout_width="34dp" android:layout_height="34dp" android:text="10" android:textAlignment="center"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+                    <CheckedTextView android:textSize="@dimen/font_size_15sp" android:textColor="@color/common_text_color_not_clickable_cc" android:gravity="center" android:layout_gravity="center" android:id="@+id/delay_off_time_15" android:background="@drawable/night_light_delay_time" android:layout_width="34dp" android:layout_height="34dp" android:text="15" android:textAlignment="center"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+                    <CheckedTextView android:textSize="@dimen/font_size_15sp" android:textColor="@color/common_text_color_not_clickable_cc" android:gravity="center" android:layout_gravity="center" android:id="@+id/delay_off_time_20" android:background="@drawable/night_light_delay_time" android:clickable="true" android:layout_width="34dp" android:layout_height="34dp" android:text="20" android:textAlignment="center"/>
+                </LinearLayout>
+            </LinearLayout>
+            <TextView android:background="@color/common_color_divider_line" android:layout_width="match_parent" android:layout_height="1px"/>
+        </LinearLayout>
+        <View android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+        <Button android:textSize="17sp" android:textColor="@color/common_text_color_tips" android:id="@+id/btn_complete" android:background="@drawable/common_create_bottom_btn" android:layout_width="match_parent" android:layout_height="50dp" android:text="@string/common_text_save" android:textAllCaps="false"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.yeelight.yeelib.p194ui.view.CommonTitleBar android:layout_gravity="top" android:id="@+id/common_tile_bar" android:layout_width="match_parent" android:layout_height="wrap_content" app:leftButtonResource="@drawable/icon_yeelight_nav_menu" app:leftButtonVisible="true" app:rightButtonResource="@drawable/icon_yeelight_nav_add" app:rightButtonVisible="true"/>
+    <FrameLayout android:id="@+id/layout_fragment" android:background="@color/common_color_secondary_white_f8" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+    <TextView android:background="@color/common_divider_line_control_bottom_color" android:layout_width="match_parent" android:layout_height="1px"/>
+    <com.yeelight.cherry.p177ui.view.BottomTabView android:id="@+id/bottom_tab_layout" android:background="@color/common_text_color_white" android:paddingTop="6dp" android:layout_width="match_parent" android:layout_height="49dp"/>
+</LinearLayout>

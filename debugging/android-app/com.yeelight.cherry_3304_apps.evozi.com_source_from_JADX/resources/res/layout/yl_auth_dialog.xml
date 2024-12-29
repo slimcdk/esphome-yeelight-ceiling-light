@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ImageView android:id="@+id/yl_abs_height_image" android:layout_width="match_parent" android:layout_height="0dp" android:scaleType="fitXY" android:layout_weight="1"/>
+    <TextView android:id="@+id/yl_dialog_title" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="27dp" android:layout_marginRight="27dp" android:text="" style="@style/yl_dialog_title_style"/>
+    <TextView android:textColor="@color/common_text_color_secondary_66" android:id="@+id/yl_dialog_message" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginRight="20dp" android:layout_marginBottom="30dp" android:text="" style="@style/yl_dialog_message_style"/>
+</LinearLayout>

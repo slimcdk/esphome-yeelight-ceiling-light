@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/class_T" android:fitsSystemWindows="true" android:clipToPadding="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.yeelight.yeelib.p142ui.view.CommonTitleBar android:id="@+id/title_bar" android:layout_width="match_parent" android:layout_height="wrap_content" app:bottomDividerColor="@color/common_divider_line_title_bottom_color" app:leftButtonResource="@drawable/icon_yeelight_back_black" app:leftButtonVisible="true" app:textColor="@color/setting_item_theme_text_color"/>
+    <ImageView android:layout_gravity="center_horizontal" android:id="@+id/room_type_img" android:layout_width="82dp" android:layout_height="82dp" android:layout_marginTop="45dp" android:src="@drawable/icon_yeelight_room_type_3"/>
+    <View android:background="@color/common_divider_line_control_bottom_color" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginTop="45dp"/>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <EditText android:textSize="@dimen/font_size_15sp" android:textColor="@color/common_text_color_primary_33" android:id="@+id/et_name" android:background="@color/white" android:paddingLeft="22dp" android:layout_width="match_parent" android:layout_height="44dp" android:maxLines="1" android:singleLine="true" android:drawableRight="@drawable/radian_btn_bg" android:imeOptions="actionDone"/>
+        <ImageButton android:layout_gravity="right|center_vertical|center_horizontal|center" android:id="@+id/btn_clear" android:background="@color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20dp" android:src="@drawable/icon_yeelight_share_device_input_reset" android:scaleType="fitXY"/>
+    </FrameLayout>
+    <View android:background="@color/common_divider_line_control_bottom_color" android:layout_width="match_parent" android:layout_height="1px"/>
+    <View android:layout_width="1px" android:layout_height="0dp" android:layout_weight="1"/>
+    <TextView android:textSize="@dimen/title_bar_text_size" android:textColor="@color/common_text_color_tips" android:gravity="center" android:id="@+id/next_step" android:background="@drawable/common_create_bottom_btn" android:layout_width="match_parent" android:layout_height="50dp" android:text="@string/personality_light_select_next_step"/>
+</LinearLayout>

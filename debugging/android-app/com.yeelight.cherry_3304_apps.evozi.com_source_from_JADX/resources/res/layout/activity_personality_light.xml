@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/common_color_secondary_white_f8" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.yeelight.yeelib.p194ui.view.CommonTitleBar android:id="@+id/title_bar" android:layout_width="match_parent" android:layout_height="wrap_content" app:backgroundTranslucent="true" app:leftButtonResource="@drawable/icon_yeelight_back_black" app:leftButtonVisible="true" app:rightButtonResource="@drawable/icon_yeelight_nav_add" app:rightButtonVisible="true" app:textColor="@color/setting_item_theme_text_color"/>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.lcodecore.tkrefreshlayout.TwinklingRefreshLayout android:id="@+id/refresh_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+            <androidx.recyclerview.widget.RecyclerView android:id="@+id/personality_light_list" android:layout_width="match_parent" android:layout_height="wrap_content" android:divider="@drawable/group_list_divider_music_mode" android:dividerHeight="1px" android:overScrollMode="never"/>
+        </com.lcodecore.tkrefreshlayout.TwinklingRefreshLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/no_personality_light_layout" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="51dp" android:layout_marginBottom="14dp" android:src="@drawable/icon_yeelight_personality_light_create_view"/>
+            <TextView android:textSize="17sp" android:textColor="@color/common_text_color_primary_33" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10dp" android:text="@string/personality_produce_info_1"/>
+            <TextView android:textSize="@dimen/font_size_13sp" android:textColor="@color/common_text_color_description_99" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="1dp" android:text="@string/personality_produce_info_2"/>
+            <TextView android:textSize="@dimen/font_size_13sp" android:textColor="@color/common_text_color_description_99" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="38dp" android:text="@string/personality_produce_info_3"/>
+            <Button android:textSize="15sp" android:textColor="@color/white" android:id="@+id/create_light" android:background="@drawable/round_btn_red" android:layout_width="match_parent" android:layout_height="39dp" android:text="@string/personality_light_creat" android:textAllCaps="false" android:layout_marginStart="67dp" android:layout_marginEnd="67dp" style="?android:attr/borderlessButtonStyle"/>
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

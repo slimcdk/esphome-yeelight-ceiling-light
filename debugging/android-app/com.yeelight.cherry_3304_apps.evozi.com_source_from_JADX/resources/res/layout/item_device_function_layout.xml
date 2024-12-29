@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_gravity="center" android:orientation="horizontal" android:id="@+id/grid_item_view" android:background="@drawable/item_click_background" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="0dp" android:layout_height="120dp" android:layout_weight="1">
+        <FrameLayout android:paddingTop="27dp" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+            <ImageView android:layout_gravity="bottom|center_vertical|center_horizontal|center" android:id="@+id/function_img" android:layout_width="27dp" android:layout_height="27dp" android:layout_marginBottom="15dp"/>
+            <TextView android:layout_gravity="bottom|center_vertical|center_horizontal|center" android:id="@+id/function_enable_prompt" android:background="@color/common_color_secondary_yellow" android:layout_width="7dp" android:layout_height="5px" android:layout_marginBottom="5dp"/>
+        </FrameLayout>
+        <TextView android:layout_gravity="center" android:background="@color/common_divider_line_content_color" android:layout_width="75dp" android:layout_height="1px"/>
+        <LinearLayout android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="50dp">
+            <TextView android:textSize="@dimen/font_size_12sp" android:textColor="@color/setting_item_theme_text_color" android:gravity="center" android:id="@+id/function_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7dp"/>
+        </LinearLayout>
+        <TextView android:background="@color/common_divider_line_content_color" android:layout_width="match_parent" android:layout_height="1px"/>
+    </LinearLayout>
+    <TextView android:background="@color/common_divider_line_content_color" android:layout_width="1px" android:layout_height="match_parent"/>
+</LinearLayout>

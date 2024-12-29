@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/recommend_root" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ImageView android:id="@+id/recommend_scene_1" android:layout_width="160dp" android:layout_height="105dp" android:scaleType="fitXY" android:layout_alignParentLeft="true" android:layout_alignParentTop="true"/>
+    <ImageView android:id="@+id/recommend_scene_2" android:layout_width="160dp" android:layout_height="105dp" android:scaleType="fitXY" android:layout_alignParentTop="true" android:layout_alignParentRight="true"/>
+    <ImageView android:id="@+id/recommend_scene_3" android:layout_width="@dimen/save_recommend_image_width" android:layout_height="@dimen/save_recommend_image_height" android:scaleType="fitXY" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true"/>
+    <ImageView android:id="@+id/recommend_scene_4" android:layout_width="@dimen/save_recommend_image_width" android:layout_height="@dimen/save_recommend_image_height" android:scaleType="fitXY" android:layout_alignParentRight="true" android:layout_alignParentBottom="true"/>
+</RelativeLayout>

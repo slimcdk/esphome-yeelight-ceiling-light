@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/ll_timer" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.yeelight.yeelib.p142ui.view.TimePicker android:id="@+id/timerPicker" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <View android:background="@color/common_divider_line_title_bottom_color" android:layout_width="match_parent" android:layout_height="1px"/>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="49dp">
+        <TextView android:textSize="17sp" android:textColor="@color/common_text_color_primary_33" android:gravity="center" android:id="@+id/tv_timer_cancle" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/common_text_cancel" android:layout_weight="1"/>
+        <View android:background="@color/common_divider_line_title_bottom_color" android:layout_width="1px" android:layout_height="match_parent" android:layout_marginTop="5dp" android:layout_marginBottom="5dp"/>
+        <TextView android:textSize="17sp" android:textColor="@color/common_text_color_tips" android:gravity="center" android:id="@+id/tv_timer_modify" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/common_text_ok" android:layout_weight="1"/>
+    </LinearLayout>
+    <View android:background="@color/common_color_secondary_white_f8" android:layout_width="match_parent" android:layout_height="20dp"/>
+</LinearLayout>

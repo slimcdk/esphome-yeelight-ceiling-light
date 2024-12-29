@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/yl_dialog_bg" android:paddingTop="35dp" android:paddingBottom="27dp" android:layout_width="match_parent" android:layout_height="match_parent" android:paddingStart="27dp" android:paddingEnd="27dp">
+    <TextView android:textSize="20sp" android:textColor="@color/main_title_text_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/speaker_select_voice_system"/>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="35dp">
+        <FrameLayout android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+            <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center" android:orientation="vertical" android:id="@+id/ll_xiaoai" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_yeelight_mi_ai_header"/>
+                <TextView android:textSize="14sp" android:textColor="@color/common_text_color_primary_33" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="@string/speaker_xiao_ai"/>
+                <ImageView android:id="@+id/img_xiaoai" android:layout_width="19dp" android:layout_height="19dp" android:layout_marginTop="17dp" android:src="@drawable/icon_yeelight_common_choice_selected"/>
+            </LinearLayout>
+        </FrameLayout>
+        <FrameLayout android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+            <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center" android:orientation="vertical" android:id="@+id/ll_xiaobing" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_yeelight_microsoft_xiaobing_header"/>
+                <TextView android:textSize="14sp" android:textColor="@color/common_text_color_primary_33" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="@string/speaker_xiao_bing"/>
+                <ImageView android:id="@+id/img_xiaobing" android:layout_width="19dp" android:layout_height="19dp" android:layout_marginTop="17dp" android:src="@drawable/icon_yeelight_common_choice_selected"/>
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+    <Button android:id="@+id/btn_confirm" android:layout_width="match_parent" android:layout_height="44dp" android:layout_marginTop="27dp" android:text="@string/common_text_ok" style="@style/yl_dialog_btn_confirm_style"/>
+</LinearLayout>

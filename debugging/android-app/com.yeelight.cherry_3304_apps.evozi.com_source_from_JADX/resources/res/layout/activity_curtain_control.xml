@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.yeelight.yeelib.p194ui.view.CommonTitleBar android:id="@+id/title_bar" android:layout_width="match_parent" android:layout_height="wrap_content" app:backgroundTranslucent="true" app:leftButtonResource="@drawable/icon_yeelight_back_black" app:leftButtonVisible="true" app:rightButtonResource="@drawable/icon_yeelight_control_view_settings" app:rightButtonVisible="true" app:textColor="@color/setting_item_theme_text_color"/>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <com.yeelight.cherry.p177ui.view.CurtainControlView android:layout_gravity="center_horizontal" android:id="@+id/CurtainView" android:layout_width="match_parent" android:layout_height="282dp" android:layout_marginTop="40dp" android:layout_marginStart="40dp" android:layout_marginEnd="40dp"/>
+        <TextView android:textSize="16sp" android:textColor="@color/common_text_color_secondary_66" android:layout_gravity="center_horizontal" android:id="@+id/tv_progress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="52dp" android:text="60%"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/white" android:layout_width="match_parent" android:layout_height="120dp" android:layout_marginTop="10dp">
+        <FrameLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <ImageView android:layout_gravity="center" android:id="@+id/img_open" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/btn_curtain_open"/>
+        </FrameLayout>
+        <FrameLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <ImageView android:layout_gravity="center" android:id="@+id/img_pause" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/btn_curtain_stop"/>
+        </FrameLayout>
+        <FrameLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <ImageView android:layout_gravity="center" android:id="@+id/img_close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/btn_curtain_close"/>
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>

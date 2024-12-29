@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:state_pressed="true">
+        <shape>
+            <corners android:radius="@dimen/common_long_btn_radius"/>
+            <solid android:color="@color/radian_btn_offline_prompt_color"/>
+            <stroke android:width="1px" android:color="@color/radian_btn_offline_prompt_color"/>
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <corners android:radius="@dimen/common_long_btn_radius"/>
+            <stroke android:width="1px" android:color="@android:color/darker_gray"/>
+        </shape>
+    </item>
+</selector>
